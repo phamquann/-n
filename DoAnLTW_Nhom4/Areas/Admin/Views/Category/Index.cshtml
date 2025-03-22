@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DoAnLTW_Nhom4.Models.Category>
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Quản lý danh mục";
+}
+
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+
+<div class="admin-container">
+    <h2>Danh mục sản phẩm</h2>
+    <div class="button-add">
+        <a asp-action="Add" class="add-btn">Thêm danh mục mới</a>
+    </div>
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên danh mục</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var category in Model)
+                {
+                    <tr>
+                        <td>@category.Id</td>
+                        <td>@category.Name</td>
+                        <td class="action-links">
+                            <a asp-action="Update" asp-route-id="@category.Id" class="edit-btn">Chỉnh sửa</a> |
+                            <a asp-action="Delete" asp-route-id="@category.Id" class="delete-btn">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">Không có danh mục nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

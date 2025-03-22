@@ -1,0 +1,221 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+/* Định dạng chung cho header */
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+}
+
+/* Định dạng thanh thông báo */
+.top-heading {
+    background-color: antiquewhite;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    max-height: 50px;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Nội dung slide */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* Nút điều hướng */
+.prev, .next {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+/* Thanh logo, tìm kiếm, tài khoản */
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 10%;
+}
+
+.logo img {
+    height: 100px;
+    transform: scale(1.5);
+}
+
+/* Ô tìm kiếm */
+.search {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search-suggest {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.search-suggest a {
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Tùy chọn người dùng */
+.user-options {
+    display: flex;
+    gap: 15px;
+}
+
+.user-options a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+/* Navbar */
+.navbar {
+    background: #333;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Main Layout */
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 15px;
+}
+
+.sidebar h3 {
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    width: 75%;
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-column h4 {
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+}

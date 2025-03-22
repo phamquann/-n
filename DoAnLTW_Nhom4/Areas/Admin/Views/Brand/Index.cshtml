@@ -1,0 +1,49 @@
+﻿@model IEnumerable<DoAnLTW_Nhom4.Models.Brand>
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Quản lý thương hiệu";
+}
+
+<div class="admin-container">
+    <h2>Thương hiệu</h2>
+    <div class="button-add">
+        <a asp-action="Add" class="add-btn">Thêm thương hiệu mới</a>
+    </div>
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên thương hiệu</th>
+                <th>Logo</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var brand in Model)
+                {
+                    <tr>
+                        <td>@brand.Id</td>
+                        <td>@brand.Name</td>
+                        <td><img src="@brand.LogoUrl" alt="@brand.Name" style="max-width: 50px; height: auto;" /></td>
+                        <td class="action-links">
+                            <a asp-action="Display" asp-route-id="@brand.Id" class="view-btn">Xem</a> | 
+                            <a asp-action="Edit" asp-route-id="@brand.Id" class="edit-btn">Chỉnh sửa</a> | 
+                            @if(User.IsInRole("Admin"))
+                            {
+                                <a asp-action="Delete" asp-route-id="@brand.Id" class="delete-btn">Xóa</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4">Không có thương hiệu nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,24 @@
+﻿@model DoAnLTW_Nhom4.Models.Category
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Sửa danh mục";
+}
+
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+
+<div class="admin-container">
+    <h2>Sửa tên danh mục</h2>
+    <form asp-action="Update" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <button type="submit" class="edit-btn">Cập nhật</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

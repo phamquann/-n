@@ -1,0 +1,30 @@
+﻿@model DoAnLTW_Nhom4.Models.Brand
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Chi tiết thương hiệu";
+}
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<div class="admin-container">
+    <h2>Chi tiết thương hiệu</h2>
+    <div class="brand-details">
+        <p><strong>ID:</strong> @Model.Id</p>
+        <p><strong>Tên thương hiệu:</strong> @Model.Name</p>
+        <p><img src="@Model.LogoUrl" alt="@Model.Name" style="max-width: 100px; height: auto;" /></p>
+        <p><strong>Mô tả:</strong> @Model.Description</p>
+    </div>
+    <div class="action-links">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="edit-btn">Chỉnh sửa</a>
+        <a asp-action="Index" class="cancel-btn">Quay lại</a>
+    </div>
+</div>
+
+<style>
+
+    .brand-details p {
+        margin-bottom: 10px;
+    }
+
+    .form-actions {
+        margin-top: 20px;
+    }
+</style>

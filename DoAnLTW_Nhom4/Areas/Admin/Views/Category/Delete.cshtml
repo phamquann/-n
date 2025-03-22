@@ -1,0 +1,16 @@
+﻿@model DoAnLTW_Nhom4.Models.Category
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Xóa danh mục";
+}
+
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+
+<div class="admin-container">
+    <h2>Xóa danh mục</h2>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <p>Bạn có muốn xóa <strong>@Model.Name</strong> khỏi danh mục?</p>
+        <button type="submit" class="delete-btn">Xóa</button>
+    </form>
+</div>

@@ -1,0 +1,30 @@
+﻿@model DoAnLTW_Nhom4.Models.Brand
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Thêm thương hiệu";
+}
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<div class="admin-container">
+    <h2>Thêm thương hiệu</h2>
+    <form asp-action="Add" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Name" class="control-label">Tên thương hiệu</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LogoUrl" class="control-label">Logo</label>
+            <input type="file" asp-for="LogoUrl" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" class="control-label">Mô tả</label>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit" class="add-btn">Thêm</button>
+        <a asp-action="Index" class="cancel-btn">Hủy</a>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

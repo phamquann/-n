@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+<link rel="stylesheet" href="~/css/loginPartial.css" asp-append-version="true" />
+<nav class="nav-menu">
+    <ul class="nav-list">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
+            {
+                <li class="nav-item">
+                    <a class="nav-link nav-account" href="/Admin/Home/Index">
+                        <span class="nav-icon">🛠</span> DashBoard
+                    </a>
+
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link nav-account" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                        <span class="nav-icon">👤</span> Tài khoản
+                    </a>
+                </li>
+            }
+            <li class="nav-item">
+                <form class="logout-form" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="nav-link nav-button nav-logout">Đăng xuất</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link nav-auth nav-register" asp-area="Identity" asp-page="/Account/Register">Đăng ký</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-auth nav-login" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
+            </li>
+        }
+    </ul>
+</nav>

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DoAnLTW_Nhom4</title>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Thanh thông báo -->
+        <section class="top-heading">
+            <div class="slider">
+                <button class="prev">❮</button>
+                <div class="slides">
+                    <div class="slide">SẢN PHẨM CHÍNH HÃNG</div>
+                    <div class="slide">CAM KẾT LỖI ĐỔI LIỀN</div>
+                    <div class="slide">HOTLINE 1900.2091</div>
+                    <div class="slide">MIỄN PHÍ VẬN CHUYỂN</div>
+                </div>
+                <button class="next">❯</button>
+            </div>
+        </section>
+
+        <!-- Thanh logo, tìm kiếm và tài khoản -->
+        <section class="header-main">
+            <div class="logo">
+                <a href="/home/index"><img src="~/images/logo-phone.png" alt="Logo"></a>
+            </div>
+
+            <div class="search">
+                <form action="/tim-kiem" method="get">
+                    <input type="text" name="kwd" placeholder="Hôm nay bạn muốn tìm kiếm gì?">
+                    <button type="submit">🔍</button>
+                </form>
+                <div class="search-suggest">
+                    <strong>Từ khóa xu hướng:</strong>
+                    <a href="#">Samsung Galaxy A16</a>
+                    <a href="#">Redmi Note 14</a>
+                    <a href="#">Tecno Pova 6 Neo</a>
+                    <a href="#">iPhone 16</a>
+                </div>
+            </div>
+
+            <div class="user-options">
+                <partial class="account" name="_LoginPartial" />
+                <a href="#" class="cart">🛒 Giỏ hàng <span class="cart-count">0</span></a>
+            </div>
+        </section>
+    </header>
+    <!-- Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li><a asp-controller="Product" asp-action="Index">Sản phẩm</a></li>
+            <li><a asp-controller="Contact" asp-action="Index">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Danh mục sản phẩm</h3>
+            <ul>
+                <li><a href="#">Điện thoại</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Tablet</a></li>
+                <li><a href="#">Phụ kiện</a></li>
+            </ul>
+        </aside>
+
+        <!-- Nội dung chính -->
+        <main class="content">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>Liên hệ</h4>
+            <p>Hotline: 0123 456 789</p>
+        </div>
+        <div class="footer-column">
+            <h4>Địa chỉ</h4>
+            <p>123 Đường ABC, TP. HCM</p>
+        </div>
+        <div class="footer-column">
+            <h4>Thanh toán</h4>
+            <p>Visa, Mastercard, MoMo...</p>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        let slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+        let interval = setInterval(nextSlide, 3000); // Auto slide mỗi 3 giây
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[index].classList.add("active");
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Bắt sự kiện click nút điều hướng
+        document.querySelector(".next").addEventListener("click", function () {
+            nextSlide();
+            resetInterval();
+        });
+
+        document.querySelector(".prev").addEventListener("click", function () {
+            prevSlide();
+            resetInterval();
+        });
+
+        // Tạm dừng khi di chuột vào
+        document.querySelector(".top-heading").addEventListener("mouseover", function () {
+            clearInterval(interval);
+        });
+
+        // Tiếp tục chạy khi rời chuột
+        document.querySelector(".top-heading").addEventListener("mouseleave", function () {
+            interval = setInterval(nextSlide, 3000);
+        });
+
+        function resetInterval() {
+            clearInterval(interval);
+            interval = setInterval(nextSlide, 3000);
+        }
+    });
+
+</script>

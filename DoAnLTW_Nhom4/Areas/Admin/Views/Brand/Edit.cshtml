@@ -1,0 +1,43 @@
+﻿@model DoAnLTW_Nhom4.Models.Brand
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Sửa thương hiệu";
+}
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<div class="admin-container">
+    <h2>Sửa thương hiệu</h2>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Name" class="control-label">Tên thương hiệu</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LogoUrl">Logo</label>
+            <input type="file" asp-for="LogoUrl" class="form-control" onchange="previewImage(event)" />
+            <span asp-validation-for="LogoUrl" class="text-danger"></span>
+            <img id="productImage" src="@Model.LogoUrl" alt="Logo" style="max-width: 150px;" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description" class="control-label">Mô tả</label>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit" class="edit-btn">Cập nhật</button>
+        <a asp-action="Index" class="cancel-btn">Hủy</a>
+    </form>
+</div>
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function(){
+            var output = document.getElementById('productImage');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

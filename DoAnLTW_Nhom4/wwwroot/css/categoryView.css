@@ -1,0 +1,211 @@
+﻿/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container chính */
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Nút thêm */
+.button-add {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.add-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+    .add-btn:hover {
+        background-color: #218838;
+    }
+
+/* Bảng danh mục */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .admin-table th,
+    .admin-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .admin-table th {
+        background-color: #e9ecef;
+        font-weight: bold;
+        color: #495057;
+    }
+
+    .admin-table td {
+        vertical-align: middle;
+    }
+
+/* Liên kết hành động */
+.action-links a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.action-links .edit-btn {
+    color: black;
+}
+
+    .action-links .edit-btn:hover {
+        background-color: #cce5ff;
+    }
+
+.action-links .delete-btn {
+    color: black;
+}
+
+    .action-links .delete-btn:hover {
+        background-color: #f8d7da;
+    }
+.action-links .view-btn {
+    background-color: #17a2b8; /* Màu xanh ngọc */
+    color: black;
+}
+
+    .action-links .view-btn:hover {
+        background-color: #f8d7da;
+    }
+.action-links .cancel-btn {
+    color: black;
+}
+    .action-links .cancel-btn :hover {
+        background-color: #f8d7da;
+    }
+/* Form chung */
+.form-group {
+    margin-bottom: 20px;
+}
+    .form-group + button,
+    .form-actions button {
+        margin-right: 10px;
+    }
+.control-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+    .form-control:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+.text-danger {
+    display: block;
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+/* Nút trong form */
+.edit-btn,
+.delete-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: black;
+}
+
+    .edit-btn:hover {
+        background-color: #f8d7da;
+    }
+
+.delete-btn {
+    background-color: #dc3545;
+    color: black;
+}
+
+    .delete-btn:hover {
+        background-color: #f8d7da;
+    }
+.cancel-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+    .cancel-btn:hover {
+        background-color: #f8d7da;
+    }
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 15px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 8px;
+    }
+
+    .action-links a {
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    .button-add,
+    .form-group {
+        text-align: left;
+    }
+}

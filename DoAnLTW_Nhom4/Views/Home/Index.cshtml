@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ ";
+}
+
+<!-- Banner -->
+<div class="banner">
+    <img src="~/images/banner.jpg" alt="Banner quảng cáo">
+</div>
+
+<!-- Danh sách sản phẩm -->
+<div class="product-section">
+    <h2>Điện thoại nổi bật</h2>
+    <div class="product-list">
+        @for (int i = 1; i <= 8; i++)
+        {
+            <div class="product-item">
+                <img src="~/images/product.jpg" alt="Sản phẩm @i">
+                <h3>Sản phẩm @i</h3>
+                <p class="price">Giá: 10.000.000đ</p>
+                <button>Mua ngay</button>
+            </div>
+        }
+    </div>
+</div>
+
