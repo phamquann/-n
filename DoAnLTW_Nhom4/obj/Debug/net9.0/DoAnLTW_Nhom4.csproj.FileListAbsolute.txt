@@ -439,3 +439,4 @@ D:\IT_HUTECH\Lập Trình Web\DoAnLTW_Nhom4\DoAnLTW_Nhom4\obj\Debug\net9.0\compr
 D:\IT_HUTECH\Lập Trình Web\DoAnLTW_Nhom4\DoAnLTW_Nhom4\obj\Debug\net9.0\compressed\z9brdoc1wz-la22w61vjq.gz
 D:\IT_HUTECH\Lập Trình Web\DoAnLTW_Nhom4\DoAnLTW_Nhom4\obj\Debug\net9.0\compressed\n70u1m4gju-ba8xz3gh8y.gz
 D:\IT_HUTECH\Lập Trình Web\DoAnLTW_Nhom4\DoAnLTW_Nhom4\obj\Debug\net9.0\compressed\5btghacusy-e8dqq95wtg.gz
+D:\IT_HUTECH\Lập Trình Web\DoAnLTW_Nhom4\DoAnLTW_Nhom4\obj\Debug\net9.0\DoAnLTW_Nhom4.sourcelink.json

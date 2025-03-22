@@ -30,7 +30,6 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
                 .Include(p => p.Category)
                 .Include(p => p.Brand)
                 .Include(p => p.ImagesUrl)
-                .Include(p => p.ProductSpecifications)
                 .FirstOrDefaultAsync(p => p.Id == id) ?? throw new InvalidOperationException("Product not found");
         }
         public async Task AddAsync(Product product)

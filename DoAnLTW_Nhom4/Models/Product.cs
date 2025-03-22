@@ -20,13 +20,13 @@ namespace DoAnLTW_Nhom4.Models
         public decimal? DiscountPrice { get; set; }
         public int Stock { get; set; }
         public string? Description { get; set; }
-        public string? ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
         public int BrandId { get; set; }
         public Brand? Brand { get; set; }
         public List<ProductImage>? ImagesUrl { get; set; }
-        public List<ProductSpecification>? ProductSpecifications { get; set; }
+        public List<ProductSpecification>? Specifications { get; set; }
         public List<Review>? Reviews { get; set; }
         public List<OrderDetail>? OrderDetails { get; set; }
         public List<CartItem>? CartItems { get; set; }

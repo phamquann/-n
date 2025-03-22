@@ -18,6 +18,7 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
         public async Task<IEnumerable<Brand>> GetAllAsync()
         {
             return await _context.Brands
+                .Include(b => b.Products) // Bao gồm danh sách sản phẩm nếu cần
                 .ToListAsync();
         }
 

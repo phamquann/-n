@@ -7,7 +7,7 @@
 <div class="admin-container">
     <h2>Xóa thương hiệu</h2>
     <p>Bạn có muốn xóa <strong>@Model.Name</strong> khỏi danh sách thương hiệu?</p>
-    <p><strong>Logo:</strong> <img src="@Model.LogoUrl" alt="@Model.Name" style="max-width: 100px; height: auto;" /></p>
+    <p><img src="@Model.LogoUrl" alt="@Model.Name" style="max-width: 100px; height: auto;" /></p>
     <form asp-action="DeleteConfirmed" method="post">
         <input type="hidden" asp-for="Id" />
         <button type="submit" class="delete-btn">Xóa</button>

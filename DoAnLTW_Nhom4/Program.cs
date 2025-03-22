@@ -23,6 +23,7 @@ builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 builder.Services.AddScoped<IBrandRepository, EFBrandRepository>();
 builder.Services.AddScoped<IOrderRepository, EFOrderRepository>();
+builder.Services.AddScoped<IProductSpecificationRepository, EFProductSpecificationReposotory>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
 
 builder.Services.ConfigureApplicationCookie(options =>

@@ -11,12 +11,14 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
 
         public EFCategoryRepository(ApplicationDbContext context)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
-            return await _context.Categories.ToListAsync();
+            return await _context.Categories
+                .Include(c => c.Products)
+                .ToListAsync();
         }
 
         public async Task<Category> GetByIdAsync(int id)
