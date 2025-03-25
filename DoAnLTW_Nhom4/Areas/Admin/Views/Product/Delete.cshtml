@@ -1,5 +1,77 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model DoAnLTW_Nhom4.Models.Product
+
 @{
+    ViewData["Title"] = "Xóa sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+
+<h1>Xóa sản phẩm</h1>
+
+<div class="alert alert-danger">
+    <h3>Bạn có chắc chắn muốn xóa sản phẩm này?</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Price.ToString("N0") đ
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.DiscountPrice)
+            </dt>
+            <dd class="col-sm-8">
+                @(Model.DiscountPrice?.ToString("N0") ?? "") đ
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Stock)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Stock)
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Category)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Category.Name)
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Brand)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Brand.Name)
+            </dd>
+        </dl>
+
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <div class="mb-3">
+                <strong>Hình ảnh sản phẩm:</strong><br />
+                <img src="@Model.ImageUrl" style="max-width: 200px;" class="mt-2" />
+            </div>
+        }
+
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </form>
+    </div>
+</div>

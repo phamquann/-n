@@ -20,7 +20,7 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
             return await _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.Brand)
-                .Include(p => p.ImagesUrl)
+                .Include(p => p.ImageUrls)
                 .ToListAsync();
         }
 
@@ -29,7 +29,8 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
             return await _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.Brand)
-                .Include(p => p.ImagesUrl)
+                .Include(p => p.ProductSpecifications)
+                .Include(p => p.ImageUrls)
                 .FirstOrDefaultAsync(p => p.Id == id) ?? throw new InvalidOperationException("Product not found");
         }
         public async Task AddAsync(Product product)
@@ -60,7 +61,7 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
                 .Where(p => p.CategoryId == categoryId)
                 .Include(p => p.Category)
                 .Include(p => p.Brand)
-                .Include(p => p.ImagesUrl)
+                .Include(p => p.ImageUrls)
                 .ToListAsync();
         }
         public async Task<IEnumerable<Product>> SearchAsync(string searchString)
@@ -84,7 +85,7 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
                 .Where(p => p.BrandId == brandId)
                 .Include(p => p.Category)
                 .Include(p => p.Brand)
-                .Include(p => p.ImagesUrl)
+                .Include(p => p.ImageUrls)
                 .ToListAsync();
         }
     }

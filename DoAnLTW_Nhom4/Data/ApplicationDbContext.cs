@@ -22,7 +22,7 @@ namespace DoAnLTW_Nhom4.Data
         public DbSet<Promotion> Promotions { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<ProductSpecification> ProductSpecifications { get; set; }
+        
 
-      
     }
 }

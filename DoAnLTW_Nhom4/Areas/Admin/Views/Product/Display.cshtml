@@ -1,5 +1,68 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model DoAnLTW_Nhom4.Models.Product
+
 @{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <h1 class="mt-4">Chi tiết sản phẩm</h1>
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <img src="@Model.ImageUrl" class="img-fluid mb-3" alt="@Model.Name" />
+                    }
+                    @if (Model.ImageUrls != null && Model.ImageUrls.Any())
+                    {
+                        <div class="row">
+                            @foreach (var image in Model.ImageUrls)
+                            {
+                                <div class="col-md-4 mb-2">
+                                    <img src="@image.ImageUrl" class="img-fluid" alt="@Model.Name" />
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Tên sản phẩm</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+
+                        <dt class="col-sm-4">Giá</dt>
+                        <dd class="col-sm-8">@Model.Price.ToString("N0") VNĐ</dd>
+
+                        <dt class="col-sm-4">Giá khuyến mãi</dt>
+                        <dd class="col-sm-8">@(Model.DiscountPrice?.ToString("N0") ?? "Không có") VNĐ</dd>
+
+                        <dt class="col-sm-4">Số lượng tồn</dt>
+                        <dd class="col-sm-8">@Model.Stock</dd>
+
+                        <dt class="col-sm-4">Danh mục</dt>
+                        <dd class="col-sm-8">@Model.Category?.Name</dd>
+
+                        <dt class="col-sm-4">Thương hiệu</dt>
+                        <dd class="col-sm-8">@Model.Brand?.Name</dd>
+
+                        <dt class="col-sm-4">Mô tả</dt>
+                        <dd class="col-sm-8">@Html.Raw(Model.Description)</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Chỉnh sửa</a>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

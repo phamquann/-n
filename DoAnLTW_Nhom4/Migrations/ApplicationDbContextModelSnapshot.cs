@@ -285,13 +285,11 @@ namespace DoAnLTW_Nhom4.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -340,8 +338,7 @@ namespace DoAnLTW_Nhom4.Migrations
 
                     b.Property<string>("Key")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
@@ -657,7 +654,7 @@ namespace DoAnLTW_Nhom4.Migrations
             modelBuilder.Entity("DoAnLTW_Nhom4.Models.ProductImage", b =>
                 {
                     b.HasOne("DoAnLTW_Nhom4.Models.Product", "Product")
-                        .WithMany("ImagesUrl")
+                        .WithMany("ImageUrls")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -762,7 +759,7 @@ namespace DoAnLTW_Nhom4.Migrations
                 {
                     b.Navigation("CartItems");
 
-                    b.Navigation("ImagesUrl");
+                    b.Navigation("ImageUrls");
 
                     b.Navigation("OrderDetails");
 

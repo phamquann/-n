@@ -6,7 +6,7 @@ namespace DoAnLTW_Nhom4.Repositories.Interfaces
     {
         Task<List<ProductSpecification>> GetAllAsync();
         Task<ProductSpecification> GetByIdAsync(int id);
-        Task CreateAsync(ProductSpecification productSpecification);
+        Task AddAsync(List<ProductSpecification> productSpecification);
         Task UpdateAsync(ProductSpecification productSpecification);
         Task DeleteAsync(int id);
     }

@@ -1,279 +1,371 @@
 {
   "Files": [
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DoAnLTW_Nhom4.bundle.scp.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DoAnLTW_Nhom4.bundle.scp.css",
       "PackagePath": "staticwebassets\\DoAnLTW_Nhom4.la22w61vjq.bundle.scp.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\css\\admin.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\css\\categoryView.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\categoryView.css",
       "PackagePath": "staticwebassets\\css\\categoryView.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\css\\loginPartial.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\loginPartial.css",
       "PackagePath": "staticwebassets\\css\\loginPartial.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\css\\style.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\favicon.ico",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\images\\logo-phone.png",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-13-hong-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-13-hong-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-13-trang-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-13-trang-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-13-xanh-duong-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-13-xanh-duong-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-den-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-den-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-plus-hong-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-plus-hong-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-plus-trang-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-plus-trang-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-plus-xanh-luu-ly-1 - Copy.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-plus-xanh-luu-ly-1 - Copy.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-plus-xanh-luu-ly-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-plus-xanh-luu-ly-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-plus-xanh-mong-ket-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-plus-xanh-mong-ket-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-pro-max-tu-nhien-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-pro-max-tu-nhien-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-pro-sa-mac-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-pro-sa-mac-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-pro-tu-nhien-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-pro-tu-nhien-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-trang-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-trang-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-xanh-luu-ly-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16-xanh-luu-ly-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\logo-phone.png",
       "PackagePath": "staticwebassets\\images\\logo-phone.png"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\images\\samsung-logo.png",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\07c48a9a-8d9c-49e0-9625-4fe35bee855f_iphone-13-trang-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\07c48a9a-8d9c-49e0-9625-4fe35bee855f_iphone-13-trang-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\0e0f5b47-a12a-4d80-9f50-7a3f1c034b4b_iphone-16-plus-trang-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\0e0f5b47-a12a-4d80-9f50-7a3f1c034b4b_iphone-16-plus-trang-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\212d41c1-981d-4617-b29e-b05be95b6d5f_iphone-13-trang-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\212d41c1-981d-4617-b29e-b05be95b6d5f_iphone-13-trang-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\2f55af0f-eafe-408c-acdb-44bcfeaea25e_iphone-16-plus-xanh-luu-ly-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\2f55af0f-eafe-408c-acdb-44bcfeaea25e_iphone-16-plus-xanh-luu-ly-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\307bd742-0bb3-46bb-a6ef-6009967a1eb1_iphone-16-plus-xanh-mong-ket-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\307bd742-0bb3-46bb-a6ef-6009967a1eb1_iphone-16-plus-xanh-mong-ket-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\606479d2-5ee0-4357-bc41-94139979e7b0_iphone-16-plus-xanh-luu-ly-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\606479d2-5ee0-4357-bc41-94139979e7b0_iphone-16-plus-xanh-luu-ly-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\7ecbc9d1-bf3e-4c55-81e8-a012d1a34905_iphone-13-xanh-duong-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\7ecbc9d1-bf3e-4c55-81e8-a012d1a34905_iphone-13-xanh-duong-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\d3f4afd7-9435-4362-aa11-ad1c210dfc31_iphone-16-trang-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\d3f4afd7-9435-4362-aa11-ad1c210dfc31_iphone-16-trang-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\products\\f66adc99-18e3-4c3d-a984-c1a31bf8bfca_iphone-16-pro-tu-nhien-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\f66adc99-18e3-4c3d-a984-c1a31bf8bfca_iphone-16-pro-tu-nhien-1.png"
+    },
+    {
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\samsung-logo.png",
       "PackagePath": "staticwebassets\\images\\samsung-logo.png"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\js\\site.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {

@@ -68,7 +68,7 @@
                                 <a asp-area="Admin" asp-controller="Product" asp-action="Display" asp-route-id="@product.Id" class="btn btn-view" title="Xem">👁</a>
                                 @if (User.IsInRole("Admin"))
                                 {
-                                    <a asp-area="Admin" asp-controller="Product" asp-action="Update" asp-route-id="@product.Id" class="btn btn-edit" title="Sửa">✏️</a>
+                                    <a asp-area="Admin" asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id" class="btn btn-edit" title="Sửa">✏️</a>
                                     <a asp-area="Admin" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn btn-delete" title="Xóa">🗑</a>
                                 }
                                 else if (User.IsInRole("Employee"))

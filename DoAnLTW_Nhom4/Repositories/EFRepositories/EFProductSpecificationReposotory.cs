@@ -11,9 +11,9 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
         {
             _context = context;
         }
-        public async Task CreateAsync(ProductSpecification productSpecification)
+        public async Task AddAsync(List<ProductSpecification> productSpecifications)
         {
-            _context.ProductSpecifications.Add(productSpecification);
+            await _context.ProductSpecifications.AddRangeAsync(productSpecifications);
             await _context.SaveChangesAsync();
         }
 
