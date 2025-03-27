@@ -55,13 +55,50 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
             }
         }
 
-        public async Task<IEnumerable<Product>> GetByCategoryAsync(int categoryId)
+        public async Task<IEnumerable<Product>> GetBestSellersAsync(int count = 10)
         {
-            return await _context.Products
-                .Where(p => p.CategoryId == categoryId)
+            var products = await _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.Brand)
                 .Include(p => p.ImageUrls)
+                .Include(p => p.OrderDetails)
+                .ToListAsync();
+
+            return products
+                .Where(p => p.IsBestSeller || (p.OrderDetails != null && p.OrderDetails.Any()))
+                .OrderByDescending(p => p.OrderDetails != null ? p.OrderDetails.Count : 0)
+                .Take(count);
+        }
+
+        public async Task<IEnumerable<Product>> GetFeaturedProductsAsync(int count = 10)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.ImageUrls)
+                .Where(p => p.IsFeatured)
+                .Take(count)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetLatestProductsAsync(int count = 10)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.ImageUrls)
+                .OrderByDescending(p => p.Id) // Assuming higher ID means newer product
+                .Take(count)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetByCategoryAsync(int categoryId)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.ImageUrls)
+                .Where(p => p.CategoryId == categoryId)
                 .ToListAsync();
         }
         public async Task<IEnumerable<Product>> SearchAsync(string searchString)
@@ -82,10 +119,22 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
         public async Task<IEnumerable<Product>> GetByBrandAsync(int brandId)
         {
             return await _context.Products
-                .Where(p => p.BrandId == brandId)
                 .Include(p => p.Category)
                 .Include(p => p.Brand)
                 .Include(p => p.ImageUrls)
+                .Where(p => p.BrandId == brandId)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetSpecialOffersAsync(int count = 10)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.ImageUrls)
+                .Where(p => p.Discount > 0)
+                .OrderByDescending(p => p.Discount)
+                .Take(count)
                 .ToListAsync();
         }
     }

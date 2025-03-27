@@ -45,7 +45,7 @@
                 <tr>
                     <th>Tên sản phẩm</th>
                     <th>Giá</th>
-                    <th>Giá giảm</th>
+                    <th>Phần trăm giảm giá</th>
                     <th>Số lượng</th>
                     <th>Danh mục</th>
                     <th>Thương hiệu</th>
@@ -60,7 +60,7 @@
                         <tr>
                             <td>@product.Name</td>
                             <td>@product.Price.ToString("N0") VNĐ</td>
-                            <td>@(product.DiscountPrice.HasValue ? product.DiscountPrice.Value.ToString("N0") + " VNĐ" : "N/A")</td>
+                            <td>@(product.Discount.HasValue ? product.Discount.Value.ToString("N0") + " VNĐ" : "N/A")</td>
                             <td>@product.Stock</td>
                             <td>@(product.Category?.Name ?? "Chưa có")</td>
                             <td>@(product.Brand?.Name ?? "Chưa có")</td>

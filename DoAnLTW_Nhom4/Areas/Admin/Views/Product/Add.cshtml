@@ -29,9 +29,9 @@
 
                 <div class="row product-form-group">
                     <div class="col-md-6">
-                        <label asp-for="DiscountPrice" class="control-label">Giá khuyến mãi</label>
-                        <input asp-for="DiscountPrice" class="form-control product-form-input" type="number" />
-                        <span asp-validation-for="DiscountPrice" class="text-danger"></span>
+                        <label asp-for="Discount" class="control-label">Phần trăm khuyến mãi</label>
+                        <input asp-for="Discount" class="form-control product-form-input" type="number" />
+                        <span asp-validation-for="Discount" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
                         <label asp-for="Stock" class="control-label">Số lượng</label>
@@ -43,14 +43,14 @@
                 <div class="row product-form-group">
                     <div class="col-md-6">
                         <label asp-for="CategoryId" class="control-label">Danh mục</label>
-                        <select asp-for="CategoryId" class="form-control product-form-select" asp-items="ViewBag.Categories">
+                        <select asp-for="CategoryId" class="form-control product-form-select" asp-items="ViewBag.Categories" required>
                             <option value="">-- Chọn danh mục --</option>
                         </select>
                         <span asp-validation-for="CategoryId" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
                         <label asp-for="BrandId" class="control-label">Thương hiệu</label>
-                        <select asp-for="BrandId" class="form-control product-form-select" asp-items="ViewBag.Brands">
+                        <select asp-for="BrandId" class="form-control product-form-select" asp-items="ViewBag.Brands" required>
                             <option value="">-- Chọn thương hiệu --</option>
                         </select>
                         <span asp-validation-for="BrandId" class="text-danger"></span>
@@ -64,15 +64,15 @@
                 </div>
 
                 <div class="product-form-group">
-                    <label asp-for="ImageUrl" class="control-label">Hình ảnh chính</label>
-                    <input asp-for="ImageUrl" class="form-control product-form-file" type="file" />
-                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                    <label class="control-label">Hình ảnh chính</label>
+                    <input type="file" class="form-control product-form-file" name="ImageUrl" accept="image/*" required />
+                    <span class="text-danger field-validation-valid" data-valmsg-for="ImageUrl" data-valmsg-replace="true"></span>
                 </div>
 
                 <div class="product-form-group">
-                    <label asp-for="ImageUrls" class="control-label">Hình ảnh phụ</label>
-                    <input asp-for="ImageUrls" class="form-control product-form-file" type="file" multiple />
-                    <span asp-validation-for="ImageUrls" class="text-danger"></span>
+                    <label class="control-label">Hình ảnh phụ</label>
+                    <input type="file" class="form-control product-form-file" name="ImageUrls" multiple accept="image/*" />
+                    <span class="text-danger field-validation-valid" data-valmsg-for="ImageUrls" data-valmsg-replace="true"></span>
                 </div>
 
                 @* Thông số kĩ thuật *@

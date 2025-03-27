@@ -8432,11 +8432,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
       "projectName": "DoAnLTW_Nhom4",
-      "projectPath": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

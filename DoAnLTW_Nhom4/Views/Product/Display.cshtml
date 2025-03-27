@@ -33,7 +33,7 @@
                 <dd class="col-sm-8">@Model.Price.ToString("N0") VNĐ</dd>
 
                 <dt class="col-sm-4">Giá khuyến mãi</dt>
-                <dd class="col-sm-8">@(Model.DiscountPrice?.ToString("N0") ?? "<span class='text-muted'>Không có</span>") VNĐ</dd>
+                <dd class="col-sm-8">@(Model.Discount?.ToString("N0") ?? "<span class='text-muted'>Không có</span>") VNĐ</dd>
 
                 <dt class="col-sm-4">Số lượng hàng</dt>
                 <dd class="col-sm-8">@Model.Stock</dd>

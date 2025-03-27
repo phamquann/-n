@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/button.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Thanh logo, tìm kiếm và tài khoản -->
         <section class="header-main">
@@ -79,7 +79,7 @@
 
                 <!-- Các banner -->
                 <div class="slide">
-                    <img src="images/banner1.jpg" alt="Banner 1">
+                    <img src="~/images/banner1.jpg" alt="Banner 1">
                     <div class="slide-caption">
                         <h2>Khuyến mãi cực lớn!</h2>
                         <p>Mua ngay điện thoại mới với giá cực sốc.</p>
@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="images/banner2.jpg" alt="Banner 2">
+                    <img src="~/images/banner2.jpg" alt="Banner 2">
                     <div class="slide-caption">
                         <h2>Sản phẩm mới nhất</h2>
                         <p>Cập nhật công nghệ hiện đại, thời thượng.</p>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="images/banner3.jpg" alt="Banner 3">
+                    <img src="~/images/banner3.jpg" alt="Banner 3">
                     <div class="slide-caption">
                         <h2>Ưu đãi hấp dẫn</h2>
                         <p>Nhận ngay quà tặng khi đặt hàng hôm nay!</p>
@@ -122,16 +122,109 @@
         <div class="main-container">
             <!-- Sidebar -->
             <aside class="sidebar">
-                <h3>Danh mục sản phẩm</h3>
-                <ul>
-                    <li><a href="#"><i class="fas fa-mobile"></i> Điện thoại</a></li>
-                    <li><a href="#"><i class="fas fa-laptop"></i> Laptop</a></li>
-                    <li><a href="#"><i class="fas fa-tablet-alt"></i> Tablet</a></li>
-                    <li><a href="#"><i class="fas fa-headphones"></i> Phụ kiện</a></li>
-                </ul>
+                <!-- Categories Section -->
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-list"></i> Danh mục sản phẩm</h3>
+                    <ul class="category-list">
+                        @if(ViewBag.Categories != null)
+                        {
+                            @foreach (var category in ViewBag.Categories)
+                            {
+                                <li>
+                                    <a asp-controller="Product" asp-action="Index" asp-route-categoryId="@category.Id">
+                                        <i class="fas fa-chevron-right"></i> @category.Name
+                                    </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+
+                <!-- Brands Section -->
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-building"></i> Thương hiệu</h3>
+                    <ul class="brand-list">
+                        @if(ViewBag.Brands != null)
+                        {
+                            @foreach (var brand in ViewBag.Brands)
+                            {
+                                <li>
+                                    <a asp-controller="Product" asp-action="Index" asp-route-brandId="@brand.Id">
+                                        <div class="brand-image">
+                                            <img src="@(brand.LogoUrl ?? "/images/default-brand.png")" alt="@brand.Name">
+                                        </div>
+                                        <span class="brand-name">@brand.Name</span>
+                                    </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+
+                <!-- Filters Section -->
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-filter"></i> Bộ lọc</h3>
+                    <form id="filterForm" method="get" asp-controller="Product" asp-action="Index">
+                        <!-- Price Range -->
+                        <div class="filter-group">
+                            <h4>Khoảng giá</h4>
+                            <div class="price-range">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text">Từ</span>
+                                    <input type="number" class="form-control" name="minPrice" placeholder="0">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text">Đến</span>
+                                    <input type="number" class="form-control" name="maxPrice" placeholder="10000000">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sort Options -->
+                        <div class="filter-group">
+                            <h4>Sắp xếp</h4>
+                            <select class="form-select" name="sortBy">
+                                <option value="">Mặc định</option>
+                                <option value="price_asc">Giá tăng dần</option>
+                                <option value="price_desc">Giá giảm dần</option>
+                                <option value="name_asc">Tên A-Z</option>
+                                <option value="name_desc">Tên Z-A</option>
+                                <option value="newest">Mới nhất</option>
+                                <option value="bestseller">Bán chạy nhất</option>
+                            </select>
+                        </div>
+
+                        <!-- Special Filters -->
+                        <div class="filter-group">
+                            <h4>Đặc biệt</h4>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="isNew" id="isNew">
+                                <label class="form-check-label" for="isNew">
+                                    Sản phẩm mới
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="hasDiscount" id="hasDiscount">
+                                <label class="form-check-label" for="hasDiscount">
+                                    Có khuyến mãi
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="isBestSeller" id="isBestSeller">
+                                <label class="form-check-label" for="isBestSeller">
+                                    Bán chạy nhất
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mt-3">
+                            <i class="fas fa-search"></i> Lọc sản phẩm
+                        </button>
+                    </form>
+                </div>
             </aside>
 
-            <!-- Nội dung chính -->
+            <!-- Main Content -->
             <main class="content">
                 @RenderBody()
             </main>
@@ -161,8 +254,6 @@
 </html>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-       
-
         //Banner
         const slides = document.querySelectorAll(".main-slider .slide");
         const dots = document.querySelectorAll(".slider-dots .dot");
@@ -221,7 +312,6 @@
 
         showSlide(currentIndex);
         startAutoSlide();
-        
     });
 </script>
 

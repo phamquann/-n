@@ -68,53 +68,47 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Brand brand, IFormFile LogoUrl)
         {
-            if (id != brand.Id)
+            if (!ModelState.IsValid)
             {
-                return NotFound();
+                return View(brand);
             }
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    var existingBrand = await _brandRepository.GetByIdAsync(id);
-                    if (LogoUrl == null)
-                    {
-                        brand.LogoUrl = existingBrand.LogoUrl;
-                    }
-                    else
-                    {
-                        brand.LogoUrl = await SaveImage(LogoUrl);
-                    }
-                    if (LogoUrl != null && LogoUrl.Length > 0)
-                    {
-                        // luu anh
-                        existingBrand.LogoUrl = await SaveImage(LogoUrl);
-                    }
-                    existingBrand.Name = brand.Name;
-                    existingBrand.Description = brand.Description;
-                    await _brandRepository.UpdateAsync(existingBrand);
-                    return RedirectToAction(nameof(Index));
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!await BrandExists(brand.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
 
-                }
-                catch (Exception)
+            try
+            {
+                var existingBrand = await _brandRepository.GetByIdAsync(id);
+                if (existingBrand == null)
                 {
-                    ModelState.AddModelError("", "Có lỗi xảy ra, vui lòng thử lại");
-                    
+                    return NotFound();
                 }
+
+                // Kiểm tra nếu có ảnh mới thì cập nhật, nếu không giữ ảnh cũ
+                if (LogoUrl != null && LogoUrl.Length > 0)
+                {
+                    existingBrand.LogoUrl = await SaveImage(LogoUrl);
+                }
+
+                // Cập nhật thông tin thương hiệu
+                existingBrand.Name = brand.Name;
+                existingBrand.Description = brand.Description;
+
+                await _brandRepository.UpdateAsync(existingBrand);
+                return RedirectToAction(nameof(Index));
             }
-            return View(brand);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!await BrandExists(id))
+                {
+                    return NotFound();
+                }
+                throw;
+            }
+            catch (Exception)
+            {
+                ModelState.AddModelError("", "Có lỗi xảy ra, vui lòng thử lại");
+                return View(brand);
+            }
         }
+
         private async Task<bool> BrandExists(int id)
         {
             var brand = await _brandRepository.GetByIdAsync(id);

@@ -1,0 +1,81 @@
+@{
+    var featuredProducts = ViewBag.FeaturedProducts as IEnumerable<DoAnLTW_Nhom4.Models.Product>;
+}
+
+<div class="featured-carousel">
+    <div class="carousel-header">
+        <h3><i class="fas fa-star"></i> Sản phẩm nổi bật</h3>
+        <div class="carousel-controls">
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    
+    <div class="carousel-container">
+        <div class="carousel-track">
+            @foreach (var product in featuredProducts)
+            {
+                <div class="carousel-item">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="@product.ImageUrls.FirstOrDefault()?.ImageUrl" alt="@product.Name" onerror="this.src='/images/default-product.png'">
+                            @if (product.Discount > 0)
+                            {
+                                <span class="discount-badge">-@product.Discount%</span>
+                            }
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">@product.Name</h4>
+                            <div class="product-price">
+                                @if (product.Discount > 0)
+                                {
+                                    <span class="original-price">@product.Price.ToString("N0")đ</span>
+                                    <span class="discounted-price">@((product.Price * (1 - product.Discount / 100))?.ToString("N0"))đ</span>
+                                }
+                                else
+                                {
+                                    <span class="price">@product.Price.ToString("N0")đ</span>
+                                }
+                            </div>
+                            <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary btn-sm">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.querySelector('.carousel-prev');
+        const nextBtn = document.querySelector('.carousel-next');
+        let currentIndex = 0;
+        const itemsPerView = 4;
+        const totalItems = items.length;
+
+        function updateCarousel() {
+            const offset = -currentIndex * (100 / itemsPerView);
+            track.style.transform = `translateX(${offset}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalItems - itemsPerView) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        // Initialize carousel
+        updateCarousel();
+    });
+</script> 

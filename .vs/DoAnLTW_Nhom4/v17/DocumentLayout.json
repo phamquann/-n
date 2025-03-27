@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\IT_HUTECH\\L\u1EADp Tr\u00ECnh Web\\DoAnLTW_Nhom4\\DoAnLTW\\",
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|d:\\it_hutech\\l\u1EADp tr\u00ECnh web\\doanltw_nhom4\\doanltw\\doanltw_nhom4\\wwwroot\\css\\productdetail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\wwwroot\\css\\productdetail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|d:\\it_hutech\\l\u1EADp tr\u00ECnh web\\doanltw_nhom4\\doanltw\\doanltw_nhom4\\areas\\admin\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\areas\\admin\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|d:\\it_hutech\\l\u1EADp tr\u00ECnh web\\doanltw_nhom4\\doanltw\\doanltw_nhom4\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Display.cshtml",
-              "DocumentMoniker": "D:\\IT_HUTECH\\L\u1EADp Tr\u00ECnh Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Display.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Display.cshtml",
-              "ToolTip": "D:\\IT_HUTECH\\L\u1EADp Tr\u00ECnh Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Display.cshtml",
-              "RelativeToolTip": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Display.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "RelativeToolTip": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-27T06:57:05.172Z",
+              "WhenOpened": "2025-03-27T17:46:22.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "RelativeToolTip": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T17:43:31.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "productDetail.css",
-              "DocumentMoniker": "D:\\IT_HUTECH\\L\u1EADp Tr\u00ECnh Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\productDetail.css",
-              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\wwwroot\\css\\productDetail.css",
-              "ToolTip": "D:\\IT_HUTECH\\L\u1EADp Tr\u00ECnh Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\productDetail.css",
-              "RelativeToolTip": "DoAnLTW_Nhom4\\wwwroot\\css\\productDetail.css",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-27T06:55:26.635Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwHcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T17:42:45.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Display.cshtml",
-              "DocumentMoniker": "D:\\IT_HUTECH\\L\u1EADp Tr\u00ECnh Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\Views\\Product\\Display.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Views\\Product\\Display.cshtml",
-              "ToolTip": "D:\\IT_HUTECH\\L\u1EADp Tr\u00ECnh Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\Views\\Product\\Display.cshtml",
-              "RelativeToolTip": "DoAnLTW_Nhom4\\Views\\Product\\Display.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAABwAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DoAnLTW_Nhom4\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAFoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-27T06:53:42.82Z",
+              "WhenOpened": "2025-03-27T17:09:58.033Z",
               "EditorCaption": ""
             }
           ]

@@ -281,15 +281,22 @@ namespace DoAnLTW_Nhom4.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("DiscountPrice")
+                    b.Property<decimal?>("Discount")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsBestSeller")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsFeatured")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -665,7 +672,7 @@ namespace DoAnLTW_Nhom4.Migrations
             modelBuilder.Entity("DoAnLTW_Nhom4.Models.ProductSpecification", b =>
                 {
                     b.HasOne("DoAnLTW_Nhom4.Models.Product", "Product")
-                        .WithMany("Specifications")
+                        .WithMany("ProductSpecifications")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -763,9 +770,9 @@ namespace DoAnLTW_Nhom4.Migrations
 
                     b.Navigation("OrderDetails");
 
-                    b.Navigation("Reviews");
+                    b.Navigation("ProductSpecifications");
 
-                    b.Navigation("Specifications");
+                    b.Navigation("Reviews");
                 });
 
             modelBuilder.Entity("DoAnLTW_Nhom4.Models.ShoppingCart", b =>

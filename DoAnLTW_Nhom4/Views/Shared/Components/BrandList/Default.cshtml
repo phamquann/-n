@@ -1,0 +1,22 @@
+@model IEnumerable<DoAnLTW_Nhom4.Models.Brand>
+
+@foreach (var brand in Model)
+{
+    <div class="col-md-3 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <div class="brand-image mb-3">
+                    <img src="@brand.LogoUrl" alt="@brand.Name" class="img-fluid rounded-circle" 
+                         style="width: 100px; height: 100px; object-fit: cover;"
+                         onerror="this.src='/images/default-brand.png'">
+                </div>
+                <h5 class="card-title">@brand.Name</h5>
+                <p class="card-text text-muted">@brand.Description</p>
+                <a asp-controller="Product" asp-action="Index" asp-route-brandId="@brand.Id" 
+                   class="btn btn-outline-primary">
+                    <i class="fas fa-arrow-right"></i> Xem sản phẩm
+                </a>
+            </div>
+        </div>
+    </div>
+} 

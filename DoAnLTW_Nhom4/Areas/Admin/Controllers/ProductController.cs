@@ -67,6 +67,8 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(Product product, IFormFile ImageUrl, List<IFormFile> ImageUrls, List<ProductSpecification> productSpecifications)
         {
+            ModelState.Remove("Brand");
+            ModelState.Remove("Category");
             if (ModelState.IsValid)
             {
                 if (ImageUrl == null)
@@ -91,8 +93,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
                         if (!IsValidImage(image))
                         {
                             ModelState.AddModelError("ImageUrls", "Hình ảnh không hợp lệ");
-                            ViewBag.Categories = new SelectList(await _categoryRepository.GetAllAsync(), "Id", "Name");
-                            ViewBag.Brands = new SelectList(await _brandRepository.GetAllAsync(), "Id", "Name");
+                            PrepareViewBags();
                             return View(product);
                         }
                         var imageUrl = await SaveImage(image);
@@ -102,23 +103,19 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
                         }
                     }
                 }
-                await _productRepository.AddAsync(product);
-                await _context.SaveChangesAsync();
-                // Thêm thông số kỹ thuật
+
+                // Thêm thông số kỹ thuật vào sản phẩm trước khi lưu
                 if (productSpecifications != null && productSpecifications.Any())
                 {
-                    foreach (var spec in productSpecifications)
-                    {
-                        spec.ProductId = product.Id;  // Gán ID sản phẩm
-                        _context.ProductSpecifications.Add(spec);
-                    }
-                    await _context.SaveChangesAsync();
+                    product.ProductSpecifications = productSpecifications;
                 }
-                
+
+                await _productRepository.AddAsync(product);
+                await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.Categories = new SelectList(await _categoryRepository.GetAllAsync(), "Id", "Name");
-            ViewBag.Brands = new SelectList(await _brandRepository.GetAllAsync(), "Id", "Name");
+            PrepareViewBags();
             return View(product);
         }
 
@@ -186,6 +183,8 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(Product product, IFormFile? ImageUrl, List<IFormFile>? ImageUrls, List<ProductSpecification>? ProductSpecifications)
         {
+            ModelState.Remove("Brand");
+            ModelState.Remove("Category");
             if (!ModelState.IsValid)
             {
                 ViewBag.Categories = new SelectList(await _categoryRepository.GetAllAsync(), "Id", "Name");
@@ -201,6 +200,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
 
             existingProduct.Name = product.Name;
             existingProduct.Price = product.Price;
+            existingProduct.Discount = product.Discount;
             existingProduct.Stock = product.Stock;
             existingProduct.CategoryId = product.CategoryId;
             existingProduct.BrandId = product.BrandId;
