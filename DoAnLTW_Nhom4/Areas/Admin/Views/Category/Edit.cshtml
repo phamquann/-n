@@ -5,6 +5,7 @@
 }
 
 <link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/button.css asp-append-version="true" />
 
 <div class="admin-container">
     <h2>Sửa tên danh mục</h2>
@@ -15,10 +16,15 @@
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
-        <button type="submit" class="edit-btn">Cập nhật</button>
+        <button type="submit" class="btn update-btn">Cập nhật</button>
+        <a asp-action="Index" class="btn back-btn">Quay lại</a>
     </form>
 </div>
-
+<style>
+    .form-group{
+        margin: 10px;
+    }
+</style>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

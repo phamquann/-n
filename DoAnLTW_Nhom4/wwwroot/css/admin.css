@@ -83,7 +83,7 @@
     font-weight: bold;
 }
 
-/* ===== Bảng điều khiển admin ===== */
+ ===== Bảng điều khiển admin ===== 
 h1, h2 {
     color: #333;
     margin-bottom: 15px;
@@ -118,7 +118,7 @@ h4{
         color: #222;
     }
 
-/* Nút thêm sản phẩm */
+ Nút thêm sản phẩm 
 .add-btn {
     display: inline-block;
     background-color: #28a745;
@@ -135,13 +135,13 @@ h4{
     transform: scale(1.05);
 }
 
-/* Phần main chiếm 70% */
+ Phần main chiếm 70% 
 .main-content {
     width: 70%;
     margin: auto;
 }
 
-/* Nút thêm sản phẩm */
+ Nút thêm sản phẩm 
 .add-btn {
     display: inline-block;
     background-color: #28a745;
@@ -158,7 +158,7 @@ h4{
     transform: scale(1.05);
 }
 
-/* Phần main chiếm 70% */
+ Phần main chiếm 70% 
 .main-content {
     width: 70%;
     margin: auto;

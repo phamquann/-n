@@ -1,5 +1,132 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model DoAnLTW_Nhom4.Models.Product
+
 @{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "_LayoutProduct";
+}
+<link rel="stylesheet" href="~/css/productDetail.css" asp-append-version="true" />
+
+<div class="product-detail-page">
+    <h1 class="page-title">Chi tiết sản phẩm</h1>
+    <div class="product-layout">
+        <!-- Ảnh chính và Gallery -->
+        <div class="image-section">
+            <img id="mainImage" src="@Model.ImageUrl" class="main-image" alt="@Model.Name" />
+
+            @if (Model.ImageUrls != null && Model.ImageUrls.Any())
+            {
+                <div class="image-gallery">
+                    @foreach (var image in Model.ImageUrls)
+                    {
+                        <img src="@image.ImageUrl" class="thumbnail" alt="@Model.Name" onclick="changeMainImage(this)" />
+                    }
+                </div>
+            }
+        </div>
+        <!-- Thông tin sản phẩm -->
+        <div class="info-section">
+            <dl class="row">
+                <dt class="col-sm-4">Tên sản phẩm</dt>
+                <dd class="col-sm-8">@Model.Name</dd>
+
+                <dt class="col-sm-4">Giá</dt>
+                <dd class="col-sm-8">@Model.Price.ToString("N0") VNĐ</dd>
+
+                <dt class="col-sm-4">Giá khuyến mãi</dt>
+                <dd class="col-sm-8">@(Model.DiscountPrice?.ToString("N0") ?? "<span class='text-muted'>Không có</span>") VNĐ</dd>
+
+                <dt class="col-sm-4">Số lượng hàng</dt>
+                <dd class="col-sm-8">@Model.Stock</dd>
+
+                <dt class="col-sm-4">Thương hiệu</dt>
+                <dd class="col-sm-8">@(Model.Brand?.Name ?? "<span class='text-muted'>Chưa có</span>")</dd>
+
+                <dt class="col-sm-4">Mô tả</dt>
+                <dd class="col-sm-8">@Html.Raw(Model.Description)</dd>
+            </dl>
+            <div class="button-container">
+                @* <a asp-action="Cart asp-route-id="@Model.Id" class="btn add-to-cart">Thêm vào giỏ hàng</a> *@
+                <a asp-action="Index" class="btn back-btn">Quay lại danh sách</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thông số kỹ thuật -->
+    <div class="specifications-section">
+        <h3 class="specifications-title">Thông số kỹ thuật</h3>
+        @if (Model.ProductSpecifications != null && Model.ProductSpecifications.Any())
+        {
+            <table class="specifications-table">
+                <thead>
+                    <tr>
+                        <th>Tên thông số</th>
+                        <th>Giá trị</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var spec in Model.ProductSpecifications)
+                    {
+                        <tr>
+                            <td>@spec.Key</td>
+                            <td>@spec.Value</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="text-muted">Không có thông số kỹ thuật nào.</p>
+        }
+    </div>
+
+    <!-- Hiển thị đánh giá -->
+    <div id="reviews-container">
+        @await Html.PartialAsync("_ReviewList", Model.Reviews)
+    </div>
+
+    <!-- Form thêm đánh giá -->
+    <div class="review-form">
+        <h3>Viết đánh giá</h3>
+        <form id="reviewForm">
+            <input type="hidden" name="ProductId" value="@Model.Id" />
+            <input type="text" name="UserName" placeholder="Tên của bạn" required />
+            <select name="Rating">
+                <option value="5">⭐⭐⭐⭐⭐ - Rất tốt</option>
+                <option value="4">⭐⭐⭐⭐ - Tốt</option>
+                <option value="3">⭐⭐⭐ - Trung bình</option>
+                <option value="2">⭐⭐ - Kém</option>
+                <option value="1">⭐ - Rất kém</option>
+            </select>
+            <textarea name="Comment" placeholder="Viết nhận xét của bạn" required></textarea>
+            <button type="submit">Gửi đánh giá</button>
+        </form>
+    </div>
+
+
+</div>
+
+@section Scripts {
+    <script>
+        function changeMainImage(thumbnail) {
+            var mainImage = document.getElementById("mainImage");
+            if (mainImage) {
+                mainImage.src = thumbnail.src;
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#reviewForm").submit(function(e) {
+                e.preventDefault();
+                $.post("/Review/AddReview", $(this).serialize(), function(response) {
+                    alert(response.message);
+                    $("#reviewForm")[0].reset();
+                });
+            });
+        });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

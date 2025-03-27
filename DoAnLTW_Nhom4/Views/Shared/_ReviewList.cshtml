@@ -1,0 +1,20 @@
+﻿@model List<DoAnLTW_Nhom4.Models.Review>;
+
+@if (Model != null && Model.Count > 0) // Dùng Count thay vì Any()
+{
+    <h3>Đánh giá sản phẩm</h3>
+    <ul class="review-list">
+        @foreach (var review in Model)
+        {
+            <li>
+                <strong>@review.UserName</strong> - @review.Rating ⭐
+                <p>@review.Comment</p>
+                <small>@review.CreatedAt.ToString("dd/MM/yyyy")</small>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Chưa có đánh giá nào.</p>
+}

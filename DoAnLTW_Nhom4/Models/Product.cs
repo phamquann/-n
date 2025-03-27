@@ -36,7 +36,7 @@ namespace DoAnLTW_Nhom4.Models
 
         public List<ProductImage> ImageUrls { get; set; } = new List<ProductImage>();
         public List<ProductSpecification> ProductSpecifications { get; set; } = new List<ProductSpecification>();
-        public List<Review>? Reviews { get; set; }
+        public List<Review>? Reviews { get; set; } = new List<Review>();
         public List<OrderDetail>? OrderDetails { get; set; }
         public List<CartItem>? CartItems { get; set; }
     }

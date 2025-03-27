@@ -4,24 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - DoAnLTW_Nhom4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/button.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
         <!-- Thanh thông báo -->
-        <section class="top-heading">
-            <div class="slider">
-                <button class="prev">❮</button>
-                <div class="slides">
-                    <div class="slide">SẢN PHẨM CHÍNH HÃNG</div>
-                    <div class="slide">CAM KẾT LỖI ĐỔI LIỀN</div>
-                    <div class="slide">HOTLINE 1900.2091</div>
-                    <div class="slide">MIỄN PHÍ VẬN CHUYỂN</div>
+        <section class="notification-bar">
+            <div class="notification-slider">
+                <div class="notification-slides">
+                    <div class="notification-slide">SẢN PHẨM CHÍNH HÃNG</div>
+                    <div class="notification-slide">CAM KẾT LỖI ĐỔI LIỀN</div>
+                    <div class="notification-slide">HOTLINE 1900.2091</div>
+                    <div class="notification-slide">MIỄN PHÍ VẬN CHUYỂN</div>
                 </div>
-                <button class="next">❯</button>
             </div>
         </section>
+
 
         <!-- Thanh logo, tìm kiếm và tài khoản -->
         <section class="header-main">
@@ -32,7 +37,7 @@
             <div class="search">
                 <form action="/tim-kiem" method="get">
                     <input type="text" name="kwd" placeholder="Hôm nay bạn muốn tìm kiếm gì?">
-                    <button type="submit">🔍</button>
+                    <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
                 <div class="search-suggest">
                     <strong>Từ khóa xu hướng:</strong>
@@ -45,67 +50,134 @@
 
             <div class="user-options">
                 <partial class="account" name="_LoginPartial" />
-                <a href="#" class="cart">🛒 Giỏ hàng <span class="cart-count">0</span></a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
             </div>
         </section>
     </header>
     <!-- Menu -->
     <nav class="navbar">
         <ul>
-            <li><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
-            <li><a asp-controller="Product" asp-action="Index">Sản phẩm</a></li>
-            <li><a asp-controller="Contact" asp-action="Index">Liên hệ</a></li>
+            <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a asp-controller="Product" asp-action="Index"><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
+            <li><a asp-controller="Contact" asp-action="Index"><i class="fas fa-envelope"></i> Liên hệ</a></li>
         </ul>
     </nav>
 
     <!-- Main Layout -->
     <div class="container main-content">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h3>Danh mục sản phẩm</h3>
-            <ul>
-                <li><a href="#">Điện thoại</a></li>
-                <li><a href="#">Laptop</a></li>
-                <li><a href="#">Tablet</a></li>
-                <li><a href="#">Phụ kiện</a></li>
-            </ul>
-        </aside>
+        <!-- Main Slider -->
+        <div class="main-slider">
+            <div class="slider-wrapper">
+                <!-- Slide Giới thiệu -->
+                <div class="slide active intro-slide">
+                    <div class="intro-content">
+                        <h2>Chào mừng đến với Shop Điện Thoại</h2>
+                        <p>Chúng tôi cung cấp những sản phẩm công nghệ mới nhất với mức giá tốt nhất!</p>
+                        <a href="/san-pham" class="btn-slide">Khám phá ngay</a>
+                    </div>
+                </div>
 
-        <!-- Nội dung chính -->
-        <main class="content">
-            @RenderBody()
-        </main>
+                <!-- Các banner -->
+                <div class="slide">
+                    <img src="images/banner1.jpg" alt="Banner 1">
+                    <div class="slide-caption">
+                        <h2>Khuyến mãi cực lớn!</h2>
+                        <p>Mua ngay điện thoại mới với giá cực sốc.</p>
+                        <a href="#" class="btn-slide">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner2.jpg" alt="Banner 2">
+                    <div class="slide-caption">
+                        <h2>Sản phẩm mới nhất</h2>
+                        <p>Cập nhật công nghệ hiện đại, thời thượng.</p>
+                        <a href="#" class="btn-slide">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner3.jpg" alt="Banner 3">
+                    <div class="slide-caption">
+                        <h2>Ưu đãi hấp dẫn</h2>
+                        <p>Nhận ngay quà tặng khi đặt hàng hôm nay!</p>
+                        <a href="#" class="btn-slide">Xem ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút điều hướng -->
+            <div class="slider-nav">
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+
+            <!-- Chấm nhỏ (dots) -->
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Danh mục sản phẩm</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-mobile"></i> Điện thoại</a></li>
+                    <li><a href="#"><i class="fas fa-laptop"></i> Laptop</a></li>
+                    <li><a href="#"><i class="fas fa-tablet-alt"></i> Tablet</a></li>
+                    <li><a href="#"><i class="fas fa-headphones"></i> Phụ kiện</a></li>
+                </ul>
+            </aside>
+
+            <!-- Nội dung chính -->
+            <main class="content">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-column">
             <h4>Liên hệ</h4>
-            <p>Hotline: 0123 456 789</p>
+            <p><i class="fas fa-phone"></i> Hotline: 0123 456 789</p>
         </div>
         <div class="footer-column">
             <h4>Địa chỉ</h4>
-            <p>123 Đường ABC, TP. HCM</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, TP. HCM</p>
         </div>
         <div class="footer-column">
             <h4>Thanh toán</h4>
-            <p>Visa, Mastercard, MoMo...</p>
+            <p><i class="fas fa-credit-card"></i> Visa, Mastercard, MoMo...</p>
         </div>
     </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
 <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        let slides = document.querySelectorAll(".slide");
+    document.addEventListener("DOMContentLoaded", function () {
+       
+
+        //Banner
+        const slides = document.querySelectorAll(".main-slider .slide");
+        const dots = document.querySelectorAll(".slider-dots .dot");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
         let currentIndex = 0;
-        let interval = setInterval(nextSlide, 3000); // Auto slide mỗi 3 giây
+        let slideInterval;
 
         function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove("active"));
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                dots[i].classList.remove("active");
+            });
             slides[index].classList.add("active");
+            dots[index].classList.add("active");
         }
 
         function nextSlide() {
@@ -118,31 +190,38 @@
             showSlide(currentIndex);
         }
 
-        // Bắt sự kiện click nút điều hướng
-        document.querySelector(".next").addEventListener("click", function () {
-            nextSlide();
-            resetInterval();
-        });
-
-        document.querySelector(".prev").addEventListener("click", function () {
-            prevSlide();
-            resetInterval();
-        });
-
-        // Tạm dừng khi di chuột vào
-        document.querySelector(".top-heading").addEventListener("mouseover", function () {
-            clearInterval(interval);
-        });
-
-        // Tiếp tục chạy khi rời chuột
-        document.querySelector(".top-heading").addEventListener("mouseleave", function () {
-            interval = setInterval(nextSlide, 3000);
-        });
-
-        function resetInterval() {
-            clearInterval(interval);
-            interval = setInterval(nextSlide, 3000);
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, 5000);
         }
-    });
 
+        function stopAutoSlide() {
+            clearInterval(slideInterval);
+        }
+
+        prevBtn.addEventListener("click", function () {
+            prevSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        nextBtn.addEventListener("click", function () {
+            nextSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", function () {
+                currentIndex = index;
+                showSlide(currentIndex);
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        });
+
+        showSlide(currentIndex);
+        startAutoSlide();
+        
+    });
 </script>
+

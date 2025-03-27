@@ -7,48 +7,64 @@
     ViewData["Title"] = "Quản lý sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+<h1 class="product-form-header">Quản lý sản phẩm</h1>
 
-<h1>Quản lý sản phẩm</h1>
-
-<p>
-    <a asp-action="Add" class="btn btn-primary">Thêm sản phẩm mới</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Hình ảnh</th>
-            <th>@Html.DisplayNameFor(model => model.Name)</th>
-            <th>@Html.DisplayNameFor(model => model.Price)</th>
-            <th>@Html.DisplayNameFor(model => model.DiscountPrice)</th>
-            <th>@Html.DisplayNameFor(model => model.Stock)</th>
-            <th>@Html.DisplayNameFor(model => model.Category)</th>
-            <th>@Html.DisplayNameFor(model => model.Brand)</th>
-            <th>Thao tác</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
+<div class="product-form-container">
+    <div class="product-form-header">
+        @if (User.IsInRole("Admin"))
         {
-            <tr>
-                <td>
-                    @if (!string.IsNullOrEmpty(item.ImageUrl))
-                    {
-                        <img src="@item.ImageUrl" alt="@item.Name" style="max-width: 50px; max-height: 50px;" />
-                    }
-                </td>
-                <td>@item.Name</td>
-                <td>@item.Price.ToString("N0") đ</td>
-                <td>@(item.DiscountPrice?.ToString("N0") ?? "") đ</td>
-                <td>@item.Stock</td>
-                <td>@item.Category?.Name</td>
-                <td>@item.Brand?.Name</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Sửa</a>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Chi tiết</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
-                </td>
-            </tr>
+            <a asp-area="Admin" asp-controller="Product" asp-action="Add" class="btn add-product-btn">➕ Thêm sản phẩm</a>
         }
-    </tbody>
-</table>
+    </div>
+
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Giá giảm</th>
+                <th>Số lượng</th>
+                <th>Danh mục</th>
+                <th>Thương hiệu</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Price.ToString("N0") VNĐ</td>
+                        <td>@(product.DiscountPrice.HasValue ? product.DiscountPrice.Value.ToString("N0") + " VNĐ" : "<span class='text-muted'>Không có</span>")</td>
+                        <td>@product.Stock</td>
+                        <td>@(product.Category?.Name ?? "<span class='text-muted'>Chưa có</span>")</td>
+                        <td>@(product.Brand?.Name ?? "<span class='text-muted'>Chưa có</span>")</td>
+                        <td class="product-form-btn">
+                            <a asp-area="Admin" asp-controller="Product" asp-action="Display" asp-route-id="@product.Id" class="btn view-btn" title="Xem chi tiết">👁</a>
+
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <a asp-area="Admin" asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id" class="btn edit-btn" title="Chỉnh sửa">✏️</a>
+                                <a asp-area="Admin" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn delete-btn" title="Xóa sản phẩm">🗑</a>
+                            }
+                            else if (User.IsInRole("Employee"))
+                            {
+                                <a asp-area="Admin" asp-controller="Product" asp-action="Update" asp-route-id="@product.Id" class="btn edit-btn" title="Cập nhật">✏️</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="product-form-group text-center text-muted">Không có sản phẩm nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

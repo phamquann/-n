@@ -4,13 +4,14 @@
     ViewData["Title"] = "Xóa thương hiệu";
 }
 <link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/button.css asp-append-version="true" />
 <div class="admin-container">
     <h2>Xóa thương hiệu</h2>
     <p>Bạn có muốn xóa <strong>@Model.Name</strong> khỏi danh sách thương hiệu?</p>
     <p><img src="@Model.LogoUrl" alt="@Model.Name" style="max-width: 100px; height: auto;" /></p>
     <form asp-action="DeleteConfirmed" method="post">
         <input type="hidden" asp-for="Id" />
-        <button type="submit" class="delete-btn">Xóa</button>
-        <a asp-action="Index" class="cancel-btn">Hủy</a>
+        <button type="submit" class="btn btn-danger remove-btn">Xóa</button>
+        <a asp-action="Index" class="btn cancel-btn">Hủy</a>
     </form>
 </div>

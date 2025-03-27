@@ -1,4 +1,5 @@
-﻿using DoAnLTW_Nhom4.Repositories.Interfaces;
+﻿using DoAnLTW_Nhom4.Repositories.EFRepositories;
+using DoAnLTW_Nhom4.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -7,10 +8,12 @@ namespace DoAnLTW_Nhom4.Controllers
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;
+        private readonly IReviewRepository _reviewRepository;
 
-        public ProductController(IProductRepository productRepository)
+        public ProductController(IProductRepository productRepository, IReviewRepository reviewRepository)
         {
             _productRepository = productRepository;
+            _reviewRepository = reviewRepository;
         }
 
         // Hiển thị danh sách tất cả sản phẩm
@@ -28,6 +31,7 @@ namespace DoAnLTW_Nhom4.Controllers
             {
                 return NotFound();
             }
+            product.Reviews = await _reviewRepository.GetReviewsByProductIdAsync(id);
             return View(product);
         }
         // Hiển thị sản phẩm theo danh mục

@@ -5,13 +5,14 @@
 }
 
 <link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/button.css asp-append-version="true" />
 
 <div class="admin-container">
     <h2>Xóa danh mục</h2>
     <form asp-action="DeleteConfirmed" method="post">
         <input type="hidden" asp-for="Id" />
         <p>Bạn có muốn xóa <strong>@Model.Name</strong> khỏi danh mục?</p>
-        <button type="submit" class="delete-btn">Xóa</button>
-        <a asp-action="Index" class="cancel-btn">Hủy</a>
+        <button type="submit" class="btn btn-danger remove-btn">Xóa</button>
+        <a asp-action="Index" class="btn cancel-btn">Hủy</a>
     </form>
 </div>

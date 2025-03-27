@@ -3,11 +3,12 @@
     Layout = "_LayoutAdmin";
     ViewData["Title"] = "Quản lý thương hiệu";
 }
-
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/button.css asp-append-version="true" />
 <div class="admin-container">
     <h2>Thương hiệu</h2>
     <div class="button-add">
-        <a asp-action="Add" class="add-btn">Thêm thương hiệu mới</a>
+        <a asp-action="Add" class="btn add-brand-btn">Thêm thương hiệu mới</a>
     </div>
     <table class="admin-table">
         <thead>
@@ -28,11 +29,11 @@
                         <td>@brand.Name</td>
                         <td><img src="@brand.LogoUrl" alt="@brand.Name" style="max-width: 50px; height: auto;" /></td>
                         <td class="action-links">
-                            <a asp-action="Display" asp-route-id="@brand.Id" class="view-btn">Xem</a> | 
-                            <a asp-action="Edit" asp-route-id="@brand.Id" class="edit-btn">Chỉnh sửa</a> | 
+                            <a asp-action="Display" asp-route-id="@brand.Id" class="btn view-btn" title="Xem">👁</a> |
+                            <a asp-action="Edit" asp-route-id="@brand.Id" class="btn edit-btn" title="Chỉnh sửa">✏️</a> |
                             @if(User.IsInRole("Admin"))
                             {
-                                <a asp-action="Delete" asp-route-id="@brand.Id" class="delete-btn">Xóa</a>
+                                <a asp-action="Delete" asp-route-id="@brand.Id" class="btn btn-danger delete-btn" title="Xóa">🗑</a>
                             }
                         </td>
                     </tr>

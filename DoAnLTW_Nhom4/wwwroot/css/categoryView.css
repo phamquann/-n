@@ -1,211 +1,113 @@
-﻿/* Reset cơ bản */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Container chính */
+﻿/* CSS chung cho khu vực quản lý (admin) */
 .admin-container {
-    max-width: 1200px;
-    margin: 20px auto;
     padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Màu xám nhạt */
+    border-radius: 5px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Hiệu ứng đổ bóng nhẹ */
 }
 
-/* Tiêu đề */
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-/* Nút thêm */
-.button-add {
-    margin-bottom: 20px;
-    text-align: right;
-}
-
-.add-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-    .add-btn:hover {
-        background-color: #218838;
+    .admin-container h2 {
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: #343a40; /* Màu xám đậm */
     }
 
-/* Bảng danh mục */
+/* CSS cho bảng quản lý */
 .admin-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    table-layout: auto; /* Quan trọng: Đảm bảo bảng vừa với nội dung */
 }
 
     .admin-table th,
     .admin-table td {
-        padding: 12px;
+        padding: 0.75rem;
+        border-bottom: 1px solid #dee2e6; /* Đường kẻ ngang giữa các hàng */
         text-align: left;
-        border-bottom: 1px solid #ddd;
+        vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+        word-break: break-word; /* Xuống dòng nếu nội dung quá dài */
     }
 
-    .admin-table th {
-        background-color: #e9ecef;
-        font-weight: bold;
+    .admin-table thead th {
+        background-color: #e9ecef; /* Màu xám nhạt cho tiêu đề */
+        font-weight: 600;
         color: #495057;
     }
 
-    .admin-table td {
-        vertical-align: middle;
-    }
-
-/* Liên kết hành động */
-.action-links a {
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+/* CSS cho các liên kết hành động (view, edit, delete) */
+.action-links {
+    white-space: nowrap; /* Ngăn các liên kết xuống dòng */
 }
 
-.action-links .edit-btn {
-    color: black;
-}
-
-    .action-links .edit-btn:hover {
-        background-color: #cce5ff;
+    .action-links a {
+        display: inline-flex; /* Sử dụng flexbox để căn giữa icon và text (nếu có) */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        font-size: 1rem; /* Kích thước icon */
+        text-decoration: none; /* Loại bỏ gạch chân mặc định */
+        transition: background-color 0.15s ease-in-out;
+        margin-right: 0.25rem; /* Khoảng cách giữa các nút */
     }
 
-.action-links .delete-btn {
-    color: black;
+/* CSS cho hình ảnh trong bảng */
+.admin-table img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 3px; /* Bo tròn góc ảnh */
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ */
 }
 
-    .action-links .delete-btn:hover {
-        background-color: #f8d7da;
-    }
-.action-links .view-btn {
-    background-color: #17a2b8; /* Màu xanh ngọc */
-    color: black;
+/* CSS cho form */
+form {
+    width: 100%;
+    max-width: 600px; /* Giới hạn chiều rộng form */
+    margin: 0 auto; /* Căn giữa form */
 }
 
-    .action-links .view-btn:hover {
-        background-color: #f8d7da;
-    }
-.action-links .cancel-btn {
-    color: black;
-}
-    .action-links .cancel-btn :hover {
-        background-color: #f8d7da;
-    }
-/* Form chung */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
-    .form-group + button,
-    .form-actions button {
-        margin-right: 10px;
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #495057;
     }
-.control-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #495057;
-}
 
 .form-control {
+    display: block;
     width: 100%;
-    padding: 10px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
     border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.3s;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
     .form-control:focus {
-        border-color: #007bff;
-        outline: none;
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     }
 
 .text-danger {
-    display: block;
     color: #dc3545;
-    font-size: 0.875em;
-    margin-top: 5px;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block; /* Hiển thị lỗi trên dòng riêng */
 }
-
-/* Nút trong form */
-.edit-btn,
-.delete-btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.edit-btn {
-    background-color: #007bff;
-    color: black;
-}
-
-    .edit-btn:hover {
-        background-color: #f8d7da;
-    }
-
-.delete-btn {
-    background-color: #dc3545;
-    color: black;
-}
-
-    .delete-btn:hover {
-        background-color: #f8d7da;
-    }
-.cancel-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #6c757d;
-    color: black;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-left: 10px;
-    transition: background-color 0.3s;
-}
-
-    .cancel-btn:hover {
-        background-color: #f8d7da;
-    }
-/* Responsive */
-@media (max-width: 768px) {
-    .admin-container {
-        padding: 15px;
-    }
-
-    .admin-table th,
-    .admin-table td {
-        padding: 8px;
-    }
-
-    .action-links a {
-        display: inline-block;
-        margin: 5px 0;
-    }
-
-    .button-add,
-    .form-group {
-        text-align: left;
-    }
+/* CSS cho hình ảnh preview */
+#productImage {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem; /* Thêm khoảng cách phía trên ảnh */
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ */
+    display: block; /* Đảm bảo ảnh nằm trên dòng riêng */
 }

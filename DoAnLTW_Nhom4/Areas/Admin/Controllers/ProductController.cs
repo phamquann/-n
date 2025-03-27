@@ -168,6 +168,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         {
             var product = await _context.Products
                 .Include(p => p.ProductSpecifications) // Load thông số kỹ thuật
+                .Include(p => p.ImageUrls)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (product == null)
@@ -213,10 +214,19 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
                     ModelState.AddModelError("ImageUrl", "Hình ảnh không hợp lệ");
                     return View(product);
                 }
-                existingProduct.ImageUrl = await SaveImage(ImageUrl);
+                existingProduct.ImageUrl = await SaveImage(ImageUrl); // Lưu ảnh mới
+            }
+            //Nếu không có hình ảnh mới thì giữ lại hình ảnh cũ
+            else
+            {
+                ModelState.Remove("ImageUrl");
             }
 
             // Xử lý hình ảnh phụ
+            // Lấy danh sách các URL ảnh cũ
+            var oldImageUrls = existingProduct.ImageUrls.Select(img => img.ImageUrl).ToList();
+
+            // Xử lý hình ảnh phụ mới
             if (ImageUrls != null && ImageUrls.Count > 0)
             {
                 foreach (var image in ImageUrls)
@@ -226,10 +236,16 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
                         ModelState.AddModelError("ImageUrls", "Hình ảnh không hợp lệ");
                         return View(product);
                     }
+
                     var imageUrl = await SaveImage(image);
                     if (!string.IsNullOrEmpty(imageUrl))
                     {
-                        existingProduct.ImageUrls.Add(new ProductImage { ImageUrl = imageUrl });
+                        // Kiểm tra xem URL ảnh mới đã tồn tại trong danh sách ảnh cũ chưa
+                        if (!oldImageUrls.Contains(imageUrl))
+                        {
+                            existingProduct.ImageUrls.Add(new ProductImage { ImageUrl = imageUrl });
+                        }
+                        
                     }
                 }
             }

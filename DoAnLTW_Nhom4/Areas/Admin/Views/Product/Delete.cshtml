@@ -7,71 +7,91 @@
     ViewData["Title"] = "Xóa sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
-
-<h1>Xóa sản phẩm</h1>
-
-<div class="alert alert-danger">
-    <h3>Bạn có chắc chắn muốn xóa sản phẩm này?</h3>
-</div>
-
-<div class="row">
-    <div class="col-md-6">
-        <dl class="row">
-            <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.Name)
-            </dt>
-            <dd class="col-sm-8">
-                @Html.DisplayFor(model => model.Name)
-            </dd>
-
-            <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.Price)
-            </dt>
-            <dd class="col-sm-8">
-                @Model.Price.ToString("N0") đ
-            </dd>
-
-            <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.DiscountPrice)
-            </dt>
-            <dd class="col-sm-8">
-                @(Model.DiscountPrice?.ToString("N0") ?? "") đ
-            </dd>
-
-            <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.Stock)
-            </dt>
-            <dd class="col-sm-8">
-                @Html.DisplayFor(model => model.Stock)
-            </dd>
-
-            <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.Category)
-            </dt>
-            <dd class="col-sm-8">
-                @Html.DisplayFor(model => model.Category.Name)
-            </dd>
-
-            <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.Brand)
-            </dt>
-            <dd class="col-sm-8">
-                @Html.DisplayFor(model => model.Brand.Name)
-            </dd>
-        </dl>
-
-        @if (!string.IsNullOrEmpty(Model.ImageUrl))
-        {
-            <div class="mb-3">
-                <strong>Hình ảnh sản phẩm:</strong><br />
-                <img src="@Model.ImageUrl" style="max-width: 200px;" class="mt-2" />
-            </div>
-        }
-
-        <form asp-action="Delete" method="post">
-            <input type="hidden" asp-for="Id" />
-            <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
-            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
-        </form>
+<h2>Xóa sản phẩm</h2>
+<h3 class="question">Bạn có muốn xóa sản phẩm này?</h3>
+<div class="infomation">
+    <img src="@Model.ImageUrl" alt="Product Image" style="max-width: 200px; max-height: 200px;" />
+    <div class="text">
+        <h4>Name: @Model.Name</h4>
+        <h4>Price: @Model.Price</h4>
     </div>
 </div>
+<form asp-action="Delete" method="post" class="deletePage">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger remove-btn">Xóa</button>
+    <a asp-action="Index" class="btn cancel-btn">Quay lại</a>
+</form>
+<style>
+    .admin-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .question {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #d9534f;
+    }
+
+    .infomation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: auto;
+    }
+
+        .infomation img {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+    .text h4 {
+        margin: 5px 0;
+    }
+
+    .deletePage {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-danger {
+        background-color: #d9534f;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        margin-right: 10px;
+    }
+
+        .btn-danger:hover {
+            background-color: #c9302c;
+        }
+
+    .btn-cancel {
+        background-color: #6c757d;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+    }
+
+        .btn-cancel:hover {
+            background-color: #5a6268;
+        }
+
+</style>

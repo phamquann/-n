@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj": {}
+    "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj": {}
   },
   "projects": {
-    "D:\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj": {
+    "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
+        "projectUniqueName": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
         "projectName": "DoAnLTW_Nhom4",
-        "projectPath": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
+        "projectPath": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\",
+        "outputPath": "D:\\IT_HUTECH\\Lập Trình Web\\DoAnLTW_Nhom4\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

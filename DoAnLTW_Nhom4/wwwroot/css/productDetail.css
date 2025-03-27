@@ -1,0 +1,155 @@
+﻿/* =====================================
+   General Styles
+   ===================================== */
+.product-detail-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif; /* Đảm bảo font chữ nhất quán */
+}
+
+.page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* =====================================
+   Product Layout (Ảnh & Thông tin)
+   ===================================== */
+.product-layout {
+    display: flex;
+/*    flex-wrap: wrap;*/
+    gap: 20px;
+}
+
+/* =====================================
+   Image Section
+   ===================================== */
+.image-section {
+    flex: 1 1 400px;
+    max-width: 400px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    display: block; /* Ngăn chặn khoảng trắng bên dưới ảnh */
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s ease-in-out; /* Thêm transition */
+}
+
+    .thumbnail:hover {
+        border-color: #aaa;
+    }
+
+/* =====================================
+   Information Section
+   ===================================== */
+.info-section {
+    flex: 1 1 500px;
+    min-width: 300px;
+}
+
+    .info-section dl {
+        margin-bottom: 20px;
+    }
+
+    .info-section dt {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .info-section dd {
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+.text-muted {
+    color: #777;
+    font-style: italic;
+}
+
+/* =====================================
+   Specifications Section
+   ===================================== */
+.specifications-section {
+    margin-top: 30px;
+    clear: both;
+}
+
+.specifications-title {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.specifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .specifications-table th,
+    .specifications-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .specifications-table th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .specifications-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+/* =====================================
+   Responsive Design
+   ===================================== */
+@media (max-width: 768px) {
+    .product-layout {
+        flex-direction: column;
+    }
+
+    .image-section {
+        max-width: 100%;
+    }
+
+    .info-section {
+        min-width: auto;
+    }
+
+    .product-detail-page {
+        padding: 10px;
+    }
+}

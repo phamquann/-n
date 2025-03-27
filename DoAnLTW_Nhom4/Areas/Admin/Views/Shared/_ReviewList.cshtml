@@ -1,0 +1,19 @@
+﻿@using System.Linq;
+@if (Model != null && Model.Any())
+{
+    <h3>Đánh giá sản phẩm</h3>
+    <ul class="review-list">
+        @foreach (var review in Model)
+        {
+            <li>
+                <strong>@review.UserName</strong> - @review.Rating ⭐
+                <p>@review.Comment</p>
+                <small>@review.CreatedAt.ToString("dd/MM/yyyy")</small>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Chưa có đánh giá nào.</p>
+}

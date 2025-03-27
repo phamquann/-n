@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DoAnLTW_Nhom4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/button.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Thanh thông báo -->
+        <section class="notification-bar">
+            <div class="notification-slider">
+                <div class="notification-slides">
+                    <div class="notification-slide">SẢN PHẨM CHÍNH HÃNG</div>
+                    <div class="notification-slide">CAM KẾT LỖI ĐỔI LIỀN</div>
+                    <div class="notification-slide">HOTLINE 1900.2091</div>
+                    <div class="notification-slide">MIỄN PHÍ VẬN CHUYỂN</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Thanh logo, tìm kiếm và tài khoản -->
+        <section class="header-main">
+            <div class="logo">
+                <a href="/home/index"><img src="~/images/logo-phone.png" alt="Logo"></a>
+            </div>
+
+            <div class="search">
+                <form action="/tim-kiem" method="get">
+                    <input type="text" name="kwd" placeholder="Hôm nay bạn muốn tìm kiếm gì?">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="search-suggest">
+                    <strong>Từ khóa xu hướng:</strong>
+                    <a href="#">Samsung Galaxy A16</a>
+                    <a href="#">Redmi Note 14</a>
+                    <a href="#">Tecno Pova 6 Neo</a>
+                    <a href="#">iPhone 16</a>
+                </div>
+            </div>
+
+            <div class="user-options">
+                <partial class="account" name="_LoginPartial" />
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
+            </div>
+        </section>
+    </header>
+    <!-- Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a asp-controller="Product" asp-action="Index"><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
+            <li><a asp-controller="Contact" asp-action="Index"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container main-content">
+        <div class="main-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Danh mục sản phẩm</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-mobile"></i> Điện thoại</a></li>
+                    <li><a href="#"><i class="fas fa-laptop"></i> Laptop</a></li>
+                    <li><a href="#"><i class="fas fa-tablet-alt"></i> Tablet</a></li>
+                    <li><a href="#"><i class="fas fa-headphones"></i> Phụ kiện</a></li>
+                </ul>
+            </aside>
+
+            <!-- Nội dung chính -->
+            <main class="content">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>Liên hệ</h4>
+            <p><i class="fas fa-phone"></i> Hotline: 0123 456 789</p>
+        </div>
+        <div class="footer-column">
+            <h4>Địa chỉ</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, TP. HCM</p>
+        </div>
+        <div class="footer-column">
+            <h4>Thanh toán</h4>
+            <p><i class="fas fa-credit-card"></i> Visa, Mastercard, MoMo...</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+<script>
+
+</script>
+

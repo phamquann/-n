@@ -4,6 +4,7 @@
     ViewData["Title"] = "Thêm thương hiệu";
 }
 <link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/button.css asp-append-version="true" />
 <div class="admin-container">
     <h2>Thêm thương hiệu</h2>
     <form asp-action="Add" method="post" enctype="multipart/form-data">
@@ -20,8 +21,8 @@
             <label asp-for="Description" class="control-label">Mô tả</label>
             <textarea asp-for="Description" class="form-control" rows="3"></textarea>
         </div>
-        <button type="submit" class="add-btn">Thêm</button>
-        <a asp-action="Index" class="cancel-btn">Hủy</a>
+        <button type="submit" class="btn add-btn">Thêm</button>
+        <a asp-action="Index" class="btn cancel-btn">Hủy</a>
     </form>
 </div>
 

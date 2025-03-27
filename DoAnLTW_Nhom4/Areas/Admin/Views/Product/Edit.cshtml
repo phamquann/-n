@@ -4,67 +4,68 @@
     ViewData["Title"] = "Cập nhật sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
-
-<div class="container-fluid">
-    <h1 class="mt-4">Cập nhật sản phẩm</h1>
-    <div class="card mb-4">
+<link rel="stylesheet" href="~/css/productAdd.css" asp-append-version="true" />
+<div class="product-form-container">
+    <h1 class="product-form-header">Cập nhật sản phẩm</h1>
+    <div class="product-form-card">
         <div class="card-header">
-            <i class="fas fa-edit me-1"></i>
-            Thông tin sản phẩm
+            <i class="fas fa-edit me-1"></i> Thông tin sản phẩm
         </div>
         <div class="card-body">
             <form asp-action="Edit" method="post" enctype="multipart/form-data">
                 <input type="hidden" asp-for="Id" />
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                <div class="mb-3">
+                <div class="product-form-group">
                     <label asp-for="Name" class="control-label">Tên sản phẩm</label>
-                    <input asp-for="Name" class="form-control" />
+                    <input asp-for="Name" class="form-control product-form-input" />
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
 
-                <div class="mb-3">
+                <div class="product-form-group">
                     <label asp-for="Price" class="control-label">Giá</label>
-                    <input asp-for="Price" class="form-control" type="number" />
+                    <input asp-for="Price" class="form-control product-form-input" type="number" />
                     <span asp-validation-for="Price" class="text-danger"></span>
                 </div>
 
-                <div class="mb-3">
+                <div class="product-form-group">
                     <label asp-for="Stock" class="control-label">Số lượng</label>
-                    <input asp-for="Stock" class="form-control" type="number" />
+                    <input asp-for="Stock" class="form-control product-form-input" type="number" />
                     <span asp-validation-for="Stock" class="text-danger"></span>
                 </div>
 
-                <div class="mb-3">
+                <div class="product-form-group">
                     <label asp-for="CategoryId" class="control-label">Danh mục</label>
-                    <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories"></select>
+                    <select asp-for="CategoryId" class="form-control product-form-select" asp-items="ViewBag.Categories"></select>
+                </div>
 
+                <div class="product-form-group">
+                    <label asp-for="BrandId" class="control-label">Thương hiệu</label>
+                    <select asp-for="BrandId" class="form-control product-form-select" asp-items="ViewBag.Brands"></select>
                 </div>
-                <div class="mb-3">
-                    <label asp-for="BrandId" class="control-label">Thương Hiệu</label>
-                    <select asp-for="BrandId" class="form-control" asp-items="ViewBag.Brands"></select>
-                </div>
-                <div class="mb-3">
+
+                <div class="product-form-group">
                     <label class="control-label">Hình ảnh chính</label>
-                    <input type="file" class="form-control" id="mainImage" name="ImageUrl" />
+                    <input type="file" class="form-control product-form-file" id="mainImage" name="ImageUrl" />
                     <img id="mainImagePreview" src="@Model.ImageUrl" class="img-thumbnail mt-2" style="max-width: 150px;" />
                 </div>
 
-                <div class="mb-3">
+                <div class="product-form-group">
                     <label class="control-label">Hình ảnh phụ</label>
-                    <input type="file" class="form-control" id="additionalImages" name="ImageUrls" multiple />
+                    <input type="file" class="form-control product-form-file" id="additionalImages" name="ImageUrls" multiple />
                     <div id="additionalImagesPreview" class="mt-2 d-flex flex-wrap">
-                        @if (Model.ImageUrls != null)
+                        @if (Model.ImageUrls != null && Model.ImageUrls.Any())
                         {
                             @foreach (var image in Model.ImageUrls)
                             {
-                                <img src="@image.ImageUrl" class="img-thumbnail m-1" style="max-width: 100px;" />
+                                <img src="@image.ImageUrl" class="img-thumbnail m-1 existing-image" style="max-width: 100px;" data-image-url="@image.ImageUrl" />
                             }
                         }
                     </div>
+                    
                 </div>
-
-                <div class="card mt-4">
+                
+                <div class="product-spec-container">
                     <div class="card-header">Thông số kỹ thuật</div>
                     <div class="card-body" id="specifications-container">
                         @if (Model.ProductSpecifications != null && Model.ProductSpecifications.Any())
@@ -72,30 +73,35 @@
                             @for (int i = 0; i < Model.ProductSpecifications.Count; i++)
                             {
                                 <div class="row mb-3 specification-item">
-                                    <div class="col-md-5">
-                                        <input type="text" name="ProductSpecifications[@i].Key" class="form-control" value="@Model.ProductSpecifications[i].Key" placeholder="Tên thông số">
-                                    </div>
-                                    <div class="col-md-5">
-                                        <input type="text" name="ProductSpecifications[@i].Value" class="form-control" value="@Model.ProductSpecifications[i].Value" placeholder="Giá trị">
-                                    </div>
-                                    <div class="col-md-2">
-                                        <button type="button" class="btn btn-danger btn-remove-spec">Xóa</button>
-                                    </div>
+                                        <div class="col-md-5">
+                                            <input type="text" name="ProductSpecifications[@i].Key" class="form-control" value="@Model.ProductSpecifications[i].Key" placeholder="Tên thông số">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <input type="text" name="ProductSpecifications[@i].Value" class="form-control" value="@Model.ProductSpecifications[i].Value" placeholder="Giá trị">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="btn-danger btn-remove-spec">Xóa</button>
+                                        </div>
                                 </div>
                             }
                         }
                     </div>
-                    <button type="button" class="btn btn-primary" id="btn-add-spec">Thêm thông số</button>
+                    <button type="button" class="btn btn-add-spec">Thêm thông số</button>
                 </div>
 
-                <div class="mt-3">
-                    <button type="submit" class="btn btn-success">Lưu</button>
-                    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                <div class="product-form-btn">
+                    <button type="submit" class="btn update-btn">
+                        <i class="btn-save"></i> Lưu
+                    </button>
+                    <a asp-action="Index" class="btn back-btn">
+                        <i class="btn-back"></i> Quay lại
+                    </a>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
 
 <script>
     document.getElementById("mainImage").addEventListener("change", function (event) {
@@ -108,7 +114,14 @@
 
     document.getElementById("additionalImages").addEventListener("change", function (event) {
         let previewContainer = document.getElementById("additionalImagesPreview");
-        previewContainer.innerHTML = "";
+
+        // Hiển thị ảnh hiện có trước khi thêm ảnh mới
+        let existingImages = previewContainer.querySelectorAll(".existing-image");
+        let existingImageUrls = Array.from(existingImages).map(img => img.dataset.imageUrl);
+
+        // Xóa các ảnh đang xem trước (trừ các ảnh hiện có)
+        previewContainer.querySelectorAll(".img-thumbnail:not(.existing-image)").forEach(img => img.remove());
+
         for (let file of event.target.files) {
             let reader = new FileReader();
             reader.onload = function () {
@@ -121,32 +134,36 @@
             reader.readAsDataURL(file);
         }
     });
-
-        document.getElementById("btn-add-spec").addEventListener("click", function () {
+    // Sửa lỗi thêm thông số
+    document.querySelector(".btn-add-spec").addEventListener("click", function () {
         let specContainer = document.getElementById("specifications-container");
-        let specCount = specContainer.getElementsByClassName("specification-item").length;
+        let specCount = specContainer.querySelectorAll(".specification-item").length; // Đếm các specification item
 
         let newSpec = document.createElement("div");
-        newSpec.classList.add("row", "mb-3", "specification-item");
+        newSpec.classList.add("row", "mb-3", "specification-item"); // Thêm class specification-item
         newSpec.innerHTML = `
-            <div class="col-md-5">
-                <input type="text" name="ProductSpecifications[${specCount}].Key" class="form-control" placeholder="Tên thông số">
-            </div>
-            <div class="col-md-5">
-                <input type="text" name="ProductSpecifications[${specCount}].Value" class="form-control" placeholder="Giá trị">
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-danger btn-remove-spec">Xóa</button>
+            
+                <div class="col-md-5">
+                    <input type="text" name="ProductSpecifications[${specCount}].Key" class="form-control" placeholder="Tên thông số">
+                </div>
+                <div class="col-md-5">
+                    <input type="text" name="ProductSpecifications[${specCount}].Value" class="form-control" placeholder="Giá trị">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn-danger btn-remove-spec">Xóa</button>
+                
             </div>
         `;
-
         specContainer.appendChild(newSpec);
     });
 
-    document.addEventListener("click", function (event) {
+    // Sửa lỗi xóa thông số
+    document.getElementById("specifications-container").addEventListener("click", function (event) {
         if (event.target.classList.contains("btn-remove-spec")) {
-            event.target.parentElement.parentElement.remove();
+            event.target.closest(".specification-item").remove(); // Tìm phần tử cha gần nhất có class specification-item và xóa
         }
     });
-
 </script>
+<style>
+    
+</style>
