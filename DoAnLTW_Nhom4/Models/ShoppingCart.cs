@@ -1,22 +1,23 @@
-﻿using DoAnLTW_Nhom4.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace DoAnLTW_Nhom4.Models
+﻿namespace DoAnLTW_Nhom4.Models
 {
     public class ShoppingCart
     {
-        [Key]
         public int Id { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string CartId { get; set; } // Có thể dùng GUID để định danh giỏ hàng
-
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
-
-        // Quan hệ
-        public ICollection<CartItem> CartItems { get; set; }
+        public List<CartItem> Items { get; set; } = new List<CartItem>();
+        public void AddItem(CartItem item)
+        {
+            var existingItem = Items.FirstOrDefault(i => i.ProductId == item.ProductId);
+            if (existingItem != null){
+                existingItem.Quantity += item.Quantity;
+            }
+            else
+            {
+                Items.Add(item);
+            }
+        }
+        public void RemoveItem(int productId)
+        {
+            Items.RemoveAll(i => i.ProductId == productId);
+        }
     }
 }

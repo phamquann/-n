@@ -8,18 +8,14 @@ namespace DoAnLTW_Nhom4.Models
     {
         [Key]
         public int Id { get; set; }
-
-        [ForeignKey("ShoppingCart")]
-        public int ShoppingCartId { get; set; }
-
-        [ForeignKey("Product")]
         public int ProductId { get; set; }
-
-        [Required]
+        public string UserId { get; set; }  // Gán giỏ hàng theo từng user (nếu có đăng nhập)
+        public string Name { get; set; }
+        public string ImageUrl { get; set; }
+        public decimal? Price { get; set; }
         public int Quantity { get; set; }
+        public int StockQuantity { get; set; }
+        public bool IsSelected { get; set; } = false;
 
-        // Quan hệ
-        public ShoppingCart ShoppingCart { get; set; }
-        public Product Product { get; set; }
     }
 }

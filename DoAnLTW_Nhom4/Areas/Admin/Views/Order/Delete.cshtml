@@ -1,0 +1,66 @@
+@model DoAnLTW_Nhom4.Models.Order
+
+@{
+    ViewData["Title"] = "Xóa đơn hàng";
+    Layout = "_LayoutAdmin";
+}
+<link rel="stylesheet" href="~/css/Order.css" />
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 text-gray-800">Xóa đơn hàng #@Model.Id</h1>
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Quay lại
+        </a>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-danger">Xác nhận xóa đơn hàng</h6>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger">
+                <i class="fas fa-exclamation-triangle"></i>
+                Bạn có chắc chắn muốn xóa đơn hàng này? Hành động này không thể hoàn tác.
+            </div>
+
+            <dl class="row">
+                <dt class="col-sm-3">Mã đơn hàng:</dt>
+                <dd class="col-sm-9">#@Model.Id</dd>
+
+                <dt class="col-sm-3">Ngày đặt:</dt>
+                <dd class="col-sm-9">@Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                <dt class="col-sm-3">Khách hàng:</dt>
+                <dd class="col-sm-9">@Model.FullName</dd>
+
+                <dt class="col-sm-3">Tổng tiền:</dt>
+                <dd class="col-sm-9">@Model.TotalPrice?.ToString("N0")đ</dd>
+
+                <dt class="col-sm-3">Trạng thái:</dt>
+                <dd class="col-sm-9">@GetStatusText(Model.Status)</dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">
+                    <i class="fas fa-trash"></i> Xác nhận xóa
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@functions {
+    private string GetStatusText(OrderStatus status)
+    {
+        return status switch
+        {
+            OrderStatus.Pending => "Chờ xử lý",
+            OrderStatus.Processing => "Đang xử lý",
+            OrderStatus.Shipped => "Đã giao hàng",
+            OrderStatus.Delivered => "Đã nhận hàng",
+            OrderStatus.Cancelled => "Đã hủy",
+            _ => status.ToString()
+        };
+    }
+} 

@@ -30,10 +30,10 @@
                 <dd class="col-sm-8">@Model.Name</dd>
 
                 <dt class="col-sm-4">Giá</dt>
-                <dd class="col-sm-8">@Model.Price.ToString("N0") VNĐ</dd>
+                <dd class="col-sm-8" style="text-decoration: line-through;font-size: 0.7rem;">@Model.Price.ToString("N0") đ</dd>
 
                 <dt class="col-sm-4">Giá khuyến mãi</dt>
-                <dd class="col-sm-8">@(Model.Discount?.ToString("N0") ?? "<span class='text-muted'>Không có</span>") VNĐ</dd>
+                <dd class="col-sm-8">@((Model.Price * (1 - Model.Discount / 100))?.ToString("N0"))đ</dd>
 
                 <dt class="col-sm-4">Số lượng hàng</dt>
                 <dd class="col-sm-8">@Model.Stock</dd>
@@ -45,7 +45,9 @@
                 <dd class="col-sm-8">@Html.Raw(Model.Description)</dd>
             </dl>
             <div class="button-container">
-                @* <a asp-action="Cart asp-route-id="@Model.Id" class="btn add-to-cart">Thêm vào giỏ hàng</a> *@
+                <button class="btn add-to-cart-btn" data-product-id="@Model.Id">Thêm vào giỏ hàng
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
                 <a asp-action="Index" class="btn back-btn">Quay lại danh sách</a>
             </div>
         </div>

@@ -1,0 +1,193 @@
+﻿@using DoAnLTW_Nhom4.Extensions
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DoAnLTW_Nhom4</title>
+    <link rel="stylesheet" href="~/css/Login_Register.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <section class="header-main">
+            <div class="logo">
+                <a asp-controller="Home" asp-action="Index" asp-route-area=""><img src="~/images/logo-phone.png" alt="Logo"></a>
+                <h1>Chào mừng bạn đến với Phone-S</h1>
+            </div>
+            <div class="user-options">
+                <a href="/ShoppingCart/Index" class="cart-icon">
+                    🛒 <span class="cart-count">@((Context.Session.GetObjectFromJson<ShoppingCart>("Cart")?.Items.Count ?? 0))</span>
+                </a>
+                <partial name="_LoginPartial" />
+            </div>
+        </section>
+    </header>
+    <!-- Main Layout -->
+    <div class="container main-content">
+        <!-- Main Content -->
+        <main class="content">
+            @RenderBody()
+        </main>
+        <!-- banner giới thiệu -->
+        <div class="main-slider">
+            <div class="slider-wrapper">
+                <!-- Slide Giới thiệu -->
+                <div class="slide active intro-slide">
+                    <div class="intro-content">
+                        <h2>Chào mừng đến với PhoneS</h2>
+                    </div>
+                </div>
+                <!-- Các banner -->
+                <div class="slide">
+                    <img src="~/images/banner_introduce.jpg" alt="Banner 1">
+                    <div class="slide-caption">
+                        <h2>Khuyến mãi cực lớn!</h2>
+                        <p>Mua ngay điện thoại mới với giá cực sốc.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="~/images/banner_introduce2.jpg" alt="Banner 2">
+                    <div class="slide-caption">
+                        <h2>Sản phẩm mới nhất</h2>
+                        <p>Cập nhật công nghệ hiện đại, thời thượng.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="~/images/promo1.png" alt="Banner 3">
+                    <div class="slide-caption">
+                        <h2>Ưu đãi hấp dẫn</h2>
+                        <p>Nhận ngay quà tặng khi đặt hàng hôm nay!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút điều hướng -->
+            <div class="slider-nav">
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+
+            <!-- Chấm nhỏ (dots) -->
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </div>
+        
+    </div>
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Về chúng tôi</h2>
+                <p>Chúng tôi là đơn vị cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Với đội ngũ nhân viên chuyên nghiệp và tận tâm, chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tốt nhất.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <h3>Giao hàng nhanh chóng</h3>
+                        <p>Giao hàng toàn quốc trong 24-48h</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Bảo hành chính hãng</h3>
+                        <p>Chính sách bảo hành 12 tháng</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <h3>Hỗ trợ 24/7</h3>
+                        <p>Đội ngũ tư vấn luôn sẵn sàng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="/images/about-us.jpg" alt="Về chúng tôi">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>Liên hệ</h4>
+            <p><i class="fas fa-phone"></i> Hotline: 0123 456 789</p>
+        </div>
+        <div class="footer-column">
+            <h4>Địa chỉ</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, TP. HCM</p>
+        </div>
+        <div class="footer-column">
+            <h4>Thanh toán</h4>
+            <p><i class="fas fa-credit-card"></i> Visa, Mastercard, MoMo...</p>
+        </div>
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        //Banner
+        const slides = document.querySelectorAll(".main-slider .slide");
+        const dots = document.querySelectorAll(".slider-dots .dot");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        let currentIndex = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                dots[i].classList.remove("active");
+            });
+            slides[index].classList.add("active");
+            dots[index].classList.add("active");
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(slideInterval);
+        }
+
+        prevBtn.addEventListener("click", function () {
+            prevSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        nextBtn.addEventListener("click", function () {
+            nextSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", function () {
+                currentIndex = index;
+                showSlide(currentIndex);
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        });
+
+        showSlide(currentIndex);
+        startAutoSlide();
+    });
+
+</script>
+

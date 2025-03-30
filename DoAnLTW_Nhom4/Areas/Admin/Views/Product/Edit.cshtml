@@ -72,7 +72,7 @@
                             <img src="@Model.ImageUrl" alt="Hình ảnh chính" class="img-thumbnail" />
                         </div>
                         <div class="new-image-input">
-                            <input type="file" class="form-control product-form-file" name="ImageUrl" accept="image/*" onchange="previewImage(event)" />
+                            <input type="file" class="form-control product-form-file" name="ImageUrl" accept="image/*" onchange="previewImage(Event)" />
                             <span class="text-danger field-validation-valid" data-valmsg-for="ImageUrl" data-valmsg-replace="true"></span>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
         });
 
         // Xử lý thêm thông số
-        let specIndex = @(Model.ProductSpecifications?.Count ?? 0);
+        let specIndex = @(Model.ProductSpecifications?.Count ?? 0)
         document.querySelector('.btn-add-spec').addEventListener('click', function() {
             const container = document.getElementById('specifications-container');
             const newSpec = document.createElement('div');

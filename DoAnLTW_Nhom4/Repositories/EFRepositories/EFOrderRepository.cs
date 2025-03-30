@@ -25,11 +25,12 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
         public async Task<Order> GetByIdAsync(int id)
         {
             return await _context.Orders
+                .Include(o => o.ApplicationUser)
                 .Include(o => o.OrderDetails)
                 .ThenInclude(od => od.Product)
                 .FirstOrDefaultAsync(o => o.Id == id) ?? throw new InvalidOperationException("Order not found");
         }
-
+        
         public async Task AddAsync(Order order)
         {
             _context.Orders.Add(order);
@@ -52,13 +53,6 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
             }
         }
 
-        public async Task<IEnumerable<Order>> GetByStatusAsync(string status)
-        {
-            return await _context.Orders
-                .Where(o => o.Status == status)
-                .Include(o => o.OrderDetails)
-                .ThenInclude(od => od.Product)
-                .ToListAsync();
-        }
+        
     }
 }

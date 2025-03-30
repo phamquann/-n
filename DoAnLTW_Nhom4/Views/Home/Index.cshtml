@@ -3,7 +3,7 @@
 }
 
 <!-- Latest Products Section -->
-<section class="latest-products">
+<section class="product-section">
     <div class="section-header">
         <h2><i class="fas fa-clock"></i> Sản phẩm mới nhất</h2>
         <a asp-controller="Product" asp-action="Index" class="view-all">Xem tất cả <i class="fas fa-arrow-right"></i></a>
@@ -23,7 +23,7 @@
 </section>
 
 <!-- Best Sellers Section -->
-<section class="best-sellers">
+<section class="product-section">
     <div class="section-header">
         <h2><i class="fas fa-fire"></i> Sản phẩm bán chạy</h2>
         <a asp-controller="Product" asp-action="Index" class="view-all">Xem tất cả <i class="fas fa-arrow-right"></i></a>
@@ -54,98 +54,82 @@
     </div>
 </section>
 
-<!-- About Us Section -->
-<section class="about-us">
-    <div class="container">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>Về chúng tôi</h2>
-                <p>Chúng tôi là đơn vị cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Với đội ngũ nhân viên chuyên nghiệp và tận tâm, chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tốt nhất.</p>
-                <div class="features">
-                    <div class="feature">
-                        <i class="fas fa-truck"></i>
-                        <h3>Giao hàng nhanh chóng</h3>
-                        <p>Giao hàng toàn quốc trong 24-48h</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Bảo hành chính hãng</h3>
-                        <p>Chính sách bảo hành 12 tháng</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-headset"></i>
-                        <h3>Hỗ trợ 24/7</h3>
-                        <p>Đội ngũ tư vấn luôn sẵn sàng</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="/images/about-us.jpg" alt="Về chúng tôi">
-            </div>
-        </div>
-    </div>
-</section>
-
 @section Scripts {
     <script>
-        // Add to cart functionality
-        document.querySelectorAll('.add-to-cart').forEach(button => {
-            button.addEventListener('click', async function(e) {
-                e.preventDefault();
-                const productId = this.dataset.productId;
-                try {
-                    const response = await fetch('/Cart/AddToCart', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            productId: productId,
-                            quantity: 1
-                        })
-                    });
-                    
-                    if (response.ok) {
-                        // Show success message
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add to cart functionality
+            document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+                button.addEventListener('click', async function(e) {
+                    e.preventDefault();
+                    const productId = this.dataset.productId;
+                    try {
+                        const response = await fetch('/ShoppingCart/AddToCart', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                productId: parseInt(productId),
+                                quantity: 1
+                            })
+                        });
+                        
+                        const result = await response.json();
+                        if (result.success) {
+                            // Show success message
+                            const toast = document.createElement('div');
+                            toast.className = 'toast success';
+                            toast.textContent = result.message;
+                            document.body.appendChild(toast);
+                            setTimeout(() => toast.remove(), 3000);
+                        } else {
+                            // Show error message
+                            const toast = document.createElement('div');
+                            toast.className = 'toast error';
+                            toast.textContent = result.message;
+                            document.body.appendChild(toast);
+                            setTimeout(() => toast.remove(), 3000);
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        // Show error message
                         const toast = document.createElement('div');
-                        toast.className = 'toast success';
-                        toast.textContent = 'Đã thêm sản phẩm vào giỏ hàng';
+                        toast.className = 'toast error';
+                        toast.textContent = 'Có lỗi xảy ra khi thêm vào giỏ hàng';
                         document.body.appendChild(toast);
                         setTimeout(() => toast.remove(), 3000);
                     }
-                } catch (error) {
-                    console.error('Error:', error);
-                }
-            });
-        });
-
-        // Horizontal scroll for product rows
-        document.querySelectorAll('.product-row-container').forEach(container => {
-            const row = container.querySelector('.product-row');
-            const leftBtn = container.querySelector('.scroll-left');
-            const rightBtn = container.querySelector('.scroll-right');
-
-            // Ẩn nút scroll khi không cần thiết
-            const updateScrollButtons = () => {
-                leftBtn.style.display = row.scrollLeft > 0 ? 'flex' : 'none';
-                rightBtn.style.display = row.scrollLeft < (row.scrollWidth - row.clientWidth) ? 'flex' : 'none';
-            };
-
-            row.addEventListener('scroll', updateScrollButtons);
-            window.addEventListener('resize', updateScrollButtons);
-            updateScrollButtons(); // Kiểm tra trạng thái ban đầu
-
-            leftBtn.addEventListener('click', () => {
-                row.scrollBy({
-                    left: -300,
-                    behavior: 'smooth'
                 });
             });
 
-            rightBtn.addEventListener('click', () => {
-                row.scrollBy({
-                    left: 300,
-                    behavior: 'smooth'
+            // Horizontal scroll for product rows
+            document.querySelectorAll('.product-row-container').forEach(container => {
+                const row = container.querySelector('.product-row');
+                const leftBtn = container.querySelector('.scroll-left');
+                const rightBtn = container.querySelector('.scroll-right');
+
+                // Ẩn nút scroll khi không cần thiết
+                const updateScrollButtons = () => {
+                    leftBtn.style.display = row.scrollLeft > 0 ? 'flex' : 'none';
+                    rightBtn.style.display = row.scrollLeft < (row.scrollWidth - row.clientWidth) ? 'flex' : 'none';
+                };
+
+                row.addEventListener('scroll', updateScrollButtons);
+                window.addEventListener('resize', updateScrollButtons);
+                updateScrollButtons(); // Kiểm tra trạng thái ban đầu
+
+                leftBtn.addEventListener('click', () => {
+                    row.scrollBy({
+                        left: -300,
+                        behavior: 'smooth'
+                    });
+                });
+
+                rightBtn.addEventListener('click', () => {
+                    row.scrollBy({
+                        left: 300,
+                        behavior: 'smooth'
+                    });
                 });
             });
         });

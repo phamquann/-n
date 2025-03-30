@@ -1,0 +1,40 @@
+﻿@model DoAnLTW_Nhom4.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "Xóa người dùng";
+}
+<link rel="stylesheet" href="~/css/categoryView.css" asp-append-version="true" />
+
+<h1>Xóa người dùng</h1>
+
+<h3>Bạn có chắc chắn muốn xóa người dùng này?</h3>
+<div>
+    <h4>ApplicationUser</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên người dùng
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            Tên đầy đủ
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+        <a asp-action="Index">Quay lại danh sách</a>
+    </form>
+</div>

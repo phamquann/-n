@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using DoAnLTW_Nhom4.Extensions
+
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="utf-8" />
@@ -8,10 +10,12 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/button.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cart.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    @Html.AntiForgeryToken()
 </head>
 <body>
     <!-- Header -->
@@ -31,7 +35,7 @@
         <!-- Thanh logo, tìm kiếm và tài khoản -->
         <section class="header-main">
             <div class="logo">
-                <a href="/home/index"><img src="~/images/logo-phone.png" alt="Logo"></a>
+                <a asp-controller="Home" asp-action="Index" asp-route-area=""><img src="~/images/logo-phone.png" alt="Logo"></a>
             </div>
 
             <div class="search">
@@ -49,17 +53,20 @@
             </div>
 
             <div class="user-options">
-                <partial class="account" name="_LoginPartial" />
-                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
+                <a href="/ShoppingCart/Index" class="cart-icon">
+                    🛒 <span class="cart-count">@((Context.Session.GetObjectFromJson<ShoppingCart>("Cart")?.Items.Count ?? 0))</span>
+                </a>
+                <partial name="_LoginPartial" />
             </div>
         </section>
     </header>
     <!-- Menu -->
     <nav class="navbar">
         <ul>
-            <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Trang chủ</a></li>
-            <li><a asp-controller="Product" asp-action="Index"><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
-            <li><a asp-controller="Contact" asp-action="Index"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+            <li><a asp-controller="Home" asp-action="Index" asp-route-area=""><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a asp-controller="Product" asp-action="Index" asp-route-area=""><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
+            <li><a asp-controller="Order" asp-action="Index" asp-route-area=""><i class="fas fa-list-alt"></i> Quản lí đơn hàng</a></li>
+            
         </ul>
     </nav>
 
@@ -121,114 +128,42 @@
 
         <div class="main-container">
             <!-- Sidebar -->
-            <aside class="sidebar">
-                <!-- Categories Section -->
-                <div class="sidebar-section">
-                    <h3><i class="fas fa-list"></i> Danh mục sản phẩm</h3>
-                    <ul class="category-list">
-                        @if(ViewBag.Categories != null)
-                        {
-                            @foreach (var category in ViewBag.Categories)
-                            {
-                                <li>
-                                    <a asp-controller="Product" asp-action="Index" asp-route-categoryId="@category.Id">
-                                        <i class="fas fa-chevron-right"></i> @category.Name
-                                    </a>
-                                </li>
-                            }
-                        }
-                    </ul>
-                </div>
-
-                <!-- Brands Section -->
-                <div class="sidebar-section">
-                    <h3><i class="fas fa-building"></i> Thương hiệu</h3>
-                    <ul class="brand-list">
-                        @if(ViewBag.Brands != null)
-                        {
-                            @foreach (var brand in ViewBag.Brands)
-                            {
-                                <li>
-                                    <a asp-controller="Product" asp-action="Index" asp-route-brandId="@brand.Id">
-                                        <div class="brand-image">
-                                            <img src="@(brand.LogoUrl ?? "/images/default-brand.png")" alt="@brand.Name">
-                                        </div>
-                                        <span class="brand-name">@brand.Name</span>
-                                    </a>
-                                </li>
-                            }
-                        }
-                    </ul>
-                </div>
-
-                <!-- Filters Section -->
-                <div class="sidebar-section">
-                    <h3><i class="fas fa-filter"></i> Bộ lọc</h3>
-                    <form id="filterForm" method="get" asp-controller="Product" asp-action="Index">
-                        <!-- Price Range -->
-                        <div class="filter-group">
-                            <h4>Khoảng giá</h4>
-                            <div class="price-range">
-                                <div class="input-group mb-2">
-                                    <span class="input-group-text">Từ</span>
-                                    <input type="number" class="form-control" name="minPrice" placeholder="0">
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-text">Đến</span>
-                                    <input type="number" class="form-control" name="maxPrice" placeholder="10000000">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sort Options -->
-                        <div class="filter-group">
-                            <h4>Sắp xếp</h4>
-                            <select class="form-select" name="sortBy">
-                                <option value="">Mặc định</option>
-                                <option value="price_asc">Giá tăng dần</option>
-                                <option value="price_desc">Giá giảm dần</option>
-                                <option value="name_asc">Tên A-Z</option>
-                                <option value="name_desc">Tên Z-A</option>
-                                <option value="newest">Mới nhất</option>
-                                <option value="bestseller">Bán chạy nhất</option>
-                            </select>
-                        </div>
-
-                        <!-- Special Filters -->
-                        <div class="filter-group">
-                            <h4>Đặc biệt</h4>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" name="isNew" id="isNew">
-                                <label class="form-check-label" for="isNew">
-                                    Sản phẩm mới
-                                </label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" name="hasDiscount" id="hasDiscount">
-                                <label class="form-check-label" for="hasDiscount">
-                                    Có khuyến mãi
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="isBestSeller" id="isBestSeller">
-                                <label class="form-check-label" for="isBestSeller">
-                                    Bán chạy nhất
-                                </label>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100 mt-3">
-                            <i class="fas fa-search"></i> Lọc sản phẩm
-                        </button>
-                    </form>
-                </div>
-            </aside>
+            @await Component.InvokeAsync("ProductFilter")
 
             <!-- Main Content -->
             <main class="content">
                 @RenderBody()
             </main>
         </div>
+        <!-- About Us Section -->
+        <section class="about-us">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về chúng tôi</h2>
+                    <p>Chúng tôi là đơn vị cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Với đội ngũ nhân viên chuyên nghiệp và tận tâm, chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tốt nhất.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <h3>Giao hàng nhanh chóng</h3>
+                            <p>Giao hàng toàn quốc trong 24-48h</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Bảo hành chính hãng</h3>
+                            <p>Chính sách bảo hành 12 tháng</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <h3>Hỗ trợ 24/7</h3>
+                            <p>Đội ngũ tư vấn luôn sẵn sàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/images/about-us.jpg" alt="Về chúng tôi">
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->
@@ -248,7 +183,8 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/shopping-cart.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
@@ -313,5 +249,28 @@
         showSlide(currentIndex);
         startAutoSlide();
     });
+
+</script>
+
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '{your-app-id}',
+        cookie     : true,
+        xfbml      : true,
+        version    : '{api-version}'
+      });
+
+      FB.AppEvents.logPageView();
+
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
 </script>
 

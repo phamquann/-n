@@ -16,7 +16,6 @@ namespace DoAnLTW_Nhom4.Components
             _categoryRepository = categoryRepository;
             _brandRepository = brandRepository;
         }
-
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var categories = await _categoryRepository.GetAllAsync();

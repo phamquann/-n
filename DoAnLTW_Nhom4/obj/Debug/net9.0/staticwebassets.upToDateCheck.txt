@@ -1,4 +1,5 @@
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\Cart.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\loginPartial.css
@@ -44,6 +45,7 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\RoleManager.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\admin.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\site.css
@@ -51,16 +53,18 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\js\site.js
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\Login_Register.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\deleteProduct.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\Order.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\js\shopping-cart.js
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\button.css
@@ -72,17 +76,22 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
 wwwroot\css\admin.css
 wwwroot\css\button.css
+wwwroot\css\Cart.css
 wwwroot\css\categoryView.css
-wwwroot\css\deleteProduct.css
+wwwroot\css\Login_Register.css
 wwwroot\css\loginPartial.css
+wwwroot\css\Order.css
 wwwroot\css\product.css
 wwwroot\css\productAdd.css
 wwwroot\css\productDetail.css
 wwwroot\css\productView.css
+wwwroot\css\RoleManager.css
 wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\favicon.ico
 wwwroot\images\about-us.jpg
+wwwroot\images\banner_introduce.jpg
+wwwroot\images\banner_introduce2.jpg
 wwwroot\images\banner1.jpg
 wwwroot\images\banner2.jpg
 wwwroot\images\banner3.jpg
@@ -106,11 +115,13 @@ wwwroot\images\iphone-16-plus-trang-1.png
 wwwroot\images\iphone-16-plus-xanh-luu-ly-1 - Copy.png
 wwwroot\images\iphone-16-plus-xanh-luu-ly-1.png
 wwwroot\images\iphone-16-plus-xanh-mong-ket-1.png
+wwwroot\images\iphone-16-pro-den-1.png
 wwwroot\images\iphone-16-pro-max-den-1.png
 wwwroot\images\iphone-16-pro-max-sa-mac-1.png
 wwwroot\images\iphone-16-pro-max-trang-1.png
 wwwroot\images\iphone-16-pro-max-tu-nhien-1.png
 wwwroot\images\iphone-16-pro-sa-mac-1.png
+wwwroot\images\iphone-16-pro-trang-1.png
 wwwroot\images\iphone-16-pro-tu-nhien-1.png
 wwwroot\images\iphone-16-trang-1.png
 wwwroot\images\iphone-16-xanh-luu-ly-1.png
@@ -129,6 +140,8 @@ wwwroot\images\products\606479d2-5ee0-4357-bc41-94139979e7b0_iphone-16-plus-xanh
 wwwroot\images\products\7ecbc9d1-bf3e-4c55-81e8-a012d1a34905_iphone-13-xanh-duong-1.png
 wwwroot\images\products\d3f4afd7-9435-4362-aa11-ad1c210dfc31_iphone-16-trang-1.png
 wwwroot\images\products\f66adc99-18e3-4c3d-a984-c1a31bf8bfca_iphone-16-pro-tu-nhien-1.png
+wwwroot\images\promo1.png
+wwwroot\images\promo2.png
 wwwroot\images\realme.jpg
 wwwroot\images\samsung-logo.png
 wwwroot\images\Xiaomi_logo.png
@@ -138,6 +151,7 @@ wwwroot\images\xiaomi-14-ultra-den.png
 wwwroot\images\xiaomi-14-ultra-trang.png
 wwwroot\images\xiaomi-14-white.png
 wwwroot\images\xiaomi-logo.png
+wwwroot\js\shopping-cart.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

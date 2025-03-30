@@ -73,13 +73,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
 }
 
 .logo img {
-    max-width: 150px;
+    max-width: 90px;
 }
-
+    .logo img:hover {
+        transform: scale(1.1);
+    }
 /* Search Styles */
 .search {
     flex-grow: 1;
@@ -135,10 +137,6 @@ header {
     margin-left: 1rem;
 }
 
-.cart {
-    color: #007bff;
-    text-decoration: none;
-}
 
 /* Navbar */
 .navbar {
@@ -342,7 +340,8 @@ header {
 
 /* Main Content */
 .main-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 75%;
     align-items: flex-start;
     gap: 20px;
 }                  
@@ -355,7 +354,7 @@ header {
 
 .content {
     flex: 1;
-    max-width: 75%;
+    
     overflow: hidden; 
 }
 /* Footer */

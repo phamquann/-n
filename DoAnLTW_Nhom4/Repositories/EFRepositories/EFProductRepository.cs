@@ -26,12 +26,26 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
 
         public async Task<Product> GetByIdAsync(int id)
         {
-            return await _context.Products
-                .Include(p => p.Category)
-                .Include(p => p.Brand)
-                .Include(p => p.ProductSpecifications)
-                .Include(p => p.ImageUrls)
-                .FirstOrDefaultAsync(p => p.Id == id) ?? throw new InvalidOperationException("Product not found");
+            try
+            {
+                var product = await _context.Products
+                    .Include(p => p.Category)
+                    .Include(p => p.Brand)
+                    .Include(p => p.ProductSpecifications)
+                    .Include(p => p.ImageUrls)
+                    .FirstOrDefaultAsync(p => p.Id == id);
+
+                if (product == null)
+                {
+                    throw new InvalidOperationException($"Không tìm thấy sản phẩm với ID: {id}");
+                }
+
+                return product;
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException($"Có lỗi xảy ra khi tìm kiếm sản phẩm: {ex.Message}");
+            }
         }
         public async Task AddAsync(Product product)
         {

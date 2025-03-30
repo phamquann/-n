@@ -5,6 +5,7 @@ namespace DoAnLTW_Nhom4.Models
 {
     public class Product
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Tên sản phẩm không được để trống")]

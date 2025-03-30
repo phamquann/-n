@@ -10,6 +10,6 @@ namespace DoAnLTW_Nhom4.Repositories.Interfaces
         Task AddAsync(Order order);
         Task UpdateAsync(Order order);
         Task DeleteAsync(int id);
-        Task<IEnumerable<Order>> GetByStatusAsync(string status);
+        
     }
 }

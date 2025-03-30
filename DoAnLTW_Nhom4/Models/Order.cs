@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,43 +8,29 @@ namespace DoAnLTW_Nhom4.Models
 {
     public class Order
     {
-        [Key]
         public int Id { get; set; }
-
-        [Required]
-        [StringLength(100)]
         public string FullName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string UserId { get; set; }
+        public DateTime OrderDate { get; set; }
+        public decimal? TotalPrice { get; set; }
+        public string ShippingAddress { get; set; }
+        public string Notes { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string? Email { get; set; }
+        public OrderStatus Status { get; set; }
 
-        [Required]
-        [StringLength(20)]
-        public string? Phone { get; set; }
 
-        [Required]
-        public string? Address { get; set; }
-
-        [Required]
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal TotalAmount { get; set; }
-
-        [Required]
-        [StringLength(50)]
-        public string Status { get; set; } = "pending";
-
-        [Required]
-        [StringLength(50)]
-        public string PaymentMethod { get; set; }
-
-        [StringLength(50)]
-        public string PaymentStatus { get; set; } = "unpaid";
-        public string? Notes { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
-        public DateTime UpdatedAt { get; set; } = DateTime.Now;
-
-        // Quan hệ
-        public ICollection<OrderDetail>? OrderDetails { get; set; }
+        [ForeignKey("UserId")]
+        [ValidateNever]
+        public ApplicationUser ApplicationUser { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
+    }
+    public enum OrderStatus
+    {
+        Pending,
+        Processing,
+        Shipped,
+        Delivered,
+        Cancelled
     }
 }

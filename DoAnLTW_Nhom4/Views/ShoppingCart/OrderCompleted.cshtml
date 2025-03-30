@@ -1,0 +1,75 @@
+﻿@model DoAnLTW_Nhom4.Models.Order
+
+@{
+    ViewData["Title"] = "Hoàn thành ";
+    Layout = "_LayoutProduct";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="success-icon mb-4">
+                        <i class="fas fa-check-circle text-success" style="font-size: 5rem;"></i>
+                    </div>
+                    <h2 class="card-title mb-4">Đặt hàng thành công!</h2>
+                    <p class="card-text mb-4">Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ xử lý đơn hàng của bạn sớm nhất có thể.</p>
+
+                    <div class="order-details mb-4">
+                        <h5 class="mb-3">Chi tiết đơn hàng</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Số lượng</th>
+                                        <th>Giá</th>
+                                        <th>Tổng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var detail in Model.OrderDetails)
+                                    {
+                                        <tr>
+                                            <td>@detail.Product.Name</td>
+                                            <td>@detail.Quantity</td>
+                                            <td>@detail.Price?.ToString("N0")đ</td>
+                                            <td>@detail.Subtotal?.ToString("N0")đ</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3" class="text-end"><strong>Tổng cộng:</strong></td>
+                                        <td><strong class="text-primary">@Model.TotalPrice?.ToString("N0")đ</strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div class="shipping-info mt-4">
+                            <h5 class="mb-3">Thông tin giao hàng</h5>
+                            <p><strong>Họ tên:</strong> @Model.FullName</p>
+                            <p><strong>Số điện thoại:</strong> @Model.PhoneNumber</p>
+                            <p><strong>Địa chỉ:</strong> @Model.ShippingAddress</p>
+                            @if (!string.IsNullOrEmpty(Model.Notes))
+                            {
+                                <p><strong>Ghi chú:</strong> @Model.Notes</p>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a asp-controller="Product" asp-action="Index" class="btn btn-primary me-2">
+                            <i class="fas fa-shopping-bag"></i> Tiếp tục mua sắm
+                        </a>
+                        <a asp-controller="Order" asp-action="Display" asp-route-orderId="@Model.Id" class="btn btn-outline-primary">
+                            <i class="fas fa-list"></i> Xem đơn hàng của tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

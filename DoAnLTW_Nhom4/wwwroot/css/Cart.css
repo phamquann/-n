@@ -1,0 +1,48 @@
+﻿/*Icon Gio Hang*/
+.cart-icon {
+    position: relative;
+    text-decoration: none;
+    font-size: 30px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+    .cart-icon:hover {
+        color: #ff6f61;
+    }
+
+    .cart-icon .cart-count {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background: red;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+
+/*Nút thêm giỏ hàng*/
+.add-to-cart-btn {
+    background-color: #FF9800;
+    transition: all 0.3s ease;
+    
+    border: none;
+    border-radius: 3px;
+}
+
+    .add-to-cart-btn:hover {
+        background-color: #F57C00;
+        transform: scale(1.1);
+    }
+    .add-to-cart-btn i{
+        color: darkslategray;
+    }

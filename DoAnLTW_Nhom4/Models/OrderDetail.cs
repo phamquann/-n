@@ -20,10 +20,10 @@ namespace DoAnLTW_Nhom4.Models
 
         [Required]
         [Column(TypeName = "decimal(18,2)")]
-        public decimal Price { get; set; }
+        public decimal? Price { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal Subtotal { get; set; }
+        public decimal? Subtotal { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
