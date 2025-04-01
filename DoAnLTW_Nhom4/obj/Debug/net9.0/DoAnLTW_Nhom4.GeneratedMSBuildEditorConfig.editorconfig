@@ -232,6 +232,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Product/_NoProductsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfTm9Qcm9kdWN0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Product/_ProductListPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfUHJvZHVjdExpc3RQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Shared/Components/BrandList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQnJhbmRMaXN0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -248,16 +256,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmVhdHVyZWRDYXJvdXNlbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Shared/Components/Layout/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGF5b3V0XERlZmF1bHQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Shared/Components/ProductDisplay/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdERpc3BsYXlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Shared/Components/ProductFilter/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdEZpbHRlclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Shared/Components/Sidebar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2lkZWJhclxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LENOVO/OneDrive/Máy tính/DoAnLTW/DoAnLTW_Nhom4/Views/Shared/Error.cshtml]

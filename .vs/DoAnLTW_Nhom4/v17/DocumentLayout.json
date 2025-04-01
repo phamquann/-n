@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\areas\\admin\\controllers\\productspecificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\areas\\admin\\controllers\\productspecificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\doanltw\\doanltw_nhom4\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D1B62-BC8B-43E5-B641-3E2F0129BB21}|DoAnLTW_Nhom4\\DoAnLTW_Nhom4.csproj|solutionrelative:doanltw_nhom4\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,28 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeToolTip": "DoAnLTW_Nhom4\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAWwJUAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-30T15:23:40.345Z",
+              "Title": "ProductSpecificationController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductSpecificationController.cs",
+              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductSpecificationController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductSpecificationController.cs",
+              "RelativeToolTip": "DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductSpecificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:08:01.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "DoAnLTW_Nhom4\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAACUBAAAAAAAAAAAmwDABAAAyAAAAAAAAAA==",
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "DoAnLTW_Nhom4\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnLTW\\DoAnLTW_Nhom4\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "DoAnLTW_Nhom4\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T15:10:07.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T04:07:12.776Z"
             }
           ]
         },

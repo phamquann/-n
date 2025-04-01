@@ -39,16 +39,15 @@
             </div>
 
             <div class="search">
-                <form action="/tim-kiem" method="get">
-                    <input type="text" name="kwd" placeholder="Hôm nay bạn muốn tìm kiếm gì?">
-                    <button type="submit"><i class="fas fa-search"></i></button>
+                <form>
+                    <input type="text" class="form-control" id="searchQuery" placeholder="Hôm nay bạn muốn tìm kiếm gì?">
                 </form>
                 <div class="search-suggest">
                     <strong>Từ khóa xu hướng:</strong>
-                    <a href="#">Samsung Galaxy A16</a>
-                    <a href="#">Redmi Note 14</a>
+                    <a href="/Product/Display/14">Samsung S25 Ultra</a>
+                    <a href="#">Xiaomi 15 Ultra</a>
                     <a href="#">Tecno Pova 6 Neo</a>
-                    <a href="#">iPhone 16</a>
+                    <a href="#">iPhone 16 Promax</a>
                 </div>
             </div>
 
@@ -128,7 +127,7 @@
 
         <div class="main-container">
             <!-- Sidebar -->
-            @await Component.InvokeAsync("ProductFilter")
+            @await Component.InvokeAsync("Sidebar")
 
             <!-- Main Content -->
             <main class="content">

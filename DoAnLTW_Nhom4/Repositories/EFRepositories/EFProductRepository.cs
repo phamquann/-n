@@ -151,5 +151,58 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
                 .Take(count)
                 .ToListAsync();
         }
+        public async Task<IEnumerable<Product>> GetFilteredProductsAsync(string search, int? categoryId, int? brandId, decimal? minPrice, decimal? maxPrice, string sortOrder, bool? inStock, bool? hasDiscount)
+        {
+            //if (string.IsNullOrEmpty(search) && categoryId == null && minPrice == null && maxPrice == null && brandId == null && sortOrder == null && inStock == null && hasDiscount == null)
+            //{
+            //    return new List<Product>(); // Trả về danh sách rỗng nếu không có điều kiện nào
+            //}
+            var query = _context.Products.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+                query = query.Where(p => EF.Functions.Like(p.Name, $"%{search}%"));
+
+
+            if (categoryId.HasValue)
+                query = query.Where(p => p.CategoryId == categoryId);
+
+            if (brandId.HasValue)
+                query = query.Where(p => p.BrandId == brandId);
+
+            if (minPrice.HasValue)
+                query = query.Where(p => p.Price >= minPrice);
+
+            if (maxPrice.HasValue)
+                query = query.Where(p => p.Price <= maxPrice);
+
+            if (inStock.HasValue && inStock.Value)
+                query = query.Where(p => p.Stock > 0);
+
+            if (hasDiscount.HasValue && hasDiscount.Value)
+                query = query.Where(p => p.Discount > 0);
+
+            // Sắp xếp sản phẩm
+            switch (sortOrder)
+            {
+                case "price_asc":
+                    query = query.OrderBy(p => p.Price);
+                    break;
+                case "price_desc":
+                    query = query.OrderByDescending(p => p.Price);
+                    break;
+                case "name_asc":
+                    query = query.OrderBy(p => p.Name);
+                    break;
+                case "name_desc":
+                    query = query.OrderByDescending(p => p.Name);
+                    break;
+                default:
+                    query = query.OrderBy(p => p.Id);
+                    break;
+            }
+            Console.WriteLine("SQL Query: " + query.ToQueryString());
+            return await query.ToListAsync();
+        }
+
     }
 }

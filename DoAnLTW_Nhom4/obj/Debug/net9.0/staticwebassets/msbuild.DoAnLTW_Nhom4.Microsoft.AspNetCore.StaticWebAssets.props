@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3bfjc8i6p6</Fingerprint>
-      <Integrity>wd9zCLPGMKqy6jJZNnqWy4nEYDgjIiA+673uL7kflUI=</Integrity>
+      <Fingerprint>o0olfraa35</Fingerprint>
+      <Integrity>2Edrqmavpc5yp6POt5E+qJPS95WyChOPXshtTGDQakE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login_Register.css'))</OriginalItemSpec>
@@ -228,8 +228,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99j1fejlus</Fingerprint>
-      <Integrity>QxGyGXWLqxKISzrbJKQAxsIn+9uhMOcc1iRoRhYtenk=</Integrity>
+      <Fingerprint>kmp77de6is</Fingerprint>
+      <Integrity>hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -1404,6 +1404,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Xiaomi_logo.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\newFile.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DoAnLTW_Nhom4</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DoAnLTW_Nhom4</BasePath>
+      <RelativePath>js/newFile.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5ipweew5fc</Fingerprint>
+      <Integrity>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\newFile.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\shopping-cart.js'))">
       <SourceType>Package</SourceType>
       <SourceId>DoAnLTW_Nhom4</SourceId>
@@ -1434,8 +1452,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3r8b2a0bt1</Fingerprint>
-      <Integrity>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</Integrity>
+      <Fingerprint>iychya16rr</Fingerprint>
+      <Integrity>Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>

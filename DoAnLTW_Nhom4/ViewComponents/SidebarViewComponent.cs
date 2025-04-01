@@ -3,12 +3,12 @@ using DoAnLTW_Nhom4.Repositories.Interfaces;
 
 namespace DoAnLTW_Nhom4.Components
 {
-    public class LayoutViewComponent : ViewComponent
+    public class SidebarViewComponent : ViewComponent
     {
         private readonly ICategoryRepository _categoryRepository;
         private readonly IBrandRepository _brandRepository;
 
-        public LayoutViewComponent(
+        public SidebarViewComponent(
             ICategoryRepository categoryRepository,
             IBrandRepository brandRepository)
         {

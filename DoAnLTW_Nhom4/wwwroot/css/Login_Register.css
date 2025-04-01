@@ -267,6 +267,7 @@ header {
     display: flex;
     gap: 3rem;
     align-items: center;
+    justify-items: center;
 }
 .content {
     background: white;

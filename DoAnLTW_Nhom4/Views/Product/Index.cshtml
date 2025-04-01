@@ -5,10 +5,15 @@
     Layout = "_LayoutProduct";
 }
 <div class="product-main-container">
+    <!-- Sidebar -->
     <div class="product-sidebar">
-        @await Component.InvokeAsync("ProductFilter")
+        @await Component.InvokeAsync("Sidebar")
     </div>
     <div class="product-container">
+        <!-- Kết quả tìm kiếm -->
+        <h2 id="search-title" style="display: none;">Kết quả tìm kiếm</h2>
+        <section class="product-filter" id="product-container">
+        </section>
         <!-- Featured Section -->
         <section class="product-section">
             <div class="section-header">
@@ -48,6 +53,8 @@
         </section>
     </div>
 </div>
+
+
 <!-- All Products Section -->
 <section class="all-product-section">
     <div class="all-product-section-header">
@@ -146,5 +153,7 @@
                 });
             });
         });
+
     </script>
+    
 }

@@ -11,6 +11,8 @@ using Microsoft.Extensions.Logging;
 
 namespace DoAnLTW_Nhom4.Controllers
 {
+    [Authorize]
+
     public class ShoppingCartController : Controller
     {
         private readonly IProductRepository _productRepository;

@@ -1,0 +1,87 @@
+@{
+    var categories = ViewBag.Categories as IEnumerable<DoAnLTW_Nhom4.Models.Category>;
+    var brands = ViewBag.Brands as IEnumerable<DoAnLTW_Nhom4.Models.Brand>;
+}
+
+<div class="sidebar">
+    <!-- Categories Section -->
+    <div class="sidebar-section">
+        <h3 class="sidebar-title">Danh mục</h3>
+        <ul class="category-list">
+            @foreach (var category in categories)
+            {
+                <li>
+                    <a asp-controller="Product" asp-action="Index" asp-route-categoryId="@category.Id">
+                        <i class="fas fa-folder"></i>
+                        <span>@category.Name</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <!-- Brands Section -->
+    <div class="sidebar-section">
+        <h3 class="sidebar-title">Thương hiệu</h3>
+        <ul class="brand-list">
+            @foreach (var brand in brands)
+            {
+                <li>
+                    <a asp-controller="Product" asp-action="Index" asp-route-brandId="@brand.Id">
+                        <div class="brand-image">
+                            <img src="@brand.LogoUrl" alt="@brand.Name" onerror="this.src='/images/default-brand.png'">
+                        </div>
+                        <span class="brand-name">@brand.Name</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <!-- Filters Section -->
+    <div class="sidebar-section">
+        <div class="filter-group">
+            <h4>Tìm kiếm</h4>
+            <input type="text" class="form-control" id="searchQuery" placeholder="Nhập tên sản phẩm...">
+        </div>
+        <h3 class="sidebar-title">Bộ lọc</h3>
+        <div class="filter-group">
+            <h4>Khoảng giá</h4>
+            <div class="price-range">
+                <input type="number" class="form-control mb-2" placeholder="Giá tối thiểu" id="minPrice">
+                <input type="number" class="form-control" placeholder="Giá tối đa" id="maxPrice">
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Sắp xếp</h4>
+            <select class="form-select" id="sortOrder">
+                <option value="">Mặc định</option>
+                <option value="price_asc">Giá tăng dần</option>
+                <option value="price_desc">Giá giảm dần</option>
+                <option value="name_asc">Tên A-Z</option>
+                <option value="name_desc">Tên Z-A</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <h4>Trạng thái</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inStock">
+                <label class="form-check-label" for="inStock">
+                    Còn hàng
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hasDiscount">
+                <label class="form-check-label" for="hasDiscount">
+                    Có giảm giá
+                </label>
+            </div>
+        </div>
+
+        <button class="btn btn-primary w-100 mt-3" id="applyFilters">
+            <i class="fas fa-filter"></i> Áp dụng bộ lọc
+        </button>
+    </div>
+</div>

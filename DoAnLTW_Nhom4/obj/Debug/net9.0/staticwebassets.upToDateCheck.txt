@@ -7,6 +7,7 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery\dist\jquery.min.js
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\js\newFile.js
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery-validation\LICENSE.md
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
@@ -151,6 +152,7 @@ wwwroot\images\xiaomi-14-ultra-den.png
 wwwroot\images\xiaomi-14-ultra-trang.png
 wwwroot\images\xiaomi-14-white.png
 wwwroot\images\xiaomi-logo.png
+wwwroot\js\newFile.js
 wwwroot\js\shopping-cart.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

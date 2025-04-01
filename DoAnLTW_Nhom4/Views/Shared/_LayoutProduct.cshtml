@@ -38,13 +38,13 @@
             </div>
 
             <div class="search">
-                <form action="/tim-kiem" method="get">
-                    <input type="text" name="kwd" placeholder="Hôm nay bạn muốn tìm kiếm gì?">
+                <form method="get">
+                    <input type="text" class="form-control" id="searchQuery" placeholder="Hôm nay bạn muốn tìm kiếm gì?">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
                 <div class="search-suggest">
                     <strong>Từ khóa xu hướng:</strong>
-                    <a href="#">Samsung Galaxy A16</a>
+                    <a href="/Product/Display/14">Samsung S25 Ultra</a>
                     <a href="#">Redmi Note 14</a>
                     <a href="#">Tecno Pova 6 Neo</a>
                     <a href="#">iPhone 16</a>
@@ -64,7 +64,7 @@
         <ul>
             <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Trang chủ</a></li>
             <li><a asp-controller="Product" asp-action="Index"><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
-            <li><a asp-controller="Contact" asp-action="Index"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+            <li><a asp-controller="Order" asp-action="Index" asp-route-area=""><i class="fas fa-list-alt"></i> Quản lí đơn hàng</a></li>
         </ul>
     </nav>
 
@@ -91,6 +91,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/shopping-cart.js"></script>
+    <script src="~/js/site.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

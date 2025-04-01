@@ -1,107 +1,36 @@
-@{
-    var categories = ViewBag.Categories as IEnumerable<DoAnLTW_Nhom4.Models.Category>;
-    var brands = ViewBag.Brands as IEnumerable<DoAnLTW_Nhom4.Models.Brand>;
+@model IEnumerable<DoAnLTW_Nhom4.Models.Product>
+
+@foreach (var product in Model)
+{
+    <div class="product-card">
+        <div class="product-image">
+            <img src="@product.ImageUrl" alt="@product.Name">
+            @if (product.Discount > 0)
+            {
+                <span class="discount-badge">-@product.Discount%</span>
+            }
+        </div>
+        <div class="product-info">
+            <div class="product-category">@product.Category?.Name</div>
+            <h4 class="product-name">@product.Name</h4>
+            <div class="product-price">
+                @if (product.Discount > 0)
+                {
+                    <span class="original-price">@product.Price.ToString("N0")đ</span>
+                    <span class="discounted-price">@((product.Price * (1 - product.Discount / 100))?.ToString("N0"))đ</span>
+                }
+                else
+                {
+                    <span class="price">@product.Price.ToString("N0")đ</span>
+                }
+            </div>
+            <div class="product-actions">
+                <a asp-controller="Product" asp-action="Display" asp-route-id="@product.Id" class="btn btn-primary btn-sm">Chi tiết</a>
+                <button class="add-to-cart-btn" data-product-id="@product.Id">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 }
 
-<div class="sidebar">
-    <!-- Categories Section -->
-    <div class="sidebar-section">
-        <h3 class="sidebar-title">Danh mục</h3>
-        <ul class="category-list">
-            @foreach (var category in categories)
-            {
-                <li>
-                    <a asp-controller="Product" asp-action="Index" asp-route-categoryId="@category.Id">
-                        <i class="fas fa-folder"></i>
-                        <span>@category.Name</span>
-                    </a>
-                </li>
-            }
-        </ul>
-    </div>
-
-    <!-- Brands Section -->
-    <div class="sidebar-section">
-        <h3 class="sidebar-title">Thương hiệu</h3>
-        <ul class="brand-list">
-            @foreach (var brand in brands)
-            {
-                <li>
-                    <a asp-controller="Product" asp-action="Index" asp-route-brandId="@brand.Id">
-                        <div class="brand-image">
-                            <img src="@brand.LogoUrl" alt="@brand.Name" onerror="this.src='/images/default-brand.png'">
-                        </div>
-                        <span class="brand-name">@brand.Name</span>
-                    </a>
-                </li>
-            }
-        </ul>
-    </div>
-
-    <!-- Filters Section -->
-    <div class="sidebar-section">
-        <h3 class="sidebar-title">Bộ lọc</h3>
-        <div class="filter-group">
-            <h4>Khoảng giá</h4>
-            <div class="price-range">
-                <input type="number" class="form-control mb-2" placeholder="Giá tối thiểu" id="minPrice">
-                <input type="number" class="form-control" placeholder="Giá tối đa" id="maxPrice">
-            </div>
-        </div>
-
-        <div class="filter-group">
-            <h4>Sắp xếp</h4>
-            <select class="form-select" id="sortOrder">
-                <option value="">Mặc định</option>
-                <option value="price_asc">Giá tăng dần</option>
-                <option value="price_desc">Giá giảm dần</option>
-                <option value="name_asc">Tên A-Z</option>
-                <option value="name_desc">Tên Z-A</option>
-            </select>
-        </div>
-
-        <div class="filter-group">
-            <h4>Trạng thái</h4>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="inStock">
-                <label class="form-check-label" for="inStock">
-                    Còn hàng
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="hasDiscount">
-                <label class="form-check-label" for="hasDiscount">
-                    Có giảm giá
-                </label>
-            </div>
-        </div>
-
-        <button class="btn btn-primary w-100 mt-3" id="applyFilters">
-            <i class="fas fa-filter"></i> Áp dụng bộ lọc
-        </button>
-    </div>
-</div>
-
-@section Scripts {
-    <script>
-        document.getElementById('applyFilters').addEventListener('click', function() {
-            const minPrice = document.getElementById('minPrice').value;
-            const maxPrice = document.getElementById('maxPrice').value;
-            const sortOrder = document.getElementById('sortOrder').value;
-            const inStock = document.getElementById('inStock').checked;
-            const hasDiscount = document.getElementById('hasDiscount').checked;
-
-            let url = new URL(window.location.href);
-            let params = new URLSearchParams(url.search);
-
-            if (minPrice) params.set('minPrice', minPrice);
-            if (maxPrice) params.set('maxPrice', maxPrice);
-            if (sortOrder) params.set('sortOrder', sortOrder);
-            if (inStock) params.set('inStock', 'true');
-            if (hasDiscount) params.set('hasDiscount', 'true');
-
-            url.search = params.toString();
-            window.location.href = url.toString();
-        });
-    </script>
-} 

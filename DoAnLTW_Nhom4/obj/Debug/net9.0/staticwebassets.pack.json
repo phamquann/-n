@@ -313,6 +313,10 @@
       "PackagePath": "staticwebassets\\images\\xiaomi-logo.png"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\js\\newFile.js",
+      "PackagePath": "staticwebassets\\js\\newFile.js"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\js\\shopping-cart.js",
       "PackagePath": "staticwebassets\\js\\shopping-cart.js"
     },

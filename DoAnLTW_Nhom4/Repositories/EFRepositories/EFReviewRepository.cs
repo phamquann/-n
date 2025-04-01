@@ -24,7 +24,7 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
         }
 
         // Lấy đánh giá theo ID
-        public async Task<Review> GetReviewByIdAsync(int reviewId)
+        public async Task<Review?> GetReviewByIdAsync(int reviewId)
         {
             return await _context.Reviews.FindAsync(reviewId);
         }

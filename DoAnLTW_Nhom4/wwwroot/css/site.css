@@ -20,7 +20,17 @@
 .product-container {
     grid-column: 2;
 }
+.product-filter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 
+}
+.search-title{
+
+}
 .all-product-section {
     grid-column: 1/ -1;
     margin: 0 auto;
