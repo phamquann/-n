@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ur1mzI9Mn6m7Rf+PqiIaaDo2utkgX5BQIQdW5ojd5Pc=",
+  "Hash": "wW9uN9NFU8w8hloxqi8HKDcDe120kCsyzz5d3jr8VME=",
   "Source": "DoAnLTW_Nhom4",
   "BasePath": "_content/DoAnLTW_Nhom4",
   "Mode": "Default",
@@ -1382,12 +1382,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-ep2hazq05l.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-6cl5u4wrec.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "css/Cart#[.{fingerprint=ep2hazq05l}]?.css.gz",
+      "RelativePath": "css/Cart#[.{fingerprint=6cl5u4wrec}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\Cart.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "t8rp69dwot",
-      "Integrity": "00/c+EKnLm/zYDoR6VZwLvjWlUeDFVSEZXni/G9Oonc=",
+      "Fingerprint": "i1tzzq4wfi",
+      "Integrity": "xmgK0t/owqggaaeXWxSml5oWAgMVqtvHAoFTETFBmRQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\Cart.css"
@@ -1487,12 +1487,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-uaw7d67lek.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-xn3lfdmltw.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "css/loginPartial#[.{fingerprint=uaw7d67lek}]?.css.gz",
+      "RelativePath": "css/loginPartial#[.{fingerprint=xn3lfdmltw}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\loginPartial.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8043q0crca",
-      "Integrity": "+O6Zln/xyzi5V8BAEdNuXQMuogDkqXFg9lHdPE9H+DI=",
+      "Fingerprint": "s22pzly8vm",
+      "Integrity": "PJLUvqrRyyqUyKJJuXMM6wQb7VFWc62lq9MCySPo8HQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\loginPartial.css"
@@ -1802,12 +1802,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-37uz6cnsce.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-bcco7urtl4.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "css/productDetail#[.{fingerprint=37uz6cnsce}]?.css.gz",
+      "RelativePath": "css/productDetail#[.{fingerprint=bcco7urtl4}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1816,8 +1816,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\productDetail.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kz10j98k5m",
-      "Integrity": "8L42l2M8i+i+VaNOHORenGSWZZC8YWhLHCgOZyTdWOg=",
+      "Fingerprint": "4zy6464xoz",
+      "Integrity": "cC1OLdGjegP8isDsuEe91tpSB5OqOyv6Wz8SZf08TKo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\productDetail.css"
@@ -2579,12 +2579,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-3r47qyyaer.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-jfyn59o3pg.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "css/style#[.{fingerprint=3r47qyyaer}]?.css.gz",
+      "RelativePath": "css/style#[.{fingerprint=jfyn59o3pg}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2593,8 +2593,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "h71pdcha27",
-      "Integrity": "o8D0995RgxmhniCSoC6c80w0XwoO7h9ow1uwwft5IYs=",
+      "Fingerprint": "cr94fdqylc",
+      "Integrity": "mBJRnu59K7DtgqMpmjeN1kw+5bCjOOFqUHKerLaP82k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\style.css"
@@ -3104,12 +3104,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-kmp77de6is.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-8i8ajtt4hb.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "css/site#[.{fingerprint=kmp77de6is}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=8i8ajtt4hb}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3118,8 +3118,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m1mzb9je00",
-      "Integrity": "pkanUzQSkdafJieiz8IoE5XeSrkHD2gJZW4nnGzimrw=",
+      "Fingerprint": "t7jdph6isd",
+      "Integrity": "iR+q+TAJKygHpaCP2kLeGr93JjcoKYmosmCz2z4ZDng=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\site.css"
@@ -3251,12 +3251,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-iychya16rr.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-2ov0l5exk8.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "js/site#[.{fingerprint=iychya16rr}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=2ov0l5exk8}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3265,8 +3265,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "d5sqgtklc9",
-      "Integrity": "/8o16J7PBLOlfAjTyc2SsniCEXU7BNi40AFftZ2LIlc=",
+      "Fingerprint": "hex9fzaewv",
+      "Integrity": "p/NZvGxRfF3oI0wFIIFuLe5nxQqEh7rhAriXuIJHYYA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\js\\site.js"
@@ -3419,6 +3419,27 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\q4j1fqlx6l-fl2t6e9p5g.gz",
+      "SourceId": "DoAnLTW_Nhom4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/DoAnLTW_Nhom4",
+      "RelativePath": "css/mangageNav#[.{fingerprint=fl2t6e9p5g}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\mangageNav.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3ocisryxts",
+      "Integrity": "o1itArZReZpTlAexYSBkAtMAVopodQ/ew6B8SRkmx8M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\mangageNav.css"
+    },
+    {
       "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qfr28sqcy1-ft3s53vfgj.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -3440,12 +3461,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-la22w61vjq.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-jmzr30r77z.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "DoAnLTW_Nhom4#[.{fingerprint=la22w61vjq}]?.styles.css.gz",
+      "RelativePath": "DoAnLTW_Nhom4#[.{fingerprint=jmzr30r77z}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -3454,8 +3475,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\bundle\\DoAnLTW_Nhom4.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "yczk04je04",
-      "Integrity": "AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=",
+      "Fingerprint": "z7koiq5ybz",
+      "Integrity": "X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\bundle\\DoAnLTW_Nhom4.styles.css"
@@ -4196,12 +4217,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-la22w61vjq.gz",
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-jmzr30r77z.gz",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DoAnLTW_Nhom4",
-      "RelativePath": "DoAnLTW_Nhom4#[.{fingerprint=la22w61vjq}]!.bundle.scp.css.gz",
+      "RelativePath": "DoAnLTW_Nhom4#[.{fingerprint=jmzr30r77z}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -4210,8 +4231,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DoAnLTW_Nhom4.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "yczk04je04",
-      "Integrity": "AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=",
+      "Fingerprint": "z7koiq5ybz",
+      "Integrity": "X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DoAnLTW_Nhom4.bundle.scp.css"
@@ -4315,8 +4336,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "la22w61vjq",
-      "Integrity": "HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=",
+      "Fingerprint": "jmzr30r77z",
+      "Integrity": "G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\bundle\\DoAnLTW_Nhom4.styles.css"
@@ -4336,8 +4357,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "la22w61vjq",
-      "Integrity": "HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=",
+      "Fingerprint": "jmzr30r77z",
+      "Integrity": "G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DoAnLTW_Nhom4.bundle.scp.css"
@@ -4399,8 +4420,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ep2hazq05l",
-      "Integrity": "8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE=",
+      "Fingerprint": "6cl5u4wrec",
+      "Integrity": "RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Cart.css"
@@ -4462,11 +4483,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uaw7d67lek",
-      "Integrity": "RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY=",
+      "Fingerprint": "xn3lfdmltw",
+      "Integrity": "zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\loginPartial.css"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\mangageNav.css",
+      "SourceId": "DoAnLTW_Nhom4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\",
+      "BasePath": "_content/DoAnLTW_Nhom4",
+      "RelativePath": "css/mangageNav#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fl2t6e9p5g",
+      "Integrity": "nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mangageNav.css"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\Order.css",
@@ -4546,8 +4588,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "37uz6cnsce",
-      "Integrity": "YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E=",
+      "Fingerprint": "bcco7urtl4",
+      "Integrity": "hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\productDetail.css"
@@ -4609,8 +4651,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kmp77de6is",
-      "Integrity": "hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q=",
+      "Fingerprint": "8i8ajtt4hb",
+      "Integrity": "kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -4630,8 +4672,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3r47qyyaer",
-      "Integrity": "MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE=",
+      "Fingerprint": "jfyn59o3pg",
+      "Integrity": "DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -6016,8 +6058,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iychya16rr",
-      "Integrity": "Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY=",
+      "Fingerprint": "2ov0l5exk8",
+      "Integrity": "UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -7881,13 +7923,13 @@
       ]
     },
     {
-      "Route": "css/Cart.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-ep2hazq05l.gz",
+      "Route": "css/Cart.6cl5u4wrec.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-6cl5u4wrec.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002242152466"
+          "Quality": "0.001972386588"
         }
       ],
       "ResponseHeaders": [
@@ -7897,19 +7939,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "445"
+          "Value": "506"
         },
         {
           "Name": "ETag",
-          "Value": "\"00/c+EKnLm/zYDoR6VZwLvjWlUeDFVSEZXni/G9Oonc=\""
+          "Value": "\"xmgK0t/owqggaaeXWxSml5oWAgMVqtvHAoFTETFBmRQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:38:49 GMT"
+          "Value": "Thu, 03 Apr 2025 18:09:31 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -7925,18 +7967,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE=\""
+          "Value": "W/\"RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "6cl5u4wrec"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Cart.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE="
+          "Value": "sha256-RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE="
         }
       ]
     },
     {
-      "Route": "css/Cart.css",
+      "Route": "css/Cart.6cl5u4wrec.css",
       "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\Cart.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7946,7 +7996,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "983"
+          "Value": "1289"
         },
         {
           "Name": "Content-Type",
@@ -7954,121 +8004,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE=\""
+          "Value": "\"RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:38:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE="
-        }
-      ]
-    },
-    {
-      "Route": "css/Cart.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-ep2hazq05l.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "445"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"00/c+EKnLm/zYDoR6VZwLvjWlUeDFVSEZXni/G9Oonc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:38:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-00/c+EKnLm/zYDoR6VZwLvjWlUeDFVSEZXni/G9Oonc="
-        }
-      ]
-    },
-    {
-      "Route": "css/Cart.ep2hazq05l.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-ep2hazq05l.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.002242152466"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "445"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"00/c+EKnLm/zYDoR6VZwLvjWlUeDFVSEZXni/G9Oonc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:38:49 GMT"
+          "Value": "Thu, 03 Apr 2025 18:09:31 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ep2hazq05l"
+          "Value": "6cl5u4wrec"
         },
         {
           "Name": "label",
@@ -8076,13 +8026,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE="
+          "Value": "sha256-RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE="
         }
       ]
     },
     {
-      "Route": "css/Cart.ep2hazq05l.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\Cart.css",
+      "Route": "css/Cart.6cl5u4wrec.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-6cl5u4wrec.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8091,7 +8041,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "983"
+          "Value": "506"
         },
         {
           "Name": "Content-Type",
@@ -8099,56 +8049,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE=\""
+          "Value": "\"xmgK0t/owqggaaeXWxSml5oWAgMVqtvHAoFTETFBmRQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:38:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ep2hazq05l"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Cart.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8n2xpR2xoe053KTDcVim8+1gqI5A4xI7cIFFTKJkwHE="
-        }
-      ]
-    },
-    {
-      "Route": "css/Cart.ep2hazq05l.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-ep2hazq05l.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "445"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"00/c+EKnLm/zYDoR6VZwLvjWlUeDFVSEZXni/G9Oonc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:38:49 GMT"
+          "Value": "Thu, 03 Apr 2025 18:09:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8166,7 +8071,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ep2hazq05l"
+          "Value": "6cl5u4wrec"
         },
         {
           "Name": "label",
@@ -8174,7 +8079,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-00/c+EKnLm/zYDoR6VZwLvjWlUeDFVSEZXni/G9Oonc="
+          "Value": "sha256-xmgK0t/owqggaaeXWxSml5oWAgMVqtvHAoFTETFBmRQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/Cart.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-6cl5u4wrec.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001972386588"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xmgK0t/owqggaaeXWxSml5oWAgMVqtvHAoFTETFBmRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 18:09:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE="
+        }
+      ]
+    },
+    {
+      "Route": "css/Cart.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\Cart.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 18:09:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RimACA+6YhQW35zlO7asbvhd95ky2eErZVBhUv0DsVE="
+        }
+      ]
+    },
+    {
+      "Route": "css/Cart.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\0nxrve1zo1-6cl5u4wrec.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xmgK0t/owqggaaeXWxSml5oWAgMVqtvHAoFTETFBmRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 18:09:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xmgK0t/owqggaaeXWxSml5oWAgMVqtvHAoFTETFBmRQ="
         }
       ]
     },
@@ -8776,12 +8818,12 @@
     },
     {
       "Route": "css/loginPartial.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-uaw7d67lek.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-xn3lfdmltw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001324503311"
+          "Quality": "0.001191895113"
         }
       ],
       "ResponseHeaders": [
@@ -8791,15 +8833,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "754"
+          "Value": "838"
         },
         {
           "Name": "ETag",
-          "Value": "\"+O6Zln/xyzi5V8BAEdNuXQMuogDkqXFg9lHdPE9H+DI=\""
+          "Value": "\"PJLUvqrRyyqUyKJJuXMM6wQb7VFWc62lq9MCySPo8HQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 18:06:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8819,13 +8861,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY=\""
+          "Value": "W/\"zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY="
+          "Value": "sha256-zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o="
         }
       ]
     },
@@ -8840,7 +8882,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1823"
+          "Value": "2519"
         },
         {
           "Name": "Content-Type",
@@ -8848,11 +8890,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY=\""
+          "Value": "\"zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 18:06:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8862,13 +8904,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY="
+          "Value": "sha256-zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o="
         }
       ]
     },
     {
       "Route": "css/loginPartial.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-uaw7d67lek.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-xn3lfdmltw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8877,7 +8919,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "754"
+          "Value": "838"
         },
         {
           "Name": "Content-Type",
@@ -8885,11 +8927,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+O6Zln/xyzi5V8BAEdNuXQMuogDkqXFg9lHdPE9H+DI=\""
+          "Value": "\"PJLUvqrRyyqUyKJJuXMM6wQb7VFWc62lq9MCySPo8HQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 18:06:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8907,18 +8949,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+O6Zln/xyzi5V8BAEdNuXQMuogDkqXFg9lHdPE9H+DI="
+          "Value": "sha256-PJLUvqrRyyqUyKJJuXMM6wQb7VFWc62lq9MCySPo8HQ="
         }
       ]
     },
     {
-      "Route": "css/loginPartial.uaw7d67lek.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-uaw7d67lek.gz",
+      "Route": "css/loginPartial.xn3lfdmltw.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-xn3lfdmltw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001324503311"
+          "Quality": "0.001191895113"
         }
       ],
       "ResponseHeaders": [
@@ -8928,15 +8970,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "754"
+          "Value": "838"
         },
         {
           "Name": "ETag",
-          "Value": "\"+O6Zln/xyzi5V8BAEdNuXQMuogDkqXFg9lHdPE9H+DI=\""
+          "Value": "\"PJLUvqrRyyqUyKJJuXMM6wQb7VFWc62lq9MCySPo8HQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 18:06:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8956,13 +8998,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY=\""
+          "Value": "W/\"zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uaw7d67lek"
+          "Value": "xn3lfdmltw"
         },
         {
           "Name": "label",
@@ -8970,12 +9012,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY="
+          "Value": "sha256-zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o="
         }
       ]
     },
     {
-      "Route": "css/loginPartial.uaw7d67lek.css",
+      "Route": "css/loginPartial.xn3lfdmltw.css",
       "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\loginPartial.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8985,7 +9027,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1823"
+          "Value": "2519"
         },
         {
           "Name": "Content-Type",
@@ -8993,11 +9035,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY=\""
+          "Value": "\"zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 18:06:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9007,7 +9049,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uaw7d67lek"
+          "Value": "xn3lfdmltw"
         },
         {
           "Name": "label",
@@ -9015,13 +9057,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RlRFtId9jzpyigilMrhecXQkovpiyub/Lz9fULNoaeY="
+          "Value": "sha256-zWg9Yck1nCA5TRugF0kB7v2wtrEnN8GrHuL9JgmTi3o="
         }
       ]
     },
     {
-      "Route": "css/loginPartial.uaw7d67lek.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-uaw7d67lek.gz",
+      "Route": "css/loginPartial.xn3lfdmltw.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\254utfcuuj-xn3lfdmltw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9030,7 +9072,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "754"
+          "Value": "838"
         },
         {
           "Name": "Content-Type",
@@ -9038,11 +9080,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+O6Zln/xyzi5V8BAEdNuXQMuogDkqXFg9lHdPE9H+DI=\""
+          "Value": "\"PJLUvqrRyyqUyKJJuXMM6wQb7VFWc62lq9MCySPo8HQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 18:06:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9060,7 +9102,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uaw7d67lek"
+          "Value": "xn3lfdmltw"
         },
         {
           "Name": "label",
@@ -9068,7 +9110,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+O6Zln/xyzi5V8BAEdNuXQMuogDkqXFg9lHdPE9H+DI="
+          "Value": "sha256-PJLUvqrRyyqUyKJJuXMM6wQb7VFWc62lq9MCySPo8HQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/mangageNav.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\q4j1fqlx6l-fl2t6e9p5g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000877192982"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1itArZReZpTlAexYSBkAtMAVopodQ/ew6B8SRkmx8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:50:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38="
+        }
+      ]
+    },
+    {
+      "Route": "css/mangageNav.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\mangageNav.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:50:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38="
+        }
+      ]
+    },
+    {
+      "Route": "css/mangageNav.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\q4j1fqlx6l-fl2t6e9p5g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1itArZReZpTlAexYSBkAtMAVopodQ/ew6B8SRkmx8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:50:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1itArZReZpTlAexYSBkAtMAVopodQ/ew6B8SRkmx8M="
+        }
+      ]
+    },
+    {
+      "Route": "css/mangageNav.fl2t6e9p5g.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\q4j1fqlx6l-fl2t6e9p5g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000877192982"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1itArZReZpTlAexYSBkAtMAVopodQ/ew6B8SRkmx8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:50:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fl2t6e9p5g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/mangageNav.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38="
+        }
+      ]
+    },
+    {
+      "Route": "css/mangageNav.fl2t6e9p5g.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\mangageNav.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:50:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fl2t6e9p5g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/mangageNav.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nb/rgRAyxL3gfAVeZ33x5hOIPJMNZW/xgaBB0CqBw38="
+        }
+      ]
+    },
+    {
+      "Route": "css/mangageNav.fl2t6e9p5g.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\q4j1fqlx6l-fl2t6e9p5g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1itArZReZpTlAexYSBkAtMAVopodQ/ew6B8SRkmx8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:50:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fl2t6e9p5g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/mangageNav.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1itArZReZpTlAexYSBkAtMAVopodQ/ew6B8SRkmx8M="
         }
       ]
     },
@@ -9967,13 +10307,13 @@
       ]
     },
     {
-      "Route": "css/productDetail.37uz6cnsce.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-37uz6cnsce.gz",
+      "Route": "css/productDetail.bcco7urtl4.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-bcco7urtl4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000992063492"
+          "Quality": "0.000684462697"
         }
       ],
       "ResponseHeaders": [
@@ -9983,15 +10323,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1007"
+          "Value": "1460"
         },
         {
           "Name": "ETag",
-          "Value": "\"8L42l2M8i+i+VaNOHORenGSWZZC8YWhLHCgOZyTdWOg=\""
+          "Value": "\"cC1OLdGjegP8isDsuEe91tpSB5OqOyv6Wz8SZf08TKo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 14:35:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10011,13 +10351,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E=\""
+          "Value": "W/\"hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "37uz6cnsce"
+          "Value": "bcco7urtl4"
         },
         {
           "Name": "label",
@@ -10025,12 +10365,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E="
+          "Value": "sha256-hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00="
         }
       ]
     },
     {
-      "Route": "css/productDetail.37uz6cnsce.css",
+      "Route": "css/productDetail.bcco7urtl4.css",
       "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\productDetail.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -10040,7 +10380,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3261"
+          "Value": "5130"
         },
         {
           "Name": "Content-Type",
@@ -10048,11 +10388,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E=\""
+          "Value": "\"hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 14:35:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10062,7 +10402,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "37uz6cnsce"
+          "Value": "bcco7urtl4"
         },
         {
           "Name": "label",
@@ -10070,13 +10410,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E="
+          "Value": "sha256-hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00="
         }
       ]
     },
     {
-      "Route": "css/productDetail.37uz6cnsce.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-37uz6cnsce.gz",
+      "Route": "css/productDetail.bcco7urtl4.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-bcco7urtl4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10085,7 +10425,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1007"
+          "Value": "1460"
         },
         {
           "Name": "Content-Type",
@@ -10093,11 +10433,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8L42l2M8i+i+VaNOHORenGSWZZC8YWhLHCgOZyTdWOg=\""
+          "Value": "\"cC1OLdGjegP8isDsuEe91tpSB5OqOyv6Wz8SZf08TKo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 14:35:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10115,7 +10455,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "37uz6cnsce"
+          "Value": "bcco7urtl4"
         },
         {
           "Name": "label",
@@ -10123,18 +10463,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8L42l2M8i+i+VaNOHORenGSWZZC8YWhLHCgOZyTdWOg="
+          "Value": "sha256-cC1OLdGjegP8isDsuEe91tpSB5OqOyv6Wz8SZf08TKo="
         }
       ]
     },
     {
       "Route": "css/productDetail.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-37uz6cnsce.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-bcco7urtl4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000992063492"
+          "Quality": "0.000684462697"
         }
       ],
       "ResponseHeaders": [
@@ -10144,15 +10484,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1007"
+          "Value": "1460"
         },
         {
           "Name": "ETag",
-          "Value": "\"8L42l2M8i+i+VaNOHORenGSWZZC8YWhLHCgOZyTdWOg=\""
+          "Value": "\"cC1OLdGjegP8isDsuEe91tpSB5OqOyv6Wz8SZf08TKo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 14:35:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10172,13 +10512,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E=\""
+          "Value": "W/\"hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E="
+          "Value": "sha256-hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00="
         }
       ]
     },
@@ -10193,7 +10533,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3261"
+          "Value": "5130"
         },
         {
           "Name": "Content-Type",
@@ -10201,11 +10541,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E=\""
+          "Value": "\"hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 14:35:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10215,13 +10555,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YZZvol7sjTOl6qpkwbQLJNRBCP9ij39ATm/ViDa/W3E="
+          "Value": "sha256-hRyDB7YtqFrx42Gdnp1P17g/mUUU2/uacl6f6Kz7i00="
         }
       ]
     },
     {
       "Route": "css/productDetail.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-37uz6cnsce.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\4wqob2fugd-bcco7urtl4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10230,7 +10570,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1007"
+          "Value": "1460"
         },
         {
           "Name": "Content-Type",
@@ -10238,11 +10578,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8L42l2M8i+i+VaNOHORenGSWZZC8YWhLHCgOZyTdWOg=\""
+          "Value": "\"cC1OLdGjegP8isDsuEe91tpSB5OqOyv6Wz8SZf08TKo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 08:20:47 GMT"
+          "Value": "Thu, 03 Apr 2025 14:35:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10260,7 +10600,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8L42l2M8i+i+VaNOHORenGSWZZC8YWhLHCgOZyTdWOg="
+          "Value": "sha256-cC1OLdGjegP8isDsuEe91tpSB5OqOyv6Wz8SZf08TKo="
         }
       ]
     },
@@ -10861,6 +11201,167 @@
       ]
     },
     {
+      "Route": "css/site.8i8ajtt4hb.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-8i8ajtt4hb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000308546745"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3240"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iR+q+TAJKygHpaCP2kLeGr93JjcoKYmosmCz2z4ZDng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 15:50:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8i8ajtt4hb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.8i8ajtt4hb.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14899"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 15:50:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8i8ajtt4hb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.8i8ajtt4hb.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-8i8ajtt4hb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iR+q+TAJKygHpaCP2kLeGr93JjcoKYmosmCz2z4ZDng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 15:50:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8i8ajtt4hb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iR+q+TAJKygHpaCP2kLeGr93JjcoKYmosmCz2z4ZDng="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\css\\site.css",
       "Selectors": [],
@@ -10899,12 +11400,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-kmp77de6is.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-8i8ajtt4hb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000308641975"
+          "Quality": "0.000308546745"
         }
       ],
       "ResponseHeaders": [
@@ -10914,15 +11415,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3239"
+          "Value": "3240"
         },
         {
           "Name": "ETag",
-          "Value": "\"pkanUzQSkdafJieiz8IoE5XeSrkHD2gJZW4nnGzimrw=\""
+          "Value": "\"iR+q+TAJKygHpaCP2kLeGr93JjcoKYmosmCz2z4ZDng=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:44 GMT"
+          "Value": "Fri, 04 Apr 2025 15:50:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10942,13 +11443,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q=\""
+          "Value": "W/\"kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q="
+          "Value": "sha256-kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4="
         }
       ]
     },
@@ -10963,7 +11464,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14898"
+          "Value": "14899"
         },
         {
           "Name": "Content-Type",
@@ -10971,11 +11472,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q=\""
+          "Value": "\"kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:44 GMT"
+          "Value": "Fri, 04 Apr 2025 15:50:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10985,13 +11486,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q="
+          "Value": "sha256-kKDtaqBPkZB+tQJHNrRxnZiwEjHotXuYsyle1R7Cvq4="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-kmp77de6is.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-8i8ajtt4hb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11000,7 +11501,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3239"
+          "Value": "3240"
         },
         {
           "Name": "Content-Type",
@@ -11008,11 +11509,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pkanUzQSkdafJieiz8IoE5XeSrkHD2gJZW4nnGzimrw=\""
+          "Value": "\"iR+q+TAJKygHpaCP2kLeGr93JjcoKYmosmCz2z4ZDng=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:44 GMT"
+          "Value": "Fri, 04 Apr 2025 15:50:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11030,18 +11531,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pkanUzQSkdafJieiz8IoE5XeSrkHD2gJZW4nnGzimrw="
+          "Value": "sha256-iR+q+TAJKygHpaCP2kLeGr93JjcoKYmosmCz2z4ZDng="
         }
       ]
     },
     {
-      "Route": "css/site.kmp77de6is.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-kmp77de6is.gz",
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-jfyn59o3pg.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000308641975"
+          "Quality": "0.000346260388"
         }
       ],
       "ResponseHeaders": [
@@ -11051,19 +11552,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3239"
+          "Value": "2887"
         },
         {
           "Name": "ETag",
-          "Value": "\"pkanUzQSkdafJieiz8IoE5XeSrkHD2gJZW4nnGzimrw=\""
+          "Value": "\"mBJRnu59K7DtgqMpmjeN1kw+5bCjOOFqUHKerLaP82k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:44 GMT"
+          "Value": "Thu, 03 Apr 2025 19:10:45 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -11079,187 +11580,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q=\""
+          "Value": "W/\"DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "kmp77de6is"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q="
+          "Value": "sha256-DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ="
         }
       ]
     },
     {
-      "Route": "css/site.kmp77de6is.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14898"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "kmp77de6is"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hGeymDkWvJfMeC6tUIHfjh7bzmXYANisqQe3EE7WT3Q="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.kmp77de6is.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\nk9e02amqf-kmp77de6is.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3239"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pkanUzQSkdafJieiz8IoE5XeSrkHD2gJZW4nnGzimrw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "kmp77de6is"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pkanUzQSkdafJieiz8IoE5XeSrkHD2gJZW4nnGzimrw="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.3r47qyyaer.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-3r47qyyaer.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000472589792"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2115"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o8D0995RgxmhniCSoC6c80w0XwoO7h9ow1uwwft5IYs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:39:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3r47qyyaer"
-        },
-        {
-          "Name": "label",
-          "Value": "css/style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.3r47qyyaer.css",
+      "Route": "css/style.css",
       "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11269,7 +11601,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8040"
+          "Value": "11677"
         },
         {
           "Name": "Content-Type",
@@ -11277,11 +11609,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE=\""
+          "Value": "\"DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:39:40 GMT"
+          "Value": "Thu, 03 Apr 2025 19:10:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-jfyn59o3pg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mBJRnu59K7DtgqMpmjeN1kw+5bCjOOFqUHKerLaP82k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 19:10:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mBJRnu59K7DtgqMpmjeN1kw+5bCjOOFqUHKerLaP82k="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.jfyn59o3pg.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-jfyn59o3pg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000346260388"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2887"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mBJRnu59K7DtgqMpmjeN1kw+5bCjOOFqUHKerLaP82k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 19:10:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jfyn59o3pg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.jfyn59o3pg.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 19:10:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11291,7 +11768,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3r47qyyaer"
+          "Value": "jfyn59o3pg"
         },
         {
           "Name": "label",
@@ -11299,13 +11776,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE="
+          "Value": "sha256-DzduNwfqAGB3LKOeQdUe02RkSLzBxakMQ51fGNOPRMQ="
         }
       ]
     },
     {
-      "Route": "css/style.3r47qyyaer.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-3r47qyyaer.gz",
+      "Route": "css/style.jfyn59o3pg.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-jfyn59o3pg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11314,7 +11791,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2115"
+          "Value": "2887"
         },
         {
           "Name": "Content-Type",
@@ -11322,11 +11799,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o8D0995RgxmhniCSoC6c80w0XwoO7h9ow1uwwft5IYs=\""
+          "Value": "\"mBJRnu59K7DtgqMpmjeN1kw+5bCjOOFqUHKerLaP82k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:39:40 GMT"
+          "Value": "Thu, 03 Apr 2025 19:10:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11344,7 +11821,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3r47qyyaer"
+          "Value": "jfyn59o3pg"
         },
         {
           "Name": "label",
@@ -11352,155 +11829,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-o8D0995RgxmhniCSoC6c80w0XwoO7h9ow1uwwft5IYs="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-3r47qyyaer.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000472589792"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2115"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o8D0995RgxmhniCSoC6c80w0XwoO7h9ow1uwwft5IYs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:39:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8040"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:39:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MSrecZCbWr3LPS75Qe/mJj6c0MbjnOaATDewkdOZiDE="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\h5ztrioo5q-3r47qyyaer.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2115"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o8D0995RgxmhniCSoC6c80w0XwoO7h9ow1uwwft5IYs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:39:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-o8D0995RgxmhniCSoC6c80w0XwoO7h9ow1uwwft5IYs="
+          "Value": "sha256-mBJRnu59K7DtgqMpmjeN1kw+5bCjOOFqUHKerLaP82k="
         }
       ]
     },
     {
       "Route": "DoAnLTW_Nhom4.bundle.scp.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-la22w61vjq.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-jmzr30r77z.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001579778831"
+          "Quality": "0.001428571429"
         }
       ],
       "ResponseHeaders": [
@@ -11510,15 +11850,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11538,13 +11878,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "W/\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
@@ -11559,7 +11899,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2279"
+          "Value": "3422"
         },
         {
           "Name": "Content-Type",
@@ -11567,11 +11907,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11581,13 +11921,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
     {
       "Route": "DoAnLTW_Nhom4.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-la22w61vjq.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-jmzr30r77z.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11596,7 +11936,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "Content-Type",
@@ -11604,11 +11944,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11626,18 +11966,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo="
+          "Value": "sha256-X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc="
         }
       ]
     },
     {
-      "Route": "DoAnLTW_Nhom4.la22w61vjq.bundle.scp.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-la22w61vjq.gz",
+      "Route": "DoAnLTW_Nhom4.jmzr30r77z.bundle.scp.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-jmzr30r77z.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001579778831"
+          "Quality": "0.001428571429"
         }
       ],
       "ResponseHeaders": [
@@ -11647,15 +11987,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11675,13 +12015,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "W/\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "la22w61vjq"
+          "Value": "jmzr30r77z"
         },
         {
           "Name": "label",
@@ -11689,12 +12029,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
     {
-      "Route": "DoAnLTW_Nhom4.la22w61vjq.bundle.scp.css",
+      "Route": "DoAnLTW_Nhom4.jmzr30r77z.bundle.scp.css",
       "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DoAnLTW_Nhom4.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11704,7 +12044,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2279"
+          "Value": "3422"
         },
         {
           "Name": "Content-Type",
@@ -11712,11 +12052,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11726,7 +12066,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "la22w61vjq"
+          "Value": "jmzr30r77z"
         },
         {
           "Name": "label",
@@ -11734,13 +12074,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
     {
-      "Route": "DoAnLTW_Nhom4.la22w61vjq.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-la22w61vjq.gz",
+      "Route": "DoAnLTW_Nhom4.jmzr30r77z.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\z9brdoc1wz-jmzr30r77z.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11749,7 +12089,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "Content-Type",
@@ -11757,11 +12097,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11779,7 +12119,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "la22w61vjq"
+          "Value": "jmzr30r77z"
         },
         {
           "Name": "label",
@@ -11787,18 +12127,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo="
+          "Value": "sha256-X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc="
         }
       ]
     },
     {
-      "Route": "DoAnLTW_Nhom4.la22w61vjq.styles.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-la22w61vjq.gz",
+      "Route": "DoAnLTW_Nhom4.jmzr30r77z.styles.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-jmzr30r77z.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001579778831"
+          "Quality": "0.001428571429"
         }
       ],
       "ResponseHeaders": [
@@ -11808,15 +12148,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11836,13 +12176,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "W/\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "la22w61vjq"
+          "Value": "jmzr30r77z"
         },
         {
           "Name": "label",
@@ -11850,12 +12190,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
     {
-      "Route": "DoAnLTW_Nhom4.la22w61vjq.styles.css",
+      "Route": "DoAnLTW_Nhom4.jmzr30r77z.styles.css",
       "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\scopedcss\\bundle\\DoAnLTW_Nhom4.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11865,7 +12205,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2279"
+          "Value": "3422"
         },
         {
           "Name": "Content-Type",
@@ -11873,11 +12213,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11887,7 +12227,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "la22w61vjq"
+          "Value": "jmzr30r77z"
         },
         {
           "Name": "label",
@@ -11895,13 +12235,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
     {
-      "Route": "DoAnLTW_Nhom4.la22w61vjq.styles.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-la22w61vjq.gz",
+      "Route": "DoAnLTW_Nhom4.jmzr30r77z.styles.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-jmzr30r77z.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11910,7 +12250,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "Content-Type",
@@ -11918,11 +12258,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11940,7 +12280,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "la22w61vjq"
+          "Value": "jmzr30r77z"
         },
         {
           "Name": "label",
@@ -11948,18 +12288,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo="
+          "Value": "sha256-X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc="
         }
       ]
     },
     {
       "Route": "DoAnLTW_Nhom4.styles.css",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-la22w61vjq.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-jmzr30r77z.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001579778831"
+          "Quality": "0.001428571429"
         }
       ],
       "ResponseHeaders": [
@@ -11969,15 +12309,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11997,13 +12337,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "W/\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
@@ -12018,7 +12358,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2279"
+          "Value": "3422"
         },
         {
           "Name": "Content-Type",
@@ -12026,11 +12366,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo=\""
+          "Value": "\"G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12040,13 +12380,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HUAZQ2MM+7AwvBN512uhWLtRZdwT1SSdzRN6Rs9ALZo="
+          "Value": "sha256-G0C+IhQpEJcZmGlZ+BZcirFh1Dzr/qzoTufAHMCKAFE="
         }
       ]
     },
     {
       "Route": "DoAnLTW_Nhom4.styles.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-la22w61vjq.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\qkj1qcgy2n-jmzr30r77z.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12055,7 +12395,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "699"
         },
         {
           "Name": "Content-Type",
@@ -12063,11 +12403,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo=\""
+          "Value": "\"X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 01:40:47 GMT"
+          "Value": "Thu, 03 Apr 2025 17:19:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12085,7 +12425,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AjA/5d2YjOUkz2P/k3n79Z4ORF93QQBV1Ignw/UjKzo="
+          "Value": "sha256-X0Y6di5LA4JMF4ZKdwJhjj2uB6H9qBE7Rj7Xs+EREBc="
         }
       ]
     },
@@ -26636,13 +26976,13 @@
       ]
     },
     {
-      "Route": "js/site.iychya16rr.js",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-iychya16rr.gz",
+      "Route": "js/site.2ov0l5exk8.js",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-2ov0l5exk8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001069518717"
+          "Quality": "0.000844594595"
         }
       ],
       "ResponseHeaders": [
@@ -26652,15 +26992,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "934"
+          "Value": "1183"
         },
         {
           "Name": "ETag",
-          "Value": "\"/8o16J7PBLOlfAjTyc2SsniCEXU7BNi40AFftZ2LIlc=\""
+          "Value": "\"p/NZvGxRfF3oI0wFIIFuLe5nxQqEh7rhAriXuIJHYYA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:43 GMT"
+          "Value": "Thu, 03 Apr 2025 19:11:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26680,13 +27020,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY=\""
+          "Value": "W/\"UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iychya16rr"
+          "Value": "2ov0l5exk8"
         },
         {
           "Name": "label",
@@ -26694,12 +27034,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY="
+          "Value": "sha256-UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU="
         }
       ]
     },
     {
-      "Route": "js/site.iychya16rr.js",
+      "Route": "js/site.2ov0l5exk8.js",
       "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -26709,7 +27049,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2805"
+          "Value": "3688"
         },
         {
           "Name": "Content-Type",
@@ -26717,11 +27057,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY=\""
+          "Value": "\"UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:43 GMT"
+          "Value": "Thu, 03 Apr 2025 19:11:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26731,7 +27071,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iychya16rr"
+          "Value": "2ov0l5exk8"
         },
         {
           "Name": "label",
@@ -26739,13 +27079,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY="
+          "Value": "sha256-UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU="
         }
       ]
     },
     {
-      "Route": "js/site.iychya16rr.js.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-iychya16rr.gz",
+      "Route": "js/site.2ov0l5exk8.js.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-2ov0l5exk8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26754,7 +27094,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "934"
+          "Value": "1183"
         },
         {
           "Name": "Content-Type",
@@ -26762,11 +27102,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/8o16J7PBLOlfAjTyc2SsniCEXU7BNi40AFftZ2LIlc=\""
+          "Value": "\"p/NZvGxRfF3oI0wFIIFuLe5nxQqEh7rhAriXuIJHYYA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:43 GMT"
+          "Value": "Thu, 03 Apr 2025 19:11:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26784,7 +27124,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iychya16rr"
+          "Value": "2ov0l5exk8"
         },
         {
           "Name": "label",
@@ -26792,7 +27132,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/8o16J7PBLOlfAjTyc2SsniCEXU7BNi40AFftZ2LIlc="
+          "Value": "sha256-p/NZvGxRfF3oI0wFIIFuLe5nxQqEh7rhAriXuIJHYYA="
         }
       ]
     },
@@ -26835,12 +27175,12 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-iychya16rr.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-2ov0l5exk8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001069518717"
+          "Quality": "0.000844594595"
         }
       ],
       "ResponseHeaders": [
@@ -26850,15 +27190,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "934"
+          "Value": "1183"
         },
         {
           "Name": "ETag",
-          "Value": "\"/8o16J7PBLOlfAjTyc2SsniCEXU7BNi40AFftZ2LIlc=\""
+          "Value": "\"p/NZvGxRfF3oI0wFIIFuLe5nxQqEh7rhAriXuIJHYYA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:43 GMT"
+          "Value": "Thu, 03 Apr 2025 19:11:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26878,13 +27218,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY=\""
+          "Value": "W/\"UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY="
+          "Value": "sha256-UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU="
         }
       ]
     },
@@ -26899,7 +27239,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2805"
+          "Value": "3688"
         },
         {
           "Name": "Content-Type",
@@ -26907,11 +27247,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY=\""
+          "Value": "\"UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:43 GMT"
+          "Value": "Thu, 03 Apr 2025 19:11:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26921,13 +27261,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jkr28UZJwvGBhYcISFa8GBxOm75UTTGavnkMrBDZqIY="
+          "Value": "sha256-UindZH0WcvUhFuHMF2Gjy5/JU/juwoe/sNQJdeZ1PiU="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-iychya16rr.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\orjguge4ky-2ov0l5exk8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26936,7 +27276,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "934"
+          "Value": "1183"
         },
         {
           "Name": "Content-Type",
@@ -26944,11 +27284,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/8o16J7PBLOlfAjTyc2SsniCEXU7BNi40AFftZ2LIlc=\""
+          "Value": "\"p/NZvGxRfF3oI0wFIIFuLe5nxQqEh7rhAriXuIJHYYA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 03:39:43 GMT"
+          "Value": "Thu, 03 Apr 2025 19:11:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26966,7 +27306,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/8o16J7PBLOlfAjTyc2SsniCEXU7BNi40AFftZ2LIlc="
+          "Value": "sha256-p/NZvGxRfF3oI0wFIIFuLe5nxQqEh7rhAriXuIJHYYA="
         }
       ]
     },

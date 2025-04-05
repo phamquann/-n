@@ -36,13 +36,14 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // Hiển thị danh sách tất cả sản phẩm
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Index()
         {
             var products = await _productRepository.GetAllAsync();
             return View(products);
         }
         // Hiển thị thông tin chi tiết sản phẩm
-
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Display(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -54,6 +55,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // Thêm sản phẩm
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Add()
         {
             var categories = await _categoryRepository.GetAllAsync();
@@ -65,6 +67,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Add(Product product, IFormFile ImageUrl, List<IFormFile> ImageUrls, List<ProductSpecification> productSpecifications)
         {
             ModelState.Remove("Brand");
@@ -161,6 +164,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Edit(int id)
         {
             var product = await _context.Products
@@ -181,6 +185,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Edit(Product product, IFormFile? ImageUrl, List<IFormFile>? ImageUrls, List<ProductSpecification>? ProductSpecifications)
         {
             ModelState.Remove("Brand");
@@ -269,6 +274,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // GET: Delete
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -282,6 +288,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);

@@ -74,5 +74,18 @@ namespace DoAnLTW_Nhom4.Controllers
             var products = await _productRepository.GetByBrandAsync(brandId);
             return View("Index", products); // Sử dụng lại view Index
         }
+
+        //Lazy loading
+        public async Task<IActionResult> LoadMoreProducts(int page = 1, int pageSize = 6)
+        {
+            var paginatedProducts = await _productRepository.GetPaginatedProductsAsync(page, pageSize);
+
+            if (!paginatedProducts.Any())
+            {
+                return Content("");
+            }
+
+            return PartialView("_ProductListPartial", paginatedProducts);
+        }
     }
 }

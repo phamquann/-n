@@ -91,11 +91,11 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         // POST: Admin/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(string username, string email, string password, string fullName, string[] selectedRoles) // Thêm selectedRoles
+        public async Task<IActionResult> Create(string email, string password, string fullName, string[] selectedRoles) // Thêm selectedRoles
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = username, Email = email, FullName = fullName };
+                var user = new ApplicationUser { UserName = email, Email = email, FullName = fullName };
                 var result = await _userManager.CreateAsync(user, password);
                 if (result.Succeeded)
                 {

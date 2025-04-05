@@ -20,12 +20,14 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // Hiển thị danh sách thương hiệu
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Index()
         {
             var brands = await _brandRepository.GetAllAsync();
             return View(brands);
         }
         // Xem thoong tin thương hiệu
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Display(int id)
         {
             var brand = await _brandRepository.GetByIdAsync(id);
@@ -36,11 +38,13 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             return View(brand);
         }
         // Thêm thương hiệu
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public IActionResult Add()
         {
             return View();
         }
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Add(Brand brand, IFormFile LogoUrl)
         {
             if (ModelState.IsValid)
@@ -56,6 +60,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             return View(brand);
         }
         // Sửa thông tin thương hiệu
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Edit(int id)
         {
             var brand = await _brandRepository.GetByIdAsync(id);
@@ -66,6 +71,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             return View(brand);
         }
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Edit(int id, Brand brand, IFormFile LogoUrl)
         {
             if (!ModelState.IsValid)
@@ -116,6 +122,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // Xóa thương hiệu
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Delete(int id)
         {
             var brand = await _brandRepository.GetByIdAsync(id);
@@ -126,6 +133,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             return View(brand);
         }
         [HttpPost,ActionName("DeleteConfirmed")]
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Delete(int id, Brand brand)
         {
             if (id != brand.Id)

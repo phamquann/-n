@@ -39,5 +39,7 @@ namespace DoAnLTW_Nhom4.Models
         public List<Review>? Reviews { get; set; } = new List<Review>();
         public List<OrderDetail>? OrderDetails { get; set; }
         public List<CartItem>? CartItems { get; set; }
+
+        // Navigation properties
     }
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/css/button.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Cart.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/mangageNav.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,11 +62,16 @@
     </header>
     <!-- Menu -->
     <nav class="navbar">
-        <ul>
-            <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Trang chủ</a></li>
-            <li><a asp-controller="Product" asp-action="Index"><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
+        <!-- Nút Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a asp-route-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a asp-controller="Product" asp-action="Index" asp-route-area=""><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
             <li><a asp-controller="Order" asp-action="Index" asp-route-area=""><i class="fas fa-list-alt"></i> Quản lí đơn hàng</a></li>
         </ul>
+        <div id="menu-overlay"></div>
     </nav>
 
     <!-- Main Layout -->

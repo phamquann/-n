@@ -132,6 +132,87 @@
     .specifications-table tbody tr:nth-child(even) {
         background-color: #f9f9f9;
     }
+/*    Mô tả*/
+.decription {
+    background-color: #f9f9f9; /* Màu nền nhẹ để nổi bật phần mô tả */
+    padding: 15px;
+    border-radius: 8px; /* Bo góc mềm mại */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    margin-top: 20px;
+}
+
+    .decription h3 {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .decription p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6; /* Giúp văn bản dễ đọc hơn */
+        text-align: justify; /* Căn đều văn bản */
+        white-space: pre-wrap; /* Giữ nguyên định dạng xuống dòng */
+    }
+
+/*Đánh giá*/
+.review-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+    .review-form h3 {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .review-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .review-form input[type="text"],
+    .review-form select,
+    .review-form textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .review-form select {
+        cursor: pointer;
+    }
+
+    .review-form textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .review-form button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        .review-form button:hover {
+            background-color: #0056b3;
+        }
+
 
 /* =====================================
    Responsive Design

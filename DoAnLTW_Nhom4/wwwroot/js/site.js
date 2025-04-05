@@ -1,4 +1,22 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.getElementById('menu-overlay');
+
+    // Khi nhấn vào hamburger
+    hamburger.addEventListener('click', function () {
+        navLinks.classList.toggle('active');  // Thêm hoặc loại bỏ class 'active' để hiển thị menu
+        overlay.classList.toggle('active');  // Hiển thị nền tối
+        hamburger.style.display = 'none';  // Ẩn hamburger khi menu hiển thị
+    });
+
+    // Khi nhấn vào overlay (nền tối bên ngoài menu)
+    overlay.addEventListener('click', function () {
+        navLinks.classList.remove('active');  // Đóng menu
+        overlay.classList.remove('active');  // Ẩn overlay
+        hamburger.style.display = 'block';  // Hiển thị lại hamburger
+    });
+
     $("#search-title").hide(); // Ẩn tiêu đề nếu không có sản phẩm
     $("#product-container").hide(); // Ẩn danh sách sản phẩm
     function loadProducts() {

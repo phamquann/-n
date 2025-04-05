@@ -38,7 +38,7 @@
                        name="selectedRoles"
                        value="@role.Name"
                        id="@role.Name"
-                @(userRoles.Contains(role.Name) ? "checked" : "")>
+                @(userRoles.Contains(role.Name) == true ? "checked" : "")>
                 <label class="form-check-label" for="@role.Name">@role.Name</label>
             </div>
         }

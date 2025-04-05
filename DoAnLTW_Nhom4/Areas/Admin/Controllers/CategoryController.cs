@@ -19,6 +19,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // Hiển thị danh sách danh mục
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Index()
         {
             var categories = await _categoryRepository.GetAllAsync();
@@ -29,6 +30,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Add(Category category)
         {
             if (ModelState.IsValid)
@@ -38,6 +40,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             }
             return View(category);
         }
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Edit(int id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);
@@ -48,6 +51,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             return View(category);
         }
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Edit(int id, Category category)
         {
             if (id != category.Id)
@@ -61,6 +65,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             }
             return View(category);
         }
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Delete(int id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);
@@ -71,6 +76,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
             return View(category);
         }
         [HttpPost, ActionName("DeleteConfirmed")]
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);

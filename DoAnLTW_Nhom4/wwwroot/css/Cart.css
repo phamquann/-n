@@ -46,3 +46,18 @@
     .add-to-cart-btn i{
         color: darkslategray;
     }
+@media screen and (max-width: 768px) {
+    .cart-icon {
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .cart-icon {
+        font-size: 20px;
+        height: 100%;
+        text-align: center;
+    }
+}

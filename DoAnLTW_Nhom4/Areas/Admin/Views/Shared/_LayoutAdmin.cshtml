@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="~/css/productView.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/button.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin/promotion.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Toastr CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+
+    <!-- jQuery (cần trước toastr.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
 </head>
 <body>
     <div class="wrapper">
@@ -25,6 +36,7 @@
                 <li><a href="/Admin/Product/Index">Quản lý sản phẩm</a></li>
                 <li><a asp-area="Admin" asp-controller="Admin" asp-action="Index">Quản lý người dùng</a></li>
                 <li><a asp-area="Admin" asp-controller="Order" asp-action="Index">Quản lý đơn hàng</a></li>
+                <li><a asp-area="Admin" asp-controller="Promotion" asp-action="Index">Khuyến mãi</a></li>
                 <li><a asp-area="Home" asp-controller="Home" asp-action="Index">Trang Bán Hàng</a></li>
             </ul>
         </nav>

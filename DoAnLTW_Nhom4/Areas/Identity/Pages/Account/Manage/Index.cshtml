@@ -1,26 +1,44 @@
 ﻿@page
+@using DoAnLTW_Nhom4.Areas.Identity.Pages.Account.Manage
 @model IndexModel
-@{
-    ViewData["Title"] = "Profile";
-    ViewData["ActivePage"] = ManageNavPages.Index;
-}
 
-<h3>@ViewData["Title"]</h3>
-<partial name="_StatusMessage" for="StatusMessage" />
-<div class="row">
-    <div class="col-md-6">
-        <form id="profile-form" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <div class="form-floating mb-3">
-                <input asp-for="Username" class="form-control" placeholder="Please choose your username." disabled />
-                <label asp-for="Username" class="form-label"></label>
+@{
+    ViewData["Title"] = "Thông tin cá nhân";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+    Layout = "_Layout";
+}
+<div class="profile-container">
+    <h3 class="profile-title">@ViewData["Title"]</h3>
+
+    <div class="profile-card">
+        <form id="profile-form" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+            <div class="input-group">
+                <label asp-for="Input.FullName" class="input-label"></label>
+                <input asp-for="Input.FullName" class="input-field" placeholder="Full Name" />
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Please enter your phone number."/>
-                <label asp-for="Input.PhoneNumber" class="form-label"></label>
-                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+
+            <div class="input-group">
+                <label asp-for="Input.Email" class="input-label"></label>
+                <input asp-for="Input.Email" class="input-field" disabled />
             </div>
-            <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
+
+            <div class="input-group">
+                <label asp-for="Input.Age" class="input-label"></label>
+                <input asp-for="Input.Age" type="date" class="input-field" />
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Input.Address" class="input-label"></label>
+                <input asp-for="Input.Address" class="input-field" placeholder="Address" />
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Input.PhoneNumber" class="input-label"></label>
+                <input asp-for="Input.PhoneNumber" class="input-field" placeholder="Phone Number" />
+            </div>
+            <button type="submit" class="btn-submit">Cập nhật</button>
         </form>
     </div>
 </div>

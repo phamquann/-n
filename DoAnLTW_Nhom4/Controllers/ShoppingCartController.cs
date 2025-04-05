@@ -12,7 +12,6 @@ using Microsoft.Extensions.Logging;
 namespace DoAnLTW_Nhom4.Controllers
 {
     [Authorize]
-
     public class ShoppingCartController : Controller
     {
         private readonly IProductRepository _productRepository;
@@ -33,6 +32,7 @@ namespace DoAnLTW_Nhom4.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Customer}")]
         public async Task<IActionResult> AddToCart(int productId, int quantity)
         {
             try
@@ -147,6 +147,7 @@ namespace DoAnLTW_Nhom4.Controllers
         }
 
         // Xoá sản phẩm khỏi giỏ hàng
+        [Authorize(Roles = $"{SD.Role_Customer}")]
         public IActionResult RemoveFromCart(int productId)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
@@ -159,6 +160,7 @@ namespace DoAnLTW_Nhom4.Controllers
             return RedirectToAction("Index");
         }
         // Xóa tất cả sản phẩm khỏi giỏ hàng
+        [Authorize(Roles = $"{SD.Role_Customer}")]
         public IActionResult RemoveAllFromCart()
         {
             // Lấy giỏ hàng từ session
@@ -177,6 +179,7 @@ namespace DoAnLTW_Nhom4.Controllers
             return View(new Order());
         }
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Customer}")]
         public async Task<IActionResult> Checkout(Order order, List<int> selectedProductIds)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
@@ -226,6 +229,7 @@ namespace DoAnLTW_Nhom4.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Customer}")]
         public IActionResult ProceedToCheckout(List<int> selectedProductIds)
         {
             if (selectedProductIds == null || !selectedProductIds.Any())

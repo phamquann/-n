@@ -204,5 +204,14 @@ namespace DoAnLTW_Nhom4.Repositories.EFRepositories
             return await query.ToListAsync();
         }
 
+        public async Task<List<Product>> GetPaginatedProductsAsync(int page, int pageSize)
+        {
+            return await _context.Products
+                .OrderBy(p => p.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+        }
+
     }
 }

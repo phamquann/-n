@@ -61,12 +61,16 @@
     </header>
     <!-- Menu -->
     <nav class="navbar">
-        <ul>
-            <li><a asp-controller="Home" asp-action="Index" asp-route-area=""><i class="fas fa-home"></i> Trang chủ</a></li>
+        <!-- Nút Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a asp-route-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Trang chủ</a></li>
             <li><a asp-controller="Product" asp-action="Index" asp-route-area=""><i class="fas fa-mobile-alt"></i> Sản phẩm</a></li>
             <li><a asp-controller="Order" asp-action="Index" asp-route-area=""><i class="fas fa-list-alt"></i> Quản lí đơn hàng</a></li>
-            
         </ul>
+        <div id="menu-overlay"></div>
     </nav>
 
     <!-- Main Layout -->
@@ -189,6 +193,7 @@
 </html>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        
         //Banner
         const slides = document.querySelectorAll(".main-slider .slide");
         const dots = document.querySelectorAll(".slider-dots .dot");
@@ -247,29 +252,11 @@
 
         showSlide(currentIndex);
         startAutoSlide();
+
+        
     });
 
 </script>
 
-<script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '{your-app-id}',
-        cookie     : true,
-        xfbml      : true,
-        version    : '{api-version}'
-      });
 
-      FB.AppEvents.logPageView();
-
-    };
-
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "https://connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-</script>
 

@@ -140,7 +140,7 @@ namespace DoAnLTW_Nhom4.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
+                    b.Property<decimal?>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("ProductId")
@@ -194,10 +194,6 @@ namespace DoAnLTW_Nhom4.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -213,6 +209,9 @@ namespace DoAnLTW_Nhom4.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("PromotionId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ShippingAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -220,7 +219,7 @@ namespace DoAnLTW_Nhom4.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("TotalPrice")
+                    b.Property<decimal?>("TotalPrice")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("UserId")
@@ -228,6 +227,8 @@ namespace DoAnLTW_Nhom4.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PromotionId");
 
                     b.HasIndex("UserId");
 
@@ -257,7 +258,7 @@ namespace DoAnLTW_Nhom4.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Subtotal")
+                    b.Property<decimal?>("Subtotal")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -340,6 +341,29 @@ namespace DoAnLTW_Nhom4.Migrations
                     b.ToTable("ProductImages");
                 });
 
+            modelBuilder.Entity("DoAnLTW_Nhom4.Models.ProductPromotion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PromotionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("PromotionId");
+
+                    b.ToTable("ProductPromotions");
+                });
+
             modelBuilder.Entity("DoAnLTW_Nhom4.Models.ProductSpecification", b =>
                 {
                     b.Property<int>("Id")
@@ -379,16 +403,15 @@ namespace DoAnLTW_Nhom4.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DiscountType")
+                    b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("DiscountValue")
+                    b.Property<decimal>("DiscountAmount")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("DiscountType")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -396,11 +419,22 @@ namespace DoAnLTW_Nhom4.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<decimal>("MinimumOrderAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("UsageLimit")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsedCount")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -606,6 +640,10 @@ namespace DoAnLTW_Nhom4.Migrations
 
             modelBuilder.Entity("DoAnLTW_Nhom4.Models.Order", b =>
                 {
+                    b.HasOne("DoAnLTW_Nhom4.Models.Promotion", null)
+                        .WithMany("Orders")
+                        .HasForeignKey("PromotionId");
+
                     b.HasOne("DoAnLTW_Nhom4.Models.ApplicationUser", "ApplicationUser")
                         .WithMany("Orders")
                         .HasForeignKey("UserId")
@@ -662,6 +700,25 @@ namespace DoAnLTW_Nhom4.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("DoAnLTW_Nhom4.Models.ProductPromotion", b =>
+                {
+                    b.HasOne("DoAnLTW_Nhom4.Models.Product", "Product")
+                        .WithMany("ProductPromotions")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DoAnLTW_Nhom4.Models.Promotion", "Promotion")
+                        .WithMany("ProductPromotions")
+                        .HasForeignKey("PromotionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Promotion");
                 });
 
             modelBuilder.Entity("DoAnLTW_Nhom4.Models.ProductSpecification", b =>
@@ -765,9 +822,18 @@ namespace DoAnLTW_Nhom4.Migrations
 
                     b.Navigation("OrderDetails");
 
+                    b.Navigation("ProductPromotions");
+
                     b.Navigation("ProductSpecifications");
 
                     b.Navigation("Reviews");
+                });
+
+            modelBuilder.Entity("DoAnLTW_Nhom4.Models.Promotion", b =>
+                {
+                    b.Navigation("Orders");
+
+                    b.Navigation("ProductPromotions");
                 });
 
             modelBuilder.Entity("DoAnLTW_Nhom4.Models.ShoppingCart", b =>

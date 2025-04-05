@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoAnLTW_Nhom4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d01503004756923c0bd2291a5c0d96b95a735ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+522e9d23721f923fdab25978cfa20c173dfcd70e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoAnLTW_Nhom4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoAnLTW_Nhom4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

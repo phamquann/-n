@@ -20,6 +20,6 @@ namespace DoAnLTW_Nhom4.Repositories.Interfaces
         Task<IEnumerable<Product>> GetLatestProductsAsync(int count = 10); // Lấy sản phẩm mới nhất
         Task<IEnumerable<Product>> GetSpecialOffersAsync(int count = 10);
         Task<IEnumerable<Product>> GetFilteredProductsAsync(string search, int? categoryId, int? brandId, decimal? minPrice, decimal? maxPrice, string sortOrder, bool? inStock, bool? hasDiscount);
-
+        Task<List<Product>> GetPaginatedProductsAsync(int page, int pageSize);
     }
 }

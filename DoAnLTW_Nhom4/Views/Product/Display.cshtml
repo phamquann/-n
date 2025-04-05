@@ -40,9 +40,6 @@
 
                 <dt class="col-sm-4">Thương hiệu</dt>
                 <dd class="col-sm-8">@(Model.Brand?.Name ?? "<span class='text-muted'>Chưa có</span>")</dd>
-
-                <dt class="col-sm-4">Mô tả</dt>
-                <dd class="col-sm-8">@Html.Raw(Model.Description)</dd>
             </dl>
             <div class="button-container">
                 <button class="btn add-to-cart-btn" data-product-id="@Model.Id">Thêm vào giỏ hàng
@@ -80,6 +77,10 @@
         {
             <p class="text-muted">Không có thông số kỹ thuật nào.</p>
         }
+    </div>
+    <div class="Decription">
+        <h3> Mô tả</h3>
+        @Html.Raw(Model.Description)
     </div>
     <section class="product-section">
         <div class="section-header">

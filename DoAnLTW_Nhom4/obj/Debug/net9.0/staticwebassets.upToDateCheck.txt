@@ -57,6 +57,7 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery\dis
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\Login_Register.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\mangageNav.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
@@ -81,6 +82,7 @@ wwwroot\css\Cart.css
 wwwroot\css\categoryView.css
 wwwroot\css\Login_Register.css
 wwwroot\css\loginPartial.css
+wwwroot\css\mangageNav.css
 wwwroot\css\Order.css
 wwwroot\css\product.css
 wwwroot\css\productAdd.css

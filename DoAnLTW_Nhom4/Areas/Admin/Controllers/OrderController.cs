@@ -7,8 +7,9 @@ using DoAnLTW_Nhom4.Repositories.Interfaces;
 
 namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    
     [Area("Admin")]
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly IOrderRepository _orderRepository;
@@ -21,6 +22,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // GET: Admin/Order
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Index()
         {
             try
@@ -37,6 +39,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // GET: Admin/Order/Details/5
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> Details(int id)
         {
             try
@@ -59,6 +62,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
 
         // POST: Admin/Order/UpdateStatus/5
         [HttpPost]
+        [Authorize(Roles = $"{SD.Role_Admin},{SD.Role_Employee}")]
         public async Task<IActionResult> UpdateStatus(int id, OrderStatus newStatus)
         {
             try
@@ -82,6 +86,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         }
 
         // GET: Admin/Order/Delete/5
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> Delete(int id)
         {
             try
@@ -105,6 +110,7 @@ namespace DoAnLTW_Nhom4.Areas.Admin.Controllers
         // POST: Admin/Order/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = $"{SD.Role_Admin}")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             try
