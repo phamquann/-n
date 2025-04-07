@@ -1,0 +1,98 @@
+@model DoAnLTW_Nhom4.Models.Coupon
+
+@{
+    ViewData["Title"] = "Thêm mã giảm giá";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Thêm mã giảm giá mới</h6>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" id="couponForm">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <div class="form-group">
+                    <label asp-for="Code" class="control-label"></label>
+                    <input asp-for="Code" class="form-control" />
+                    <span asp-validation-for="Code" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DiscountPercentage" class="control-label"></label>
+                    <input asp-for="DiscountPercentage" class="form-control" type="number" min="0" max="100" step="0.01" />
+                    <span asp-validation-for="DiscountPercentage" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ExpiryDate" class="control-label"></label>
+                    <input asp-for="ExpiryDate" class="form-control" type="date" />
+                    <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="UsageLimit" class="control-label"></label>
+                    <input asp-for="UsageLimit" class="form-control" type="number" min="1" />
+                    <span asp-validation-for="UsageLimit" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="MinimumOrderAmount" class="control-label"></label>
+                    <input asp-for="MinimumOrderAmount" class="form-control" type="number" min="0" />
+                    <span asp-validation-for="MinimumOrderAmount" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        $(document).ready(function() {
+            // Set minimum date for expiry date
+            var today = new Date().toISOString().split('T')[0];
+            $('#ExpiryDate').attr('min', today);
+
+            // Handle form submission
+            $('#couponForm').submit(function(e) {
+                e.preventDefault();
+                
+                if ($(this).valid()) {
+                    $.ajax({
+                        url: $(this).attr('action'),
+                        type: 'POST',
+                        data: $(this).serialize(),
+                        success: function(response) {
+                            if (response.success) {
+                                toastr.success(response.message);
+                                setTimeout(function() {
+                                    window.location.href = '@Url.Action("Index")';
+                                }, 1500);
+                            } else {
+                                toastr.error(response.message);
+                            }
+                        },
+                        error: function() {
+                            toastr.error('Đã xảy ra lỗi khi thêm mã giảm giá');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+} 

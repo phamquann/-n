@@ -37,10 +37,10 @@
                     <tr>
                         <td>@product.Name</td>
                         <td>@product.Price.ToString("N0") VNĐ</td>
-                        <td>@(product.Discount.HasValue ? product.Discount.Value.ToString("N0") + "%" : "<span class='text-muted'>Không có</span>")</td>
+                        <td>@(product.Discount.HasValue ? product.Discount.Value.ToString("N0") + "%" : "Không có")</td>
                         <td>@product.Stock</td>
-                        <td>@(product.Category?.Name ?? "<span class='text-muted'>Chưa có</span>")</td>
-                        <td>@(product.Brand?.Name ?? "<span class='text-muted'>Chưa có</span>")</td>
+                        <td>@(product.Category?.Name ?? "Chưa có")</td>
+                        <td>@(product.Brand?.Name ?? "Chưa có")</td>
                         <td class="product-form-btn">
                             <a asp-area="Admin" asp-controller="Product" asp-action="Display" asp-route-id="@product.Id" class="btn view-btn" title="Xem chi tiết">👁</a>
 

@@ -60,7 +60,7 @@
                         <tr>
                             <td>@product.Name</td>
                             <td>@product.Price.ToString("N0") VNĐ</td>
-                            <td>@(product.Discount.HasValue ? product.Discount.Value.ToString("N0") + " VNĐ" : "N/A")</td>
+                            <td>@(product.Discount.HasValue ? product.Discount.Value.ToString("N0") + " %" : "N/A")</td>
                             <td>@product.Stock</td>
                             <td>@(product.Category?.Name ?? "Chưa có")</td>
                             <td>@(product.Brand?.Name ?? "Chưa có")</td>

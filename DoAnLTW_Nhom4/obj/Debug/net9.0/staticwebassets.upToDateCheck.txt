@@ -17,6 +17,7 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\productDet
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\categoryView.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\admin\coupon.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\css\productView.css
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
@@ -77,6 +78,7 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
 wwwroot\css\admin.css
+wwwroot\css\admin\coupon.css
 wwwroot\css\button.css
 wwwroot\css\Cart.css
 wwwroot\css\categoryView.css
@@ -111,6 +113,7 @@ wwwroot\images\iphone-13-hong-1.png
 wwwroot\images\iphone-13-trang-1.png
 wwwroot\images\iphone-13-xanh-duong-1.png
 wwwroot\images\iphone-16-den-1.png
+wwwroot\images\iphone-16e-den-1.png
 wwwroot\images\iphone-16e-trang-1.png
 wwwroot\images\iphone-16-plus-hong-1.png
 wwwroot\images\iphone-16-plus-trang-1 - Copy.png

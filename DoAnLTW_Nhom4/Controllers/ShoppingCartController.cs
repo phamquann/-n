@@ -30,7 +30,81 @@ namespace DoAnLTW_Nhom4.Controllers
             _userManager = userManager;
             _logger = logger;
         }
+        [HttpPost]
+        public async Task<IActionResult> ValidateCoupon(string code, decimal totalAmount)
+        {
+            _logger.LogInformation($"Validating coupon: {code} for total amount: {totalAmount}");
 
+            if (string.IsNullOrEmpty(code))
+            {
+                return Json(new { success = false, message = "Vui lòng nhập mã giảm giá" });
+            }
+
+            var coupon = await _context.Coupons
+                .FirstOrDefaultAsync(c => c.Code == code && c.IsActive);
+
+            if (coupon == null)
+            {
+                return Json(new { success = false, message = "Mã giảm giá không tồn tại hoặc đã hết hiệu lực" });
+            }
+
+            if (coupon.ExpiryDate < DateTime.Now)
+            {
+                return Json(new { success = false, message = "Mã giảm giá đã hết hạn" });
+            }
+
+            if (coupon.UsageLimit.HasValue && coupon.UsageCount >= coupon.UsageLimit.Value)
+            {
+                return Json(new { success = false, message = "Mã giảm giá đã hết lượt sử dụng" });
+            }
+
+            if (coupon.MinimumOrderAmount.HasValue && totalAmount < coupon.MinimumOrderAmount.Value)
+            {
+                return Json(new { success = false, message = $"Đơn hàng phải có giá trị tối thiểu {coupon.MinimumOrderAmount.Value:N0}đ" });
+            }
+
+            // Calculate discount amount
+            decimal discountAmount = totalAmount * (coupon.DiscountPercentage / 100);
+            decimal finalAmount = totalAmount - discountAmount;
+
+            _logger.LogInformation($"Calculated discount: {discountAmount}, Final amount: {finalAmount}");
+
+            // Lưu thông tin mã giảm giá vào Session
+            HttpContext.Session.SetInt32("AppliedCouponId", coupon.Id);
+            HttpContext.Session.SetDecimal("DiscountAmount", discountAmount);
+            HttpContext.Session.SetDecimal("FinalAmount", finalAmount);
+
+            _logger.LogInformation($"Saved to session - CouponId: {coupon.Id}, DiscountAmount: {discountAmount}, FinalAmount: {finalAmount}");
+
+            // Cập nhật đơn hàng tạm thời trong Session
+            var pendingOrder = HttpContext.Session.GetObjectFromJson<Order>("PendingOrder");
+            if (pendingOrder != null)
+            {
+                pendingOrder.CouponId = coupon.Id;
+                pendingOrder.DiscountAmount = discountAmount;
+                pendingOrder.FinalAmount = finalAmount;
+                HttpContext.Session.SetObjectAsJson("PendingOrder", pendingOrder);
+                _logger.LogInformation($"Updated pending order with discount information");
+            }
+            else
+            {
+                _logger.LogWarning("No pending order found in session");
+            }
+
+            return Json(new
+            {
+                success = true,
+                message = "Áp dụng mã giảm giá thành công",
+                coupon = new
+                {
+                    id = coupon.Id,
+                    code = coupon.Code,
+                    discountPercentage = coupon.DiscountPercentage,
+                    discountAmount = discountAmount,
+                    finalAmount = finalAmount
+                }
+            });
+        }
         [HttpPost]
         [Authorize(Roles = $"{SD.Role_Customer}")]
         public async Task<IActionResult> AddToCart(int productId, int quantity)
@@ -204,7 +278,28 @@ namespace DoAnLTW_Nhom4.Controllers
             order.Status = OrderStatus.Pending;
             order.TotalPrice = pendingOrder.TotalPrice;
             order.OrderDetails = pendingOrder.OrderDetails;
-            
+
+            // Cập nhật thông tin giảm giá nếu có
+            if (order.CouponId.HasValue)
+            {
+                var coupon = await _context.Coupons.FindAsync(order.CouponId.Value);
+                if (coupon != null)
+                {
+                    order.DiscountAmount = order.TotalPrice * (coupon.DiscountPercentage / 100);
+                    order.FinalAmount = order.TotalPrice - order.DiscountAmount;
+
+                    // Giảm số lần sử dụng
+                    coupon.UsageCount = Math.Max(coupon.UsageCount - 1, 0);
+
+                    _context.Coupons.Update(coupon); // Cập nhật coupon
+                    await _context.SaveChangesAsync(); // Lưu thay đổi vào cơ sở dữ liệu
+                }
+            }
+            else
+            {
+                order.DiscountAmount = 0;
+                order.FinalAmount = order.TotalPrice;
+            }
 
             try
             {
@@ -216,11 +311,22 @@ namespace DoAnLTW_Nhom4.Controllers
                 TempData["ErrorMessage"] = "Có lỗi khi xử lý đơn hàng, vui lòng thử lại!";
                 return RedirectToAction("Index");
             }
-
+            // Cập nhật số lượng sản phẩm trong kho
+            foreach (var orderDetail in order.OrderDetails)
+            {
+                var product = await _context.Products.FindAsync(orderDetail.ProductId);
+                if (product != null && product.Stock >= orderDetail.Quantity)
+                {
+                    // Giảm số lượng sản phẩm trong kho
+                    product.Stock -= orderDetail.Quantity;
+                    _context.Products.Update(product);  // Lưu thay đổi vào cơ sở dữ liệu
+                    await _context.SaveChangesAsync();
+                }
+            }
             // Xóa sản phẩm đã thanh toán khỏi giỏ hàng
             cart.Items = cart.Items.Where(i => !selectedProductIds.Contains(i.ProductId)).ToList();
             HttpContext.Session.SetObjectAsJson("Cart", cart);
-           
+
             // Xóa đơn hàng tạm thời khỏi Session
             HttpContext.Session.Remove("PendingOrder");
 
@@ -252,6 +358,13 @@ namespace DoAnLTW_Nhom4.Controllers
                 return RedirectToAction("Index");
             }
 
+            // Lấy thông tin mã giảm giá từ Session nếu có
+            var couponId = HttpContext.Session.GetInt32("AppliedCouponId");
+            var discountAmount = HttpContext.Session.GetDecimal("DiscountAmount");
+            var finalAmount = HttpContext.Session.GetDecimal("FinalAmount");
+
+            var totalPrice = selectedItems.Sum(i => i.Price * i.Quantity);
+
             // Tạo đơn hàng tạm thời để hiển thị trên trang Checkout
             var order = new Order
             {
@@ -262,9 +375,12 @@ namespace DoAnLTW_Nhom4.Controllers
                     Price = i.Price,
                     Subtotal = i.Price * i.Quantity
                 }).ToList(),
-                TotalPrice = selectedItems.Sum(i => i.Price * i.Quantity),
+                TotalPrice = totalPrice,
                 FullName = "",
                 PhoneNumber = "",
+                CouponId = couponId,
+                DiscountAmount = discountAmount ?? 0,
+                FinalAmount = finalAmount ?? totalPrice
             };
 
             // Lưu đơn hàng tạm thời vào Session

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wW9uN9NFU8w8hloxqi8HKDcDe120kCsyzz5d3jr8VME=",
+  "Hash": "3YCixSVOI8tsc9O38qoRyflAG2UVwFT8vV696r1xlOE=",
   "Source": "DoAnLTW_Nhom4",
   "BasePath": "_content/DoAnLTW_Nhom4",
   "Mode": "Default",
@@ -1884,6 +1884,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\5tbheq6e6f-m9e0ajynbx.gz",
+      "SourceId": "DoAnLTW_Nhom4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/DoAnLTW_Nhom4",
+      "RelativePath": "css/admin/coupon#[.{fingerprint=m9e0ajynbx}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\admin\\coupon.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "473yk0qdvk",
+      "Integrity": "UEdH1H8EGJH9hfGAQ/M3H9MFrW4hB4eCPjJdQbWspm8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\admin\\coupon.css"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\6ue12t1iiv-87fc7y1x7t.gz",
@@ -4385,6 +4406,27 @@
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
     },
     {
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\admin\\coupon.css",
+      "SourceId": "DoAnLTW_Nhom4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\",
+      "BasePath": "_content/DoAnLTW_Nhom4",
+      "RelativePath": "css/admin/coupon#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m9e0ajynbx",
+      "Integrity": "xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin\\coupon.css"
+    },
+    {
       "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\button.css",
       "SourceId": "DoAnLTW_Nhom4",
       "SourceType": "Discovered",
@@ -5097,6 +5139,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\iphone-16-den-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16e-den-1.png",
+      "SourceId": "DoAnLTW_Nhom4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\",
+      "BasePath": "_content/DoAnLTW_Nhom4",
+      "RelativePath": "images/iphone-16e-den-1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "03mtk65p6c",
+      "Integrity": "DBGLXUgRxgwozA3OJ8xsmgCFps0uKRk4GnGMAhhnqU8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\iphone-16e-den-1.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16e-trang-1.png",
@@ -7621,6 +7684,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-N6ml1apr++Hxrxdc68mske56xvHMsK9wfI0EOPeDlrA="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin/coupon.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\5tbheq6e6f-m9e0ajynbx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001356852103"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UEdH1H8EGJH9hfGAQ/M3H9MFrW4hB4eCPjJdQbWspm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 06:01:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin/coupon.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\admin\\coupon.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 06:01:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin/coupon.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\5tbheq6e6f-m9e0ajynbx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UEdH1H8EGJH9hfGAQ/M3H9MFrW4hB4eCPjJdQbWspm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 06:01:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UEdH1H8EGJH9hfGAQ/M3H9MFrW4hB4eCPjJdQbWspm8="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin/coupon.m9e0ajynbx.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\5tbheq6e6f-m9e0ajynbx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001356852103"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UEdH1H8EGJH9hfGAQ/M3H9MFrW4hB4eCPjJdQbWspm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 06:01:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m9e0ajynbx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin/coupon.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin/coupon.m9e0ajynbx.css",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\admin\\coupon.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 06:01:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m9e0ajynbx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin/coupon.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xmFu4nGN0dHU8CeJfIJ9o/4wjwacAReOITEaEvGHIyI="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin/coupon.m9e0ajynbx.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\obj\\Debug\\net9.0\\compressed\\5tbheq6e6f-m9e0ajynbx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UEdH1H8EGJH9hfGAQ/M3H9MFrW4hB4eCPjJdQbWspm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 06:01:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m9e0ajynbx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin/coupon.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UEdH1H8EGJH9hfGAQ/M3H9MFrW4hB4eCPjJdQbWspm8="
         }
       ]
     },
@@ -22850,6 +23211,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Hx9L1GUkvvJs0HQXNz+SzTIK052mwGtTJBj/9QMC1DU="
+        }
+      ]
+    },
+    {
+      "Route": "images/iphone-16e-den-1.03mtk65p6c.png",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16e-den-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DBGLXUgRxgwozA3OJ8xsmgCFps0uKRk4GnGMAhhnqU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 05:51:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "03mtk65p6c"
+        },
+        {
+          "Name": "label",
+          "Value": "images/iphone-16e-den-1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DBGLXUgRxgwozA3OJ8xsmgCFps0uKRk4GnGMAhhnqU8="
+        }
+      ]
+    },
+    {
+      "Route": "images/iphone-16e-den-1.png",
+      "AssetFile": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16e-den-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DBGLXUgRxgwozA3OJ8xsmgCFps0uKRk4GnGMAhhnqU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 05:51:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DBGLXUgRxgwozA3OJ8xsmgCFps0uKRk4GnGMAhhnqU8="
         }
       ]
     },

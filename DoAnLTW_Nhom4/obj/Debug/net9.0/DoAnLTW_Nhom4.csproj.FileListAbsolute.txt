@@ -1788,3 +1788,4 @@ C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\obj\Debug\net9.0\compr
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\obj\Debug\net9.0\compressed\h5ztrioo5q-jfyn59o3pg.gz
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\obj\Debug\net9.0\compressed\orjguge4ky-2ov0l5exk8.gz
 C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\obj\Debug\net9.0\compressed\nk9e02amqf-8i8ajtt4hb.gz
+C:\Users\LENOVO\OneDrive\Máy tính\DoAnLTW\DoAnLTW_Nhom4\obj\Debug\net9.0\compressed\5tbheq6e6f-m9e0ajynbx.gz

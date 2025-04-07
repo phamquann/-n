@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\admin\\coupon.css",
+      "PackagePath": "staticwebassets\\css\\admin\\coupon.css"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\css\\button.css",
       "PackagePath": "staticwebassets\\css\\button.css"
     },
@@ -211,6 +215,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16-xanh-luu-ly-1.png",
       "PackagePath": "staticwebassets\\images\\iphone-16-xanh-luu-ly-1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16e-den-1.png",
+      "PackagePath": "staticwebassets\\images\\iphone-16e-den-1.png"
     },
     {
       "Id": "C:\\Users\\LENOVO\\OneDrive\\Máy tính\\DoAnLTW\\DoAnLTW_Nhom4\\wwwroot\\images\\iphone-16e-trang-1.png",

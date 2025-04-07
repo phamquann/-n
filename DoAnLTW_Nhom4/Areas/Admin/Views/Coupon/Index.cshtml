@@ -1,0 +1,106 @@
+@model IEnumerable<DoAnLTW_Nhom4.Models.Coupon>
+
+@{
+    ViewData["Title"] = "Quản lý mã giảm giá";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 d-flex justify-content-between align-items-center">
+            <h6 class="m-0 font-weight-bold text-primary">Danh sách mã giảm giá</h6>
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Thêm mã giảm giá
+            </a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Mã giảm giá</th>
+                            <th>Phần trăm giảm</th>
+                            <th>Ngày hết hạn</th>
+                            <th>Trạng thái</th>
+                            <th>Số lần sử dụng</th>
+                            <th>Giới hạn sử dụng</th>
+                            <th>Giá trị tối thiểu</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Code</td>
+                                <td>@item.DiscountPercentage%</td>
+                                <td>@item.ExpiryDate.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input status-toggle" 
+                                               id="status-@item.Id" @(item.IsActive ? "checked" : "")
+                                               data-id="@item.Id">
+                                        <label class="custom-control-label" for="status-@item.Id">
+                                            @(item.IsActive ? "Đang hoạt động" : "Đã tắt")
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>@item.UsageCount</td>
+                                <td>@(item.UsageLimit.HasValue ? item.UsageLimit.ToString() : "Không giới hạn")</td>
+                                <td>@(item.MinimumOrderAmount.HasValue ? item.MinimumOrderAmount.Value.ToString("N0") + "đ" : "Không yêu cầu")</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <button class="btn btn-sm btn-danger delete-coupon" data-id="@item.Id">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Initialize DataTable
+            $('#dataTable').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.24/i18n/Vietnamese.json"
+                }
+            });
+
+            // Handle status toggle
+            $('.status-toggle').change(function() {
+                var id = $(this).data('id');
+                $.post('@Url.Action("ToggleStatus", "Coupon")/' + id, function(data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                    } else {
+                        toastr.error(data.message);
+                    }
+                });
+            });
+
+            // Handle delete
+            $('.delete-coupon').click(function() {
+                var id = $(this).data('id');
+                if (confirm('Bạn có chắc chắn muốn xóa mã giảm giá này?')) {
+                    $.post('@Url.Action("Delete", "Coupon")/' + id, function(data) {
+                        if (data.success) {
+                            toastr.success(data.message);
+                            location.reload();
+                        } else {
+                            toastr.error(data.message);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+} 

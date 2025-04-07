@@ -48,7 +48,7 @@
                                 <td>@order.Id</td>
                                 <td>@order.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
                                 <td>@order.FullName</td>
-                                <td>@order.TotalPrice?.ToString("N0")đ</td>
+                                <td>@order.FinalAmount?.ToString("N0")đ</td>
                                 <td>
                                     <select class="form-select form-select-sm status-select"
                                             data-order-id="@order.Id"
